@@ -2,6 +2,7 @@
 include 'ru/inc/linkadd.php';
 include 'ru/inc/config.php';
 include 'core/function.php';
+include 'core/libcities.php'
 ?><!DOCTYPE html>
 <?php
 echo $doctypedown;
@@ -27,9 +28,9 @@ echo $headdown;
 	
 	<link rel="shortcut icon" href="favicon.ico">
 
-    <link href="assets/css/bootstrap.css" rel="stylesheet">
-    <link href="assets/css/font-awesome.min.css" rel="stylesheet">
-    <link href="assets/css/main.css" rel="stylesheet">
+    <link href="/assets/css/bootstrap.css" rel="stylesheet">
+    <link href="/assets/css/font-awesome.min.css" rel="stylesheet">
+    <link href="/assets/css/main.css" rel="stylesheet">
  
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -49,6 +50,10 @@ echo $bodyup;
 <?php
 echo $bodydown;
 ?>
+
+<?php  print $_SERVER['REQUEST_URI']; ?>
+
+
 	<nav class="navbar navbar-inverse navbar-fixed-top" itemscope="" itemtype="http://www.schema.org/SiteNavigationElement">
       <div class="container">
         <div class="navbar-header">
