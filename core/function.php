@@ -42,7 +42,7 @@ function rightMenuRuF($menu, $id="", $op='"') {
 	for ($i = $real; $i <= $id; $i++) 
   { 
     echo "<li>
-			<a itemprop=".$op."url".$op." href=".$op."https://all-populations.com/ru/{$menu[$i]['name_href']}.html".$op.">
+			<a itemprop=".$op."url".$op." href=".$op."../{$menu[$i]['name_href']}.php".$op.">
 				<span itemprop=".$op."name".$op.">Население {$menu[$i]['name_ru']}</span>
 			</a>
 		 </li>"; 
@@ -140,7 +140,7 @@ function getCountryRealId($menu, $id=""){
    { 
 	echo " <tr>
 			<th>{$menu[$i]['real_id']}</th>
-			<td><a href=".$op."https://all-populations.com/ru/{$menu[$i]['name_href']}.html".$op.">{$menu[$i]['name_ru']}</a></td>
+			<td><a href=".$op."{$menu[$i]['name_href']}.html".$op.">{$menu[$i]['name_ru']}</a></td>
 			<td>{$menu[$i]['count']}</td>
 		   </tr>";
   } 
@@ -152,7 +152,7 @@ function getCountryRealId($menu, $id=""){
    { 
 	echo " <tr>
 			<th>{$menu[$i]['real_id']}</th>
-			<td><a href=".$op."https://all-populations.com/ru/{$menu[$i]['name_href']}.html".$op.">{$menu[$i]['name_ru']}</a></td>
+			<td><a href=".$op."{$menu[$i]['name_href']}.html".$op.">{$menu[$i]['name_ru']}</a></td>
 			<td>{$menu[$i]['count']}</td>
 		   </tr>";
   } 
@@ -165,7 +165,7 @@ function getCountryRealId($menu, $id=""){
    { 
 	echo " <tr>
 			<th>{$menu[$i]['real_id']}</th>
-			<td><a href=".$op."https://all-populations.com/en/{$menu[$i]['name_href']}.html".$op.">{$menu[$i]['name_en']}</a></td>
+			<td><a href=".$op."{$menu[$i]['name_href']}.html".$op.">{$menu[$i]['name_en']}</a></td>
 			<td>{$menu[$i]['count']}</td>
 		   </tr>";
   } 
@@ -177,7 +177,7 @@ function getCountryRealId($menu, $id=""){
    { 
 	echo " <tr>
 			<th>{$menu[$i]['real_id']}</th>
-			<td><a href=".$op."https://all-populations.com/en/{$menu[$i]['name_href']}.html".$op.">{$menu[$i]['name_en']}</a></td>
+			<td><a href=".$op."{$menu[$i]['name_href']}.html".$op.">{$menu[$i]['name_en']}</a></td>
 			<td>{$menu[$i]['count']}</td>
 		   </tr>";
   } 
@@ -190,7 +190,7 @@ function getCountryRealId($menu, $id=""){
 	for ($i = $real; $i <= $id; $i++) 
   { 
 	echo "<li>
-			<a itemprop=".$op."url".$op." href=".$op."https://all-populations.com/ru/{$menu[$i]['rate_city_country']}.html".$op.">
+			<a itemprop=".$op."url".$op." href=".$op."../{$menu[$i]['rate_city_country']}.html".$op.">
 				<span itemprop=".$op."name".$op.">Список городов {$menu[$i]['name_country_ru_zz']}</span>
 			</a>
 		 </li>"; 
@@ -205,7 +205,7 @@ function getCountryRealId($menu, $id=""){
 	for ($i = $real; $i <= $id; $i++) 
   { 
 	echo "<li>
-			<a itemprop=".$op."url".$op." href=".$op."https://all-populations.com/en/{$menu[$i]['rate_city_country']}.html".$op.">
+			<a itemprop=".$op."url".$op." href=".$op."{$menu[$i]['rate_city_country']}.html".$op.">
 				<span itemprop=".$op."name".$op.">List of cities in {$menu[$i]['name_country_en']}</span>
 			</a>
 		 </li>"; 

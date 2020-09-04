@@ -25,20 +25,24 @@ echo $headdown;
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <meta name='viewport' content='width=device-width, initial-scale=1.0'>
 	
-	<title>Население <?php getNameCountryRu($libcountry,1);?>. Узнайте сколько людей живет в <?php getNameCountryRu($libcountry,1);?></title>
-	<meta name='description' content='Актуальные данные о численности населения <?php getNameCountryRu($libcountry,1);?> на <?php echo $year; ?> год. Узнайте сколько человек проживает в стране.'>
-	<meta name='keywords' content='Численность населения <?php getNameCountryRu($libcountry,1);?>, население <?php getNameCountryRu($libcountry,1);?> на <?php echo $year;?> год'>
+	<title>Самые крупные города <?php getNameCountryRu($libcountry,1);?> по численности населения</title>
+	<meta name='description' content='Рейтинг городов <?php getNameCountryRu($libcountry,1);?> по численности населения на 2020 год. Узнайте список самых крупных городов <?php getNameCountryRu($libcountry,1);?>'>
+	<meta name='keywords' content='список городов <?php getNameCountryRu($libcountry,1);?> по населению'>
 	
 	<link rel='shortcut icon' href='https://all-populations.com/favicon.ico' type='image/x-icon'>
 	
-	<link rel='canonical' href='https://all-populations.com/ru/<?php getNameCountryHref($libcountry,1);?>.html'>
+	<link rel='canonical' href='https://all-populations.com/ru/<?php getListHref($libcountry,1);?>.html'>
 
-	<link rel='alternate' href='https://all-populations.com/ru/<?php getNameCountryHref($libcountry,1);?>.html' hreflang='ru'>
-	<link rel='alternate' href='https://all-populations.com/en/<?php getNameCountryHref($libcountry,1);?>.html' hreflang='en'>
+	<link rel='alternate' href='https://all-populations.com/ru/<?php getListHref($libcountry,1);?>.html' hreflang='ru'>
+	<link rel='alternate' href='https://all-populations.com/en/<?php getListHref($libcountry,1);?>.html' hreflang='en'>
 
     <link href='https://all-populations.com/assets/css/bootstrap.css' rel='stylesheet'>
     <link href='https://all-populations.com/assets/css/font-awesome.min.css' rel='stylesheet'>
     <link href='https://all-populations.com/assets/css/main.css' rel='stylesheet'>
+	
+	<!-- table js css -->
+	<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+	<script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js'></script>
  
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -46,22 +50,25 @@ echo $headdown;
       <script src='https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js'></script>
     <![endif]-->
 	
-	<meta property='og:title' content='Численность населения <?php getNameCountryRu($libcountry,1);?> на <?php echo $year; ?> год - статистика' />
-	<meta property='og:description' content='Статистика численности населения страны <?php getNameCountryRu($libcountry,1);?> на <?php echo $year; ?> год' />
+	<meta property='og:title' content='Самые крупные города <?php getNameCountryRu($libcountry,1);?> по численности населения' />
+	<meta property='og:description' content='Рейтинг городов <?php getNameCountryRu($libcountry,1);?> по численности населения на 2020 год. Узнайте список самых крупных городов <?php getNameCountryRu($libcountry,1);?>' />
 	<meta property='og:type' content='website' />
-	<meta property='og:url' content='https://all-populations.com/ru/<?php getNameCountryHref($libcountry,1);?>.html' />
+	<meta property='og:url' content='https://all-populations.com/ru/<?php getListHref($libcountry,1);?>.html' />
 	<meta property='og:image' content='https://all-populations.com/ru/images/<?php getCountryFlag($libcountry,1);?>' />
 	<meta property='og:site_name' content='All-populations.com' />
-
+ 
 <?php
 echo $headtop;
 ?>
+<style type='text/css'>
+h3 {font-size: 18px;padding: 5px 0 5px 15px;font-weight: 600;}
+</style>
   </head>
 <?php
 echo $headfoot;
 echo $bodyup;
 ?>
-  <body itemscope='itemscope' itemtype='http://schema.org/WebPageElement'> 
+<body itemscope='itemscope' itemtype='http://schema.org/WebPageElement'>  
 <?php
 echo $bodydown;
 ?>
@@ -73,14 +80,14 @@ echo $bodydown;
             <span class='icon-bar'></span>
             <span class='icon-bar'></span>
           </button>
-		<a class='navbar-brand' href='/'><span style='color: #f3e99a;'>all-</span>populations<span style='color: #eee;'>.com</span></a>
+		<a class='navbar-brand' href='https://all-populations.com'><span style='color: #f3e99a;'>all-</span>populations<span style='color: #eee;'>.com</span></a>
         </div>
         <div class='navbar-collapse collapse'>
           <ul class='nav navbar-nav navbar-left'>
-            <li itemprop='name'><a itemprop='url' href='../list-of-countries-by-population.php'>Страны</a></li>
-            <li itemprop='name'><a itemprop='url' href='../list-of-kingdoms-by-population.php'>Королевства</a></li>
-            <li itemprop='name'><a itemprop='url' href='../list-of-republics-by-population.php'>Республики</a></li>
-            <li itemprop='name'><a itemprop='url' href='../list-of-cities-by-population.php'>Города</a></li>
+            <li itemprop='name'><a itemprop='url' href='https://all-populations.com/ru/list-of-countries-by-population.html'>Страны</a></li>
+            <li itemprop='name'><a itemprop='url' href='https://all-populations.com/ru/list-of-kingdoms-by-population.html'>Королевства</a></li>
+            <li itemprop='name'><a itemprop='url' href='https://all-populations.com/ru/list-of-republics-by-population.html'>Республики</a></li>
+            <li itemprop='name'><a itemprop='url' href='https://all-populations.com/ru/list-of-cities-by-population.html'>Города</a></li>
           </ul>
         </div>
       </div>
@@ -104,8 +111,13 @@ echo $bodydown;
 							</a>
 						</li>
 						<li itemscope='' itemprop='itemListElement' itemtype='http://schema.org/ListItem'>
-							<span itemprop='item'>
+							<a href='https://all-populations.com/ru/<?php getNameCountryHref($libcountry,1);?>.html' itemprop='item'>
 								<span itemprop='name'>Население <?php getNameCountryRu($libcountry,1);?></span>
+							</a>
+						</li>
+						<li itemscope='' itemprop='itemListElement' itemtype='http://schema.org/ListItem'>
+							<span itemprop='item'>
+								<span itemprop='name'>Список городов <?php getNameCountryRu($libcountry,1);?> по населению</span>
 							</span>
 						</li>      
 					</ul>
@@ -117,13 +129,34 @@ echo $bodydown;
 		
 			<section class='col-xs-12 col-sm-12 col-md-8 col-lg-8'>
 				<div class='panel-heading' >
-					<h1 itemprop='headline'>Численность населения <?php print $libcountry[ltrim($_SERVER['REQUEST_URI'], '/')]['name_country_ru'].' <br/>';?></h1>
+					<h1 itemprop='headline'>Список городов <?php getNameCountryRu($libcountry,1);?> по численности населения</h1>
 				</div>
 				
 				<div  itemprop='text'>
-				<p>На <?php echo $year;?> год численность населения <strong><?php getNameCountryRu($libcountry,1);?></strong> - составляет <span class='pop-info'><?php getCountryPopulation($libcountry,1);?></span> человек. All-populations.com использовал данные количества населения из официальных источников. Узнать, какая статистика населения страны, города, района на All-populations.com. </p>
+					<p>Список городов <?php getNameCountryRu($libcountry,1);?> по численности населения на <?php echo $year; ?> год.<p>	
+					<p>Общее количество городов: <?php getCityCount($libcountry,1);?>.</p>
+					<p>Общее количество населения: <?php getCountryPopulation($libcountry,1);?>.</p>
 				</div>		
-		
+				
+				<input class='form-control' id='myInput' type='text' placeholder='Поиск города..'>
+				<br>
+				<h2>Самые крупные города <?php getNameCountryRu($libcountry,1);?> по численности населения</h2>
+				<div class='table-responsive'>
+				<table class='table table-bordered'>
+					<thead>
+					  <tr>
+						<th>#</th>
+						<th>Название, город</th>
+						<th>Население, человек</th>
+					  </tr>
+					</thead>
+					<tbody id='myTable'>
+					  <?php getTable($libcn);?>
+					</tbody>
+				</table>
+				</div>
+				<?php echo $scripttable;?>
+				  
 				<div class='showinfo'>
 					<div class='row'>
 						<div class='col-xs-12 col-sm-6 col-md-6 col-lg-6'>
@@ -133,8 +166,8 @@ echo $bodydown;
 						</div>
 						<div class='col-xs-12 col-sm-6 col-md-6 col-lg-6'>
 							<div class='count' itemscope='' itemtype='http://schema.org/ImageObject'>
-								<h3 class='naselenie'><?php getNameCountryRuZ($libcountry,1);?> - Население</h3>
-								<span class='skolko'><?php getCountryPopulation($libcountry,1);?> человек</span>
+								<h3 class='naselenie'>Страна: <?php getNameCountryRuZ($libcountry,1);?></h3>
+								<span class='skolko'>Количество городов: <?php getCityCount($libcountry,1);?></span>
 								<img src='https://all-populations.com/ru/images/<?php getCountryFlag($libcountry,1);?>' itemprop='contentUrl' width='160' height='107' alt='Флаг <?php getNameCountryRu($libcountry,1);?>' title='Флаг <?php getNameCountryRu($libcountry,1);?>' />
 								<span itemprop='name' style='display:block; font-size: 12px;'>Флаг <?php getNameCountryRu($libcountry,1);?></span>
 								<span class='date'>На <?php echo $month;?> <?php echo $year;?> год</span>
@@ -142,7 +175,6 @@ echo $bodydown;
 						</div>
 					</div>
 				</div>
-				<p>Доступная информация по населению любого региона, быстрая работа сайта и постоянное обновление информации являются основой нашего ресурса. Скоро на сайте появится возможность посмотреть <?php getNameCountryRuZ($libcountry,1);?> на карте.</p>
 				
 				<?php
 				echo $section;
@@ -155,17 +187,22 @@ echo $bodydown;
 			?>
 				<ul class='parent-menu-list'>
 					<li>
-						<a itemprop='url' href='../page_list_cities/list_cities.php' title='Список городов <?php getNameCountryRu($libcountry,1);?> по населению'>
-							<span itemprop='name'>Список городов <?php getNameCountryRu($libcountry,1);?> по населению</span>
-						</a>
+						<h3>Списки городов в других странах</h3>
 						<ul class='child-menu-list'>
-						<?php rightMenuRuF($libcn,1);?>
+						<?php getRightTableRu($libcountry,1);?>
 						</ul>
 					</li>
 				</ul>
 
 					<?php echo $ads3;?>
-
+				<ul class='parent-menu-list'>
+					<li>
+						<p class='lang'>На других языках</p>
+						<ul class='language-menu-list'>
+							<li><a href='https://all-populations.com/en/<?php getListHref($libcountry,1);?>.html' title='List of cities in <?php getNameCountryEn($libcountry,1);?>'>List of cities in <?php getNameCountryEn($libcountry,1);?></a></li>
+						</ul>
+					</li>
+				</ul>
 				<?php
 				echo $asidedown;
 				?>
@@ -251,16 +288,6 @@ echo $bodydown;
 					</div>
 				</div>
 			</div>
-			<div class='col-xs-12 col-sm-12 col-md-4 col-lg-4'>
-				<ul class='parent-menu-list'>
-					<li>
-						<p class='lang'>На других языках</p>
-						<ul class='language-menu-list'>
-							<li><a href='https://all-populations.com/en/<?php getNameCountryHref($libcountry,1);?>.html' title='Population of <?php getNameCountryEn($libcountry,1);?>'>Population of <?php getNameCountryEn($libcountry,1);?></a></li>
-						</ul>
-					</li>
-				</ul>
-			</div>
 			
 		</div>
 	</div>
@@ -279,7 +306,6 @@ echo $bodydown;
 		?>
 		</footer>
 	
-    <script src='https://code.jquery.com/jquery-1.10.2.min.js'></script>
     <script async src='https://all-populations.com/assets/js/bootstrap.min.js'></script>
   <?php
   echo $bodytop;

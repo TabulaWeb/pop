@@ -3,7 +3,7 @@
 $libcn = array (
 
 
-"1"=>array("name_ru"=>"Чунцин","name_en"=>"Chongqing","name_href" => "cn/population-of-chongqing","count" => "29 914 000","real_id" =>1,),
+"1"=>array("name_ru"=>"Чунцин","name_en"=>"Chongqing","name_href" => "page_cities/cities","count" => "29 914 000","real_id" =>1,),
 "2"=>array("name_ru"=>"Шанхай","name_en"=>"Shanghai","name_href" => "cn/population-of-shanghai","count" => "24 150 000","real_id" =>2,),
 "3"=>array("name_ru"=>"Пекин","name_en"=>"Beijing","name_href" => "cn/population-of-beijing","count" => "21 705 000","real_id" =>3,),
 "4"=>array("name_ru"=>"Тяньцзинь","name_en"=>"Tianjin","name_href" => "cn/population-of-tianjin","count" => "14 425 000","real_id" =>4,),
