@@ -117,7 +117,7 @@ echo $bodydown;
 		
 			<section class='col-xs-12 col-sm-12 col-md-8 col-lg-8'>
 				<div class='panel-heading' >
-					<h1 itemprop='headline'>Численность населения <?php print $libcn[ltrim($_SERVER['REQUEST_URI'], '/')]['name_ru'].' <br/>';?></h1>
+					<h1 itemprop='headline'>Численность населения <?php print_r($libcn); print $libcn[ltrim($_SERVER['REQUEST_URI'], '/')]['name_ru'].' <br/>';?></h1>
 				</div>
 				
 				<div  itemprop='text'>
