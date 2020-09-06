@@ -1,12 +1,8 @@
 <?php
-include 'inc/linkadd.php';
-include 'inc/config.php';
-include '../core/function.php';
-include '../core/libcountry.php';
-echo $doctypeup;
-?>
-
-<!DOCTYPE html>
+include 'ru/inc/linkadd.php';
+include 'ru/inc/config.php';
+include 'core/function.php';
+?><!DOCTYPE html>
 <?php
 echo $doctypedown;
 echo $htmlup;
@@ -17,41 +13,35 @@ echo $htmldown;
 echo $headup;
 ?>
   <head>
-  <?php
+   <?php
 echo $headdown;
 ?>
-  
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	
+	<title>Текущая статистика численности населения: мира, стран, городов</title>
+	<meta name="title" content="Текущая статистика численности населения: мира, стран, городов">
+	<meta name="description" content="Здесь вы узнаете сколько людей живет на планете, численность населения каждой страны и каждого города. Рейтинги стран и городов по численности населения.">
+	<meta name="keywords" content="Статистика населения">
 	
-	<title>Узнайте численность населения стран мира на <?php echo $year?> год</title>
-	<meta name="title" content="Узнайте численность населения стран мира на <?php echo $year?> год">
-	<meta name="description" content="Список стран мира по численности населения. Узнайте какая самая населенная страна мира на данный момент, в каких странах самая большая численность населения.">
-	<meta name="keywords" content="Список стран по населению">
-	
-	<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="favicon.ico">
 
-    <link href="../assets/css/bootstrap.css" rel="stylesheet">
-    <link href="../assets/css/font-awesome.min.css" rel="stylesheet">
-    <link href="../assets/css/main.css" rel="stylesheet">
-	
-	<!-- table js css -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="/assets/css/bootstrap.css" rel="stylesheet">
+    <link href="/assets/css/font-awesome.min.css" rel="stylesheet">
+    <link href="/assets/css/main.css" rel="stylesheet">
  
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
     <![endif]-->
- 
+
 <?php
 echo $headtop;
 ?>
   </head>
- <?php
+  <?php
 echo $headfoot;
 echo $bodyup;
 ?>
@@ -59,7 +49,6 @@ echo $bodyup;
 <?php
 echo $bodydown;
 ?>
-
 	<nav class="navbar navbar-inverse navbar-fixed-top" itemscope="" itemtype="http://www.schema.org/SiteNavigationElement">
       <div class="container">
         <div class="navbar-header">
@@ -68,103 +57,103 @@ echo $bodydown;
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-		<a class="navbar-brand" href="../home.php"><span style="color: #f3e99a;">all-</span>populations<span style="color: #eee;">.com</span></a>
+		<a class="navbar-brand" href="/home.php"><span style="color: #f3e99a;">all-</span>populations<span style="color: #eee;">.com</span></a>
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-left">
-            <li class="active" itemprop="name"><a itemprop="url" href="list-of-countries-by-population.php">Страны</a></li>
-            <li itemprop="name"><a itemprop="url" href="list-of-kingdoms-by-population.php">Королевства</a></li>
-            <li itemprop="name"><a itemprop="url" href="list-of-republics-by-population.php">Республики</a></li>
-            <li itemprop="name"><a itemprop="url" href="list-of-cities-by-population.php">Города</a></li>
+            <li itemprop="name"><a itemprop="url" href="/ru/list-of-countries-by-population.php">Страны</a></li>
+            <li itemprop="name"><a itemprop="url" href="/ru/list-of-kingdoms-by-population.php">Королевства</a></li>
+            <li itemprop="name"><a itemprop="url" href="/ru/list-of-republics-by-population.php">Республики</a></li>
+            <li itemprop="name"><a itemprop="url" href="/ru/list-of-cities-by-population.php">Города</a></li>
           </ul>
         </div>
       </div>
     </nav>
+
 	<div class="container">
-	
-		<div class="row">
-			<?php echo $ads1; ?>
-		</div>
-		
-		<div class="row b">
-			<div id="breadcrumbs">
-				<div id="breadcrumbs-inner">
-					<ul itemscope="" itemtype="http://schema.org/BreadcrumbList">
-						<li itemscope="" itemprop="itemListElement" itemtype="http://schema.org/ListItem">
-							<a href="population-of-earth.php" itemprop="item">
-								<span itemprop="name">Население Земли</span>
-							</a>
-						</li>    
-						<li itemscope="" itemprop="itemListElement" itemtype="http://schema.org/ListItem">
-							<span itemprop="item">
-								<span itemprop="name">Список стран по населению</span>
-							</span>
-						</li>      
-					</ul>
-				</div>
-			</div>
-		</div>
 		
 		<div class="row">
 		
 			<section class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
 				<div class="panel-heading">
-					<h1 itemprop="headline">Список из 194 стран по численности населения на 2020 год.</h1>
+					<h1 itemprop="headline">Статистика населения</h1>
 				</div>
 				
 				<div itemprop="text">
-					<p>Список из 194 стран по численности населения на <?php echo $year;?> год.</p>
-				</div>	
-				  <input class="form-control" id="myInput" type="text" placeholder="Поиск страны..">
-				  <br>
-				  <div class="table-responsive">
-				  <table class="table table-bordered">
-					<thead>
-					  <tr>
-						<th>#</th>
-						<th>Страна</th>
-						<th>Население</th>
-					  </tr>
-					</thead>
-					<tbody id="myTable">
-					  <?php getTableAllCountryRu($libcountry,1);?>
-					</tbody>
-				  </table>
-				  </div>
-				<?php echo $scripttable;?>
+					<p>Текущая статистика населения в мире.</p>
+					<h2>Выбрать язык:</h2>
+				</div>
 				
-			<div class="showinfo">
+				<div class="showinfo">
 					<div class="row">
+					
 						<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-							<?php echo $ads2;?>
+							<div class="count" style="float:none!important;">
+							<a href="/ru/population-of-earth.php">
+								<i class="fa fa-globe" aria-hidden="true" style="font-size: 200px"></i>
+								<span class="date">Население земли / RU</span>
+							</a>
+							</div>
 						</div>
+						
+						<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+							<div class="count" style="float:none!important;">
+							<a href="/en/population-of-earth.html">
+								<i class="fa fa-globe" aria-hidden="true" style="font-size: 200px"></i>
+								<span class="date">World population / EN</span>
+							</a>
+							</div>
+						</div>
+						
 					</div>
 				</div>
+				<p>Доступная информация по населению любого региона, быстрая работа сайта и постоянное обновление информации являются основой нашего ресурса.</p>
 				<?php
 				echo $section;
 				?>
 			</section>
 
 			<aside itemscope="" itemtype="http://schema.org/WPSideBar" class="col-xs-12 col-sm-12 col-md-4 col-lg-4">		
-				<?php 
+			<?php 
 			echo $asideup;
 			?>
-				<?php
-				echo $ads3;
-				?>
-				
 				<ul class="parent-menu-list">
 					<li>
-						<p class="lang">На других языках</p>
-						<ul class="language-menu-list">
+						<a itemprop="url" href="ru/list-of-countries-by-population.php" title="List of countries by population">
+							<span itemprop="name">Список стран по численности населения</span>
+						</a>
+						<ul class="child-menu-list">
 							<li>
-								<a href="https://all-populations.com/en/list-of-countries-by-population.html" title="List of countries by population">
-									List of countries by population
+								<a itemprop="url" href="/ru/cn/population-of-china.html" title="Population of China">
+									<span itemprop="name">Население Китая</span>
+								</a>
+							</li>
+							<li>
+								<a itemprop="url" href="/ru/in/population-of-india.html" title="Population of India">
+									<span itemprop="name">Население Индии</span>
+								</a>
+							</li>
+							<li>
+								<a itemprop="url" href="/ru/us/population-of-usa.html" title="Population of USA">
+									<span itemprop="name">Население США</span>
+								</a>
+							</li>
+							<li>
+								<a itemprop="url" href="/ru/id/population-of-indonesia.html" title="Population of Indonesia">
+									<span itemprop="name">Население Индонезии</span>
+								</a>
+							</li>
+							<li>
+								<a itemprop="url" href="/ru/pk/population-of-pakistan.html" title="Population of Pakistan">
+									<span itemprop="name">Население Пакистана</span>
 								</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
+				<?php
+				echo $ads3;
+				?>
 				<?php
 				echo $asidedown;
 				?>
@@ -251,8 +240,7 @@ echo $bodydown;
 					</div>
 				</div>
 			</div>
-
-		</div>
+	</div>
 	</div>
 	<footer itemscope="itemscope" itemtype="http://schema.org/WPFooter">
 	<?php
@@ -261,14 +249,25 @@ echo $bodydown;
 		<div class="container">
 			<div class="row centered" itemprop="text">
 				<p>© All-populations.com - <?php echo $year;?></p>
-				<p>Узнайте численность населения в вашем регионе!</p>
+				<p>Узнайте численность населения в вашем регионе! 					<!--LiveInternet counter--><script type="text/javascript">
+document.write("<a rel='nofollow' href='//www.liveinternet.ru/click' "+
+"target=_blank><img src='//counter.yadro.ru/hit?t45.5;r"+
+escape(document.referrer)+((typeof(screen)=="undefined")?"":
+";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth?
+screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
+";h"+escape(document.title.substring(0,150))+";"+Math.random()+
+"' alt='' title='LiveInternet' "+
+"border='0' width='0' height='0'><\/a>")
+</script><!--/LiveInternet--></p>
+
 			</div>
 		</div>
 	<?php
 		echo $footerdown;
 		?>
 	</footer>
-    <script async src="../assets/js/bootstrap.min.js"></script>
+    <script src='https://code.jquery.com/jquery-1.10.2.min.js'></script>
+    <script async src='https://all-populations.com/assets/js/bootstrap.min.js'></script>
 	<?php echo $bodytop?>
   </body>
 </html>

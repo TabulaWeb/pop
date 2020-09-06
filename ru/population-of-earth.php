@@ -60,7 +60,7 @@ echo $bodydown;
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-		<a class="navbar-brand" href="/"><span style="color: #f3e99a;">all-</span>populations<span style="color: #eee;">.com</span></a>
+		<a class="navbar-brand" href="../home.php"><span style="color: #f3e99a;">all-</span>populations<span style="color: #eee;">.com</span></a>
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-left">
@@ -84,7 +84,7 @@ echo $bodydown;
 				<div id="breadcrumbs-inner">
 					<ul itemscope="" itemtype="http://schema.org/BreadcrumbList">
 						<li itemscope="" itemprop="itemListElement" itemtype="http://schema.org/ListItem">
-							<a href="https://all-populations.com/" itemprop="item">
+							<a href="../home.php" itemprop="item">
 								<span itemprop="name">All-populations.com</span>
 							</a>
 						</li>    
@@ -138,7 +138,7 @@ echo $bodydown;
 			?>
 				<ul class="parent-menu-list">
 					<li>
-						<a itemprop="url" href="https://all-populations.com/ru/list-of-countries-by-population.html" title="">
+						<a itemprop="url" href="list-of-countries-by-population.php" title="">
 							<span itemprop="name">Список стран по численности населения</span>
 						</a>
 						<ul class="child-menu-list">
