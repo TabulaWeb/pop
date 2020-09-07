@@ -2,7 +2,7 @@
 include 'ru/inc/linkadd.php';
 include 'ru/inc/config.php';
 include 'core/function.php';
-include 'core/libcities.php';
+include 'core/libby.php';
 include 'core/libcountry.php';
 ?>
 
@@ -98,6 +98,20 @@ echo $bodyup;
 <body itemscope='itemscope' itemtype='http://schema.org/WebPageElement'> 
 <?php
 echo $bodydown;
+?>
+
+<!-- // print $_SERVER['REQUEST_URI'];
+
+// print $libby[ltrim($_SERVER['REQUEST_URI'], '/')]['name_ru'].' <br/>';
+// print $libby[ltrim($_SERVER['REQUEST_URI'], '/')]['name_en'].' <br/>';
+// print $libby[ltrim($_SERVER['REQUEST_URI'], '/')]['name_href'].' <br/>';
+// print $libby[ltrim($_SERVER['REQUEST_URI'], '/')]['count'].' <br/>';
+// print $libby[ltrim($_SERVER['REQUEST_URI'], '/')]['real_id'].' <br/>'; -->
+
+<?php 
+
+print $_SERVER['REQUEST_URI'];
+
 ?>
 
 	<nav class='navbar navbar-inverse navbar-fixed-top' itemscope='' itemtype='http://www.schema.org/SiteNavigationElement'>
