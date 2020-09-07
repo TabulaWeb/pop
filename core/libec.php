@@ -1,0 +1,42 @@
+<?php
+//Эквадор 31 
+$libec = array ( 
+"1"=>array("name_ru"=>"Гуаякиль","name_en"=>"Guayaquil","name_href" => "ec/population-of-guayaquil","count" => "2 278 691","real_id" =>1,),
+"2"=>array("name_ru"=>"Кито","name_en"=>"Quito","name_href" => "ec/population-of-quito","count" => "1 607 734","real_id" =>2,),
+"3"=>array("name_ru"=>"Куэнка","name_en"=>"Cuenca","name_href" => "ec/population-of-cuenca","count" => "329 928","real_id" =>3,),
+"4"=>array("name_ru"=>"Санто-Доминго","name_en"=>"Santo Domingo","name_href" => "ec/population-of-santo-domingo","count" => "270 875","real_id" =>4,),
+"5"=>array("name_ru"=>"Мачала","name_en"=>"Machala","name_href" => "ec/population-of-machala","count" => "231 260","real_id" =>5,),
+"6"=>array("name_ru"=>"Дуран","name_en"=>"Duran","name_href" => "ec/population-of-duran","count" => "230 839","real_id" =>6,),
+"7"=>array("name_ru"=>"Манта","name_en"=>"Manta","name_href" => "ec/population-of-manta","count" => "217 553","real_id" =>7,),
+"8"=>array("name_ru"=>"Портовьехо","name_en"=>"Portoviejo","name_href" => "ec/population-of-portoviejo","count" => "206 682","real_id" =>8,),
+"9"=>array("name_ru"=>"Лоха","name_en"=>"Loja","name_href" => "ec/population-of-loja","count" => "170 280","real_id" =>9,),
+"10"=>array("name_ru"=>"Амбато","name_en"=>"Ambato","name_href" => "ec/population-of-ambato","count" => "165 185","real_id" =>10,),
+"11"=>array("name_ru"=>"Эсмеральдас","name_en"=>"Esmeraldas","name_href" => "ec/population-of-esmeraldas","count" => "154 035","real_id" =>11,),
+"12"=>array("name_ru"=>"Кеведо","name_en"=>"Quevedo","name_href" => "ec/population-of-quevedo","count" => "150 827","real_id" =>12,),
+"13"=>array("name_ru"=>"Риобамба","name_en"=>"Riobamba","name_href" => "ec/population-of-riobamba","count" => "146 324","real_id" =>13,),
+"14"=>array("name_ru"=>"Милагро","name_en"=>"Milagro","name_href" => "ec/population-of-milagro","count" => "133 508","real_id" =>14,),
+"15"=>array("name_ru"=>"Ибарра","name_en"=>"Ibarra","name_href" => "ec/population-of-ibarra","count" => "131 856","real_id" =>15,),
+"16"=>array("name_ru"=>"Ла-Либертад","name_en"=>"La Libertad","name_href" => "ec/population-of-la-libertad","count" => "95 942","real_id" =>16,),
+"17"=>array("name_ru"=>"Бабаойо","name_en"=>"Babaoyo","name_href" => "ec/population-of-babaoyo","count" => "90 191","real_id" =>17,),
+"18"=>array("name_ru"=>"Сангольки","name_en"=>"Sangolki","name_href" => "ec/population-of-sangolki","count" => "75 080","real_id" =>18,),
+"19"=>array("name_ru"=>"Дауле","name_en"=>"Daul","name_href" => "ec/population-of-daul","count" => "65 145","real_id" =>19,),
+"20"=>array("name_ru"=>"Латакунга","name_en"=>"Latacunga","name_href" => "ec/population-of-latacunga","count" => "63 842","real_id" =>20,),
+"21"=>array("name_ru"=>"Тулькан","name_en"=>"tulcán","name_href" => "ec/population-of-tulcán","count" => "60 403","real_id" =>21,),
+"22"=>array("name_ru"=>"Чоне","name_en"=>"Chong","name_href" => "ec/population-of-chong","count" => "52 810","real_id" =>22,),
+"23"=>array("name_ru"=>"Пасахе","name_en"=>"pasach","name_href" => "ec/population-of-pasach","count" => "52 673","real_id" =>23,),
+"24"=>array("name_ru"=>"Санта-Роса","name_en"=>"Santa Rosa","name_href" => "ec/population-of-santa-rosa","count" => "48 929","real_id" =>24,),
+"25"=>array("name_ru"=>"Нуэва-Лоха","name_en"=>"Nueva Loja","name_href" => "ec/population-of-nueva-loja","count" => "48 562","real_id" =>25,),
+"26"=>array("name_ru"=>"Уакильяс","name_en"=>"Uakilyas","name_href" => "ec/population-of-uakilyas","count" => "47 706","real_id" =>26,),
+"27"=>array("name_ru"=>"Эль-Кармен","name_en"=>"El Carmen","name_href" => "ec/population-of-el-carmen","count" => "46 358","real_id" =>27,),
+"28"=>array("name_ru"=>"Монтекристи","name_en"=>"Montecristi","name_href" => "ec/population-of-montecristi","count" => "46 312","real_id" =>28,),
+"29"=>array("name_ru"=>"Самборондон","name_en"=>"Samborondon","name_href" => "ec/population-of-samborondon","count" => "42 637","real_id" =>29,),
+"30"=>array("name_ru"=>"Франсиско-де-Орельяна","name_en"=>"Francisco de Orellana","name_href" => "ec/population-of-francisco-de-orellana","count" => "40 730","real_id" =>30,),
+"31"=>array("name_ru"=>"Хипихапа","name_en"=>"Hipihapa","name_href" => "ec/population-of-hipihapa","count" => "40 232","real_id" =>31,),
+"32"=>array("name_ru"=>"Гуаякиль","name_en"=>"Guayaquil","name_href" => "ec/population-of-guayaquil","count" => "2 278 691","real_id" =>32,),
+"33"=>array("name_ru"=>"Кито","name_en"=>"Quito","name_href" => "ec/population-of-quito","count" => "1 607 734","real_id" =>33,),
+"34"=>array("name_ru"=>"Куэнка","name_en"=>"Cuenca","name_href" => "ec/population-of-cuenca","count" => "329 928","real_id" =>34,),
+"35"=>array("name_ru"=>"Санто-Доминго","name_en"=>"Santo Domingo","name_href" => "ec/population-of-santo-domingo","count" => "270 875","real_id" =>35,),
+"36"=>array("name_ru"=>"Мачала","name_en"=>"Machala","name_href" => "ec/population-of-machala","count" => "231 260","real_id" =>36,)
+);
+
+?>

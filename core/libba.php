@@ -1,0 +1,46 @@
+<?php
+//Босния и Герцоговина 34 
+$libba = array ( 
+
+"1"=>array("name_ru"=>"Сараево","name_en"=>"Sarajevo","name_href" => "ba/population-of-sarajevo","count" => "291 422","real_id" =>1,),
+"2"=>array("name_ru"=>"Баня-Лука","name_en"=>"Banja Luka","name_href" => "ba/population-of-banja-luka","count" => "150 997","real_id" =>2,),
+"3"=>array("name_ru"=>"Тузла","name_en"=>"Tuzla","name_href" => "ba/population-of-tuzla","count" => "80 570","real_id" =>3,),
+"4"=>array("name_ru"=>"Зеница","name_en"=>"Zenica","name_href" => "ba/population-of-zenica","count" => "73 751","real_id" =>4,),
+"5"=>array("name_ru"=>"Мостар","name_en"=>"Mostar","name_href" => "ba/population-of-mostar","count" => "65 286","real_id" =>5,),
+"6"=>array("name_ru"=>"Биелина","name_en"=>"Bijeljina","name_href" => "ba/population-of-bijeljina","count" => "45 291","real_id" =>6,),
+"7"=>array("name_ru"=>"Брчко","name_en"=>"Brčko","name_href" => "ba/population-of-brčko","count" => "43 859","real_id" =>7,),
+"8"=>array("name_ru"=>"Бихач","name_en"=>"Bihac","name_href" => "ba/population-of-bihac","count" => "43 007","real_id" =>8,),
+"9"=>array("name_ru"=>"Приедор","name_en"=>"Prijedor","name_href" => "ba/population-of-prijedor","count" => "32 342","real_id" =>9,),
+"10"=>array("name_ru"=>"Добой","name_en"=>"Doboj","name_href" => "ba/population-of-doboj","count" => "26 987","real_id" =>10,),
+"11"=>array("name_ru"=>"Требине","name_en"=>"Trebinje","name_href" => "ba/population-of-trebinje","count" => "25 589","real_id" =>11,),
+"12"=>array("name_ru"=>"Сански-Мост","name_en"=>"Sanski-Bridge","name_href" => "ba/population-of-sanski-bridge","count" => "19 745","real_id" =>12,),
+"13"=>array("name_ru"=>"Живинице","name_en"=>"Zivinice","name_href" => "ba/population-of-zivinice","count" => "17 495","real_id" =>13,),
+"14"=>array("name_ru"=>"Бугойно","name_en"=>"Bugojno","name_href" => "ba/population-of-bugojno","count" => "17 202","real_id" =>14,),
+"15"=>array("name_ru"=>"Травник","name_en"=>"Herbalist","name_href" => "ba/population-of-herbalist","count" => "16 534","real_id" =>15,),
+"16"=>array("name_ru"=>"Градишка","name_en"=>"Gradiska","name_href" => "ba/population-of-gradiska","count" => "16 106","real_id" =>16,),
+"17"=>array("name_ru"=>"Цазин","name_en"=>"Cazin","name_href" => "ba/population-of-cazin","count" => "14 378","real_id" =>17,),
+"18"=>array("name_ru"=>"Источно-Сараево","name_en"=>"Istochne-Sarajevo","name_href" => "ba/population-of-istochne-sarajevo","count" => "14 364","real_id" =>18,),
+"19"=>array("name_ru"=>"Пале","name_en"=>"Palais","name_href" => "ba/population-of-palais","count" => "13 883","real_id" =>19,),
+"20"=>array("name_ru"=>"Градачац","name_en"=>"Gradačac","name_href" => "ba/population-of-gradačac","count" => "13 474","real_id" =>20,),
+"21"=>array("name_ru"=>"Грачаница","name_en"=>"Gracanica","name_href" => "ba/population-of-gracanica","count" => "13 400","real_id" =>21,),
+"22"=>array("name_ru"=>"Дервента","name_en"=>"Derwent","name_href" => "ba/population-of-derwent","count" => "12 680","real_id" =>22,),
+"23"=>array("name_ru"=>"Зворник","name_en"=>"Zvornik","name_href" => "ba/population-of-zvornik","count" => "12 674","real_id" =>23,),
+"24"=>array("name_ru"=>"Горажде","name_en"=>"Goražde","name_href" => "ba/population-of-goražde","count" => "12 512","real_id" =>24,),
+"25"=>array("name_ru"=>"Лукавац","name_en"=>"Lukavac","name_href" => "ba/population-of-lukavac","count" => "12 490","real_id" =>25,),
+"26"=>array("name_ru"=>"Фоча","name_en"=>"Foca","name_href" => "ba/population-of-foca","count" => "12 334","real_id" =>26,),
+"27"=>array("name_ru"=>"Какань","name_en"=>"Kakanj","name_href" => "ba/population-of-kakanj","count" => "12 256","real_id" =>27,),
+"28"=>array("name_ru"=>"Козарска-Дубица","name_en"=>"Kozarska Dubica","name_href" => "ba/population-of-kozarska-dubica","count" => "11 556","real_id" =>28,),
+"29"=>array("name_ru"=>"Високо","name_en"=>"Visoko","name_href" => "ba/population-of-visoko","count" => "11 552","real_id" =>29,),
+"30"=>array("name_ru"=>"Босанска-Крупа","name_en"=>"Bosanska-Krupa","name_href" => "ba/population-of-bosanska-krupa","count" => "11 514","real_id" =>30,),
+"31"=>array("name_ru"=>"Вогошча","name_en"=>"Vogosca","name_href" => "ba/population-of-vogosca","count" => "11 216","real_id" =>31,),
+"32"=>array("name_ru"=>"Коньиц","name_en"=>"Konjic","name_href" => "ba/population-of-konjic","count" => "11 165","real_id" =>32,),
+"33"=>array("name_ru"=>"Нови-Град","name_en"=>"Novi Grad","name_href" => "ba/population-of-novi-grad","count" => "11 063","real_id" =>33,),
+"34"=>array("name_ru"=>"Модрича","name_en"=>"Modric","name_href" => "ba/population-of-modric","count" => "10 137","real_id" =>34,),
+"35"=>array("name_ru"=>"Сараево","name_en"=>"Sarajevo","name_href" => "ba/population-of-sarajevo","count" => "291 422","real_id" =>35,),
+"36"=>array("name_ru"=>"Баня-Лука","name_en"=>"Banja Luka","name_href" => "ba/population-of-banja-luka","count" => "150 997","real_id" =>36,),
+"37"=>array("name_ru"=>"Тузла","name_en"=>"Tuzla","name_href" => "ba/population-of-tuzla","count" => "80 570","real_id" =>37,),
+"38"=>array("name_ru"=>"Зеница","name_en"=>"Zenica","name_href" => "ba/population-of-zenica","count" => "73 751","real_id" =>38,),
+"39"=>array("name_ru"=>"Мостар","name_en"=>"Mostar","name_href" => "ba/population-of-mostar","count" => "65 286","real_id" =>39,)
+);
+
+?>

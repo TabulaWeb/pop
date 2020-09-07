@@ -1,0 +1,40 @@
+<?php
+//Тунис 29
+$libtn = array ( 
+"1"=>array("name_ru"=>"Тунис Сити","name_en"=>"Tunisia","name_href" => "tn/population-of-tunisia-city","count" => "728 453","real_id" =>1,),
+"2"=>array("name_ru"=>"Сфакс","name_en"=>"Sfax","name_href" => "tn/population-of-sfax","count" => "265 131","real_id" =>2,),
+"3"=>array("name_ru"=>"Сус","name_en"=>"Sus","name_href" => "tn/population-of-sus","count" => "173 047","real_id" =>3,),
+"4"=>array("name_ru"=>"Эт-Тадамун","name_en"=>"Ettadhamen","name_href" => "tn/population-of-ettadhamen","count" => "118 487","real_id" =>4,),
+"5"=>array("name_ru"=>"Кайруан","name_en"=>"Kairouan","name_href" => "tn/population-of-kairouan","count" => "117 903","real_id" =>5,),
+"6"=>array("name_ru"=>"Габес","name_en"=>"Gabes","name_href" => "tn/population-of-gabes","count" => "116 323","real_id" =>6,),
+"7"=>array("name_ru"=>"Бизерта","name_en"=>"Bizerte","name_href" => "tn/population-of-bizerte","count" => "114 371","real_id" =>7,),
+"8"=>array("name_ru"=>"Ариана","name_en"=>"Ariana","name_href" => "tn/population-of-ariana","count" => "97 687","real_id" =>8,),
+"9"=>array("name_ru"=>"Сукра","name_en"=>"Soukra","name_href" => "tn/population-of-soukra","count" => "89 151","real_id" =>9,),
+"10"=>array("name_ru"=>"Гафса","name_en"=>"Gafsa","name_href" => "tn/population-of-gafsa","count" => "84 676","real_id" =>10,),
+"11"=>array("name_ru"=>"Эль-Мурудж","name_en"=>"El Murudzh","name_href" => "tn/population-of-el-murudzh","count" => "81 986","real_id" =>11,),
+"12"=>array("name_ru"=>"Ла-Марса","name_en"=>"La Marsa","name_href" => "tn/population-of-la-marsa","count" => "77 890","real_id" =>12,),
+"13"=>array("name_ru"=>"Кассерин","name_en"=>"Kasserine","name_href" => "tn/population-of-kasserine","count" => "76 243","real_id" =>13,),
+"14"=>array("name_ru"=>"Дуар-Хишер","name_en"=>"Douar-Hisher","name_href" => "tn/population-of-douar-hisher","count" => "75 844","real_id" =>14,),
+"15"=>array("name_ru"=>"Бен-Арус","name_en"=>"Ben Arous","name_href" => "tn/population-of-ben-arous","count" => "74 932","real_id" =>15,),
+"16"=>array("name_ru"=>"Монастир","name_en"=>"Monastir","name_href" => "tn/population-of-monastir","count" => "71 546","real_id" =>16,),
+"17"=>array("name_ru"=>"Зарзис","name_en"=>"Zarzis","name_href" => "tn/population-of-zarzis","count" => "70 895","real_id" =>17,),
+"18"=>array("name_ru"=>"Бардо","name_en"=>"Bardo","name_href" => "tn/population-of-bardo","count" => "70 244","real_id" =>18,),
+"19"=>array("name_ru"=>"Хумт-Сук","name_en"=>"Houmt Souk","name_href" => "tn/population-of-houmt-souk","count" => "64 892","real_id" =>19,),
+"20"=>array("name_ru"=>"Хаммамет","name_en"=>"Hammamet","name_href" => "tn/population-of-hammamet","count" => "63 116","real_id" =>20,),
+"21"=>array("name_ru"=>"Меденин","name_en"=>"Medenine","name_href" => "tn/population-of-medenine","count" => "61 705","real_id" =>21,),
+"22"=>array("name_ru"=>"Татавин","name_en"=>"Tataouine","name_href" => "tn/population-of-tataouine","count" => "59 346","real_id" =>22,),
+"23"=>array("name_ru"=>"Ле-Крам","name_en"=>"Le Kram","name_href" => "tn/population-of-le-kram","count" => "58 152","real_id" =>23,),
+"24"=>array("name_ru"=>"Бен-Кардан","name_en"=>"Ben Cardan","name_href" => "tn/population-of-ben-cardan","count" => "58 101","real_id" =>24,),
+"25"=>array("name_ru"=>"Беджа","name_en"=>"Beja","name_href" => "tn/population-of-beja","count" => "56 677","real_id" =>25,),
+"26"=>array("name_ru"=>"Набуль","name_en"=>"Nabeul","name_href" => "tn/population-of-nabeul","count" => "56 387","real_id" =>26,),
+"27"=>array("name_ru"=>"Мсакен","name_en"=>"M'saken","name_href" => "tn/population-of-m-saken","count" => "55 721","real_id" =>27,),
+"28"=>array("name_ru"=>"Рауэд","name_en"=>"Raued","name_href" => "tn/population-of-raued","count" => "53 911","real_id" =>28,),
+"29"=>array("name_ru"=>"Мидун","name_en"=>"Midoun","name_href" => "tn/population-of-midoun","count" => "50 459","real_id" =>29,),
+"30"=>array("name_ru"=>"Тунис Сити","name_en"=>"Tunisia","name_href" => "tn/population-of-tunisia-city","count" => "728 453","real_id" =>30,),
+"31"=>array("name_ru"=>"Сфакс","name_en"=>"Sfax","name_href" => "tn/population-of-sfax","count" => "265 131","real_id" =>31,),
+"32"=>array("name_ru"=>"Сус","name_en"=>"Sus","name_href" => "tn/population-of-sus","count" => "173 047","real_id" =>32,),
+"33"=>array("name_ru"=>"Эт-Тадамун","name_en"=>"Ettadhamen","name_href" => "tn/population-of-ettadhamen","count" => "118 487","real_id" =>33,),
+"34"=>array("name_ru"=>"Кайруан","name_en"=>"Kairouan","name_href" => "tn/population-of-kairouan","count" => "117 903","real_id" =>34,)
+);
+
+?>

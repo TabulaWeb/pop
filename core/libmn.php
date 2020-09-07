@@ -1,0 +1,41 @@
+<?php
+//Монголия 30 
+$libmn = array ( 
+"1"=>array("name_ru"=>"Улан-Батор","name_en"=>"Ulaanbaatar","name_href" =>"mn/population-of-ulaanbaatar","count" =>"1 405 000","real_id" =>1,),
+"2"=>array("name_ru"=>"Эрдэнэт","name_en"=>"Erdenet","name_href" =>"mn/population-of-erdenet","count" =>"83 379","real_id" =>2,),
+"3"=>array("name_ru"=>"Дархан","name_en"=>"Darkhan","name_href" =>"mn/population-of-darkhan","count" =>"74 738","real_id" =>3,),
+"4"=>array("name_ru"=>"Чойбалсан","name_en"=>"Choibalsan","name_href" =>"mn/population-of-choibalsan","count" =>"38 537","real_id" =>4,),
+"5"=>array("name_ru"=>"Мурэн","name_en"=>"Mörön","name_href" =>"mn/population-of-mörön","count" =>"35 789","real_id" =>5,),
+"6"=>array("name_ru"=>"Налайх","name_en"=>"Nalaikh","name_href" =>"mn/population-of-nalaikh","count" =>"30 049","real_id" =>6,),
+"7"=>array("name_ru"=>"Баянхонгор","name_en"=>"Bayanhongor","name_href" =>"mn/population-of-bayanhongor","count" =>"29 817","real_id" =>7,),
+"8"=>array("name_ru"=>"Улгий","name_en"=>"Ölgii","name_href" =>"mn/population-of-ölgii","count" =>"29 392","real_id" =>8,),
+"9"=>array("name_ru"=>"Кобдо","name_en"=>"Hovd","name_href" =>"mn/population-of-hovd","count" =>"29 012","real_id" =>9,),
+"10"=>array("name_ru"=>"Арвайхээр","name_en"=>"Arwayheer","name_href" =>"mn/population-of-arwayheer","count" =>"27 162","real_id" =>10,),
+"11"=>array("name_ru"=>"Улаангом","name_en"=>"Ulaangom","name_href" =>"mn/population-of-ulaangom","count" =>"27 152","real_id" =>11,),
+"12"=>array("name_ru"=>"Багануур","name_en"=>"Baganuur","name_href" =>"mn/population-of-baganuur","count" =>"22 210","real_id" =>12,),
+"13"=>array("name_ru"=>"Цэцэрлэг","name_en"=>"Tsetserleg","name_href" =>"mn/population-of-tsetserleg","count" =>"20 604","real_id" =>13,),
+"14"=>array("name_ru"=>"Сухэ-Батор","name_en"=>"Sukhbaatar","name_href" =>"mn/population-of-sukhbaatar","count" =>"19 662","real_id" =>14,),
+"15"=>array("name_ru"=>"Даланзадгад","name_en"=>"Dalanzadgad","name_href" =>"mn/population-of-dalanzadgad","count" =>"18 740","real_id" =>15,),
+"16"=>array("name_ru"=>"Сайншанд","name_en"=>"Saynshand","name_href" =>"mn/population-of-saynshand","count" =>"18 735","real_id" =>16,),
+"17"=>array("name_ru"=>"Зуунэхараа","name_en"=>"Dzüünharaa","name_href" =>"mn/population-of-dzüünharaa","count" =>"18 002","real_id" =>17,),
+"18"=>array("name_ru"=>"Улиастай","name_en"=>"Uliastai","name_href" =>"mn/population-of-uliastai","count" =>"17 468","real_id" =>18,),
+"19"=>array("name_ru"=>"Ундерхаан","name_en"=>"Underkhaan","name_href" =>"mn/population-of-underkhaan","count" =>"17 164","real_id" =>19,),
+"20"=>array("name_ru"=>"Алтай","name_en"=>"Altay","name_href" =>"mn/population-of-altay","count" =>"15 492","real_id" =>20,),
+"21"=>array("name_ru"=>"Баруун-Урт","name_en"=>"Baruun-URT","name_href" =>"mn/population-of-baruun-urt","count" =>"14 089","real_id" =>21,),
+"22"=>array("name_ru"=>"Зуунмод","name_en"=>"Zuunmod","name_href" =>"mn/population-of-zuunmod","count" =>"13 330","real_id" =>22,),
+"23"=>array("name_ru"=>"Замын-Уудэ","name_en"=>"Zamyn-Uude","name_href" =>"mn/population-of-zamyn-uude","count" =>"13 285","real_id" =>23,),
+"24"=>array("name_ru"=>"Булган","name_en"=>"Bulgan","name_href" =>"mn/population-of-bulgan","count" =>"11 320","real_id" =>24,),
+"25"=>array("name_ru"=>"Мандалговь","name_en"=>"Mandalgovi","name_href" =>"mn/population-of-mandalgovi","count" =>"10 888","real_id" =>25,),
+"26"=>array("name_ru"=>"Чойр","name_en"=>"The choir","name_href" =>"mn/population-of-the-choir","count" =>"8 526","real_id" =>26,),
+"27"=>array("name_ru"=>"Каракорум","name_en"=>"Karakorum","name_href" =>"mn/population-of-karakorum","count" =>"8 411","real_id" =>27,),
+"28"=>array("name_ru"=>"Бор-Ундер","name_en"=>"Bor-Under","name_href" =>"mn/population-of-bor-under","count" =>"8 080","real_id" =>28,),
+"29"=>array("name_ru"=>"Шарынгол","name_en"=>"Sharyngol","name_href" =>"mn/population-of-sharyngol","count" =>"7 795","real_id" =>29,),
+"30"=>array("name_ru"=>"Тосонцэнгэл","name_en"=>"Tosontsengel","name_href" =>"mn/population-of-tosontsengel","count" =>"6 393","real_id" =>30,),
+"31"=>array("name_ru"=>"Улан-Батор","name_en"=>"Ulaanbaatar","name_href" =>"mn/population-of-ulaanbaatar","count" =>"1 405 000","real_id" =>31,),
+"32"=>array("name_ru"=>"Эрдэнэт","name_en"=>"Erdenet","name_href" =>"mn/population-of-erdenet","count" =>"83 379","real_id" =>32,),
+"33"=>array("name_ru"=>"Дархан","name_en"=>"Darkhan","name_href" =>"mn/population-of-darkhan","count" =>"74 738","real_id" =>33,),
+"34"=>array("name_ru"=>"Чойбалсан","name_en"=>"Choibalsan","name_href" =>"mn/population-of-choibalsan","count" =>"38 537","real_id" =>34,),
+"35"=>array("name_ru"=>"Мурэн","name_en"=>"Mörön","name_href" =>"mn/population-of-mörön","count" =>"35 789","real_id" =>35,)
+);
+
+?>

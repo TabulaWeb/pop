@@ -1,0 +1,41 @@
+<?php
+//Ангола 30 
+$libao = array ( 
+"1"=>array("name_ru"=>"Луанда","name_en"=>"Luanda","name_href" => "ao/population-of-luanda","count" => "2 644 318","real_id" =>1,),
+"2"=>array("name_ru"=>"Кабинда","name_en"=>"Cabinda ","name_href" => "ao/population-of-cabinda","count" => "399 427","real_id" =>2,),
+"3"=>array("name_ru"=>"Уамбо","name_en"=>"Huambo","name_href" => "ao/population-of-huambo","count" => "341 696","real_id" =>3,),
+"4"=>array("name_ru"=>"Лубанго","name_en"=>"Lubango","name_href" => "ao/population-of-lubango","count" => "256 713","real_id" =>4,),
+"5"=>array("name_ru"=>"Куито","name_en"=>"Kuito","name_href" => "ao/population-of-kuito","count" => "185 302","real_id" =>5,),
+"6"=>array("name_ru"=>"Маланже","name_en"=>"Malanje","name_href" => "ao/population-of-malanje","count" => "161 059","real_id" =>6,),
+"7"=>array("name_ru"=>"Лобиту","name_en"=>"Lobito","name_href" => "ao/population-of-lobito","count" => "149 249","real_id" =>7,),
+"8"=>array("name_ru"=>"Бенгела","name_en"=>"Benguela","name_href" => "ao/population-of-benguela","count" => "134 523","real_id" =>8,),
+"9"=>array("name_ru"=>"Уиже","name_en"=>"Uíge","name_href" => "ao/population-of-uíge","count" => "119 815","real_id" =>9,),
+"10"=>array("name_ru"=>"Намибе","name_en"=>"Namibe","name_href" => "ao/population-of-namibe","count" => "92 609","real_id" =>10,),
+"11"=>array("name_ru"=>"Луена","name_en"=>"Luena","name_href" => "ao/population-of-luena","count" => "86 784","real_id" =>11,),
+"12"=>array("name_ru"=>"Сауримо","name_en"=>"Saurimo","name_href" => "ao/population-of-saurimo","count" => "80 445","real_id" =>12,),
+"13"=>array("name_ru"=>"Сойо","name_en"=>"Soyo","name_href" => "ao/population-of-soyo","count" => "77 368","real_id" =>13,),
+"14"=>array("name_ru"=>"Сумбе","name_en"=>"Sumbe","name_href" => "ao/population-of-sumbe","count" => "51 749","real_id" =>14,),
+"15"=>array("name_ru"=>"Н’Далатандо","name_en"=>"N'dalatando","name_href" => "ao/population-of-ndalatando","count" => "46 606","real_id" =>15,),
+"16"=>array("name_ru"=>"Каала","name_en"=>"Kaal","name_href" => "ao/population-of-kaal","count" => "42 207","real_id" =>16,),
+"17"=>array("name_ru"=>"Кубал","name_en"=>"Кубал","name_href" => "ao/population-of-кубал","count" => "42 158","real_id" =>17,),
+"18"=>array("name_ru"=>"Дундо","name_en"=>"Dundo","name_href" => "ao/population-of-dundo","count" => "41 066","real_id" =>18,),
+"19"=>array("name_ru"=>"Негаге","name_en"=>"Negage","name_href" => "ao/population-of-negage","count" => "38 609","real_id" =>19,),
+"20"=>array("name_ru"=>"Матала","name_en"=>"Matala","name_href" => "ao/population-of-matala","count" => "33 998","real_id" =>20,),
+"21"=>array("name_ru"=>"Баилундо","name_en"=>"Bailundo","name_href" => "ao/population-of-bailundo","count" => "33 140","real_id" =>21,),
+"22"=>array("name_ru"=>"Менонге","name_en"=>"Menongue","name_href" => "ao/population-of-menongue","count" => "32 203","real_id" =>22,),
+"23"=>array("name_ru"=>"Мбанза-Конго","name_en"=>"M'banza-Kongo","name_href" => "ao/population-of-mbanza-kongo","count" => "31 645","real_id" =>23,),
+"24"=>array("name_ru"=>"Дондо","name_en"=>"Dondo","name_href" => "ao/population-of-dondo","count" => "31 216","real_id" =>24,),
+"25"=>array("name_ru"=>"Уку","name_en"=>"UCU","name_href" => "ao/population-of-ucu","count" => "29 194","real_id" =>25,),
+"26"=>array("name_ru"=>"Лукапа","name_en"=>"Lucapa","name_href" => "ao/population-of-lucapa","count" => "27 924","real_id" =>26,),
+"27"=>array("name_ru"=>"Ваку-Кунго","name_en"=>"Waku-Kungo","name_href" => "ao/population-of-waku-kungo","count" => "27 638","real_id" =>27,),
+"28"=>array("name_ru"=>"Андуло","name_en"=>"Andulo","name_href" => "ao/population-of-andulo","count" => "27 611","real_id" =>28,),
+"29"=>array("name_ru"=>"Ганда","name_en"=>"Ganda","name_href" => "ao/population-of-ganda","count" => "26 763","real_id" =>29,),
+"30"=>array("name_ru"=>"Катумбела","name_en"=>"Catumbela","name_href" => "ao/population-of-catumbela","count" => "25 933","real_id" =>30,),
+"31"=>array("name_ru"=>"Луанда","name_en"=>"Luanda","name_href" => "ao/population-of-luanda","count" => "2 644 318","real_id" =>31,),
+"32"=>array("name_ru"=>"Кабинда","name_en"=>"Cabinda ","name_href" => "ao/population-of-cabinda","count" => "399 427","real_id" =>32,),
+"33"=>array("name_ru"=>"Уамбо","name_en"=>"Huambo","name_href" => "ao/population-of-huambo","count" => "341 696","real_id" =>33,),
+"34"=>array("name_ru"=>"Лубанго","name_en"=>"Lubango","name_href" => "ao/population-of-lubango","count" => "256 713","real_id" =>34,),
+"35"=>array("name_ru"=>"Куито","name_en"=>"Kuito","name_href" => "ao/population-of-kuito","count" => "185 302","real_id" =>35,)
+);
+
+?>

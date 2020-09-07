@@ -1,0 +1,41 @@
+<?php
+//Экваториальная Гвинея 30 
+$libgq = array ( 
+"1"=>array("name_ru"=>"Бата","name_en"=>"Bata","name_href" => "gq/population-of-bata","count" => "230 469","real_id" =>1,),
+"2"=>array("name_ru"=>"Малабо","name_en"=>"Malabo","name_href" => "gq/population-of-malabo","count" => "179 273","real_id" =>2,),
+"3"=>array("name_ru"=>"Эбебьин","name_en"=>"Ebebiyín","name_href" => "gq/population-of-ebebiyín","count" => "33 523","real_id" =>3,),
+"4"=>array("name_ru"=>"Аконибе","name_en"=>"Aconibe","name_href" => "gq/population-of-aconibe","count" => "14 969","real_id" =>4,),
+"5"=>array("name_ru"=>"Анисок","name_en"=>"Añisoc","name_href" => "gq/population-of-añisoc","count" => "14 620","real_id" =>5,),
+"6"=>array("name_ru"=>"Эвинайонг","name_en"=>"Evinayong","name_href" => "gq/population-of-evinayong","count" => "9 012","real_id" =>6,),
+"7"=>array("name_ru"=>"Луба","name_en"=>"Luba","name_href" => "gq/population-of-luba","count" => "7 889","real_id" =>7,),
+"8"=>array("name_ru"=>"Монгомо","name_en"=>"Mongomo","name_href" => "gq/population-of-mongomo","count" => "7 089","real_id" =>8,),
+"9"=>array("name_ru"=>"Менгомейен","name_en"=>"Mengomeyen","name_href" => "gq/population-of-mengomeyen","count" => "6 881","real_id" =>9,),
+"10"=>array("name_ru"=>"Микомесенг","name_en"=>"Mikomeseng","name_href" => "gq/population-of-mikomeseng","count" => "6 432","real_id" =>10,),
+"11"=>array("name_ru"=>"Ниефанг","name_en"=>"Niefang","name_href" => "gq/population-of-niefang","count" => "5 649","real_id" =>11,),
+"12"=>array("name_ru"=>"Кого","name_en"=>"whom","name_href" => "gq/population-of-whom","count" => "5 579","real_id" =>12,),
+"13"=>array("name_ru"=>"Нсок","name_en"=>"Nsok","name_href" => "gq/population-of-nsok","count" => "5 473","real_id" =>13,),
+"14"=>array("name_ru"=>"Ребола","name_en"=>"Rebola","name_href" => "gq/population-of-rebola","count" => "5 347","real_id" =>14,),
+"15"=>array("name_ru"=>"Мбини","name_en"=>"Mbini","name_href" => "gq/population-of-mbini","count" => "4 829","real_id" =>15,),
+"16"=>array("name_ru"=>"Биджабиджан","name_en"=>"Bidzhabidzhan","name_href" => "gq/population-of-bidzhabidzhan","count" => "4 802","real_id" =>16,),
+"17"=>array("name_ru"=>"Нсорк","name_en"=>"Nsork","name_href" => "gq/population-of-nsork","count" => "4 361","real_id" =>17,),
+"18"=>array("name_ru"=>"Айене","name_en"=>"Iain","name_href" => "gq/population-of-iain","count" => "4 028","real_id" =>18,),
+"19"=>array("name_ru"=>"Палеа","name_en"=>"Palea","name_href" => "gq/population-of-palea","count" => "3 690","real_id" =>19,),
+"20"=>array("name_ru"=>"Нкими","name_en"=>"Nkimi","name_href" => "gq/population-of-nkimi","count" => "3 460","real_id" =>20,),
+"21"=>array("name_ru"=>"Мачинда","name_en"=>"Machinda","name_href" => "gq/population-of-machinda","count" => "3 445","real_id" =>21,),
+"22"=>array("name_ru"=>"Кориско","name_en"=>"Corisco","name_href" => "gq/population-of-corisco","count" => "3 021","real_id" =>22,),
+"23"=>array("name_ru"=>"Акуренам","name_en"=>"Akurenam","name_href" => "gq/population-of-akurenam","count" => "2 686","real_id" =>23,),
+"24"=>array("name_ru"=>"Бикурга","name_en"=>"Bikurga","name_href" => "gq/population-of-bikurga","count" => "2 421","real_id" =>24,),
+"25"=>array("name_ru"=>"Бани","name_en"=>"Bathhouses","name_href" => "gq/population-of-bathhouses","count" => "2 320","real_id" =>25,),
+"26"=>array("name_ru"=>"Нсанг","name_en"=>"Nsang","name_href" => "gq/population-of-nsang","count" => "2 039","real_id" =>26,),
+"27"=>array("name_ru"=>"Битика","name_en"=>"Bitik","name_href" => "gq/population-of-bitik","count" => "1 741","real_id" =>27,),
+"28"=>array("name_ru"=>"Нкуэ","name_en"=>"Nkue","name_href" => "gq/population-of-nkue","count" => "1 617","real_id" =>28,),
+"29"=>array("name_ru"=>"Рио-Кампо","name_en"=>"Rio Campo","name_href" => "gq/population-of-rio-campo","count" => "1 314","real_id" =>29,),
+"30"=>array("name_ru"=>"Риаба","name_en"=>"Riaba","name_href" => "gq/population-of-riaba","count" => "820","real_id" =>30,),
+"31"=>array("name_ru"=>"Бата","name_en"=>"Bata","name_href" => "gq/population-of-bata","count" => "230 469","real_id" =>31,),
+"32"=>array("name_ru"=>"Малабо","name_en"=>"Malabo","name_href" => "gq/population-of-malabo","count" => "179 273","real_id" =>32,),
+"33"=>array("name_ru"=>"Эбебьин","name_en"=>"Ebebiyín","name_href" => "gq/population-of-ebebiyín","count" => "33 523","real_id" =>33,),
+"34"=>array("name_ru"=>"Аконибе","name_en"=>"Aconibe","name_href" => "gq/population-of-aconibe","count" => "14 969","real_id" =>34,),
+"35"=>array("name_ru"=>"Анисок","name_en"=>"Añisoc","name_href" => "gq/population-of-añisoc","count" => "14 620","real_id" =>35,)
+);
+
+?>

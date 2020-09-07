@@ -1,0 +1,42 @@
+<?php
+//Киргизия 31 
+$libkg = array ( 
+"1"=>array("name_ru"=>"Бишкек","name_en"=>"Bishkek","name_href" => "kg/population-of-bishkek","count" => "995 300","real_id" =>1,),
+"2"=>array("name_ru"=>"Ош","name_en"=>"Osh","name_href" => "kg/population-of-osh","count" => "243 300","real_id" =>2,),
+"3"=>array("name_ru"=>"Джалал-Абад","name_en"=>"Jalal-Abad","name_href" => "kg/population-of-jalal-abad","count" => "89 004","real_id" =>3,),
+"4"=>array("name_ru"=>"Каракол","name_en"=>"Karakol","name_href" => "kg/population-of-karakol","count" => "79 700","real_id" =>4,),
+"5"=>array("name_ru"=>"Кара-Балта","name_en"=>"Kara-Balta","name_href" => "kg/population-of-kara-balta","count" => "70 000","real_id" =>5,),
+"6"=>array("name_ru"=>"Кант","name_en"=>"Kant","name_href" => "kg/population-of-kant","count" => "61 852","real_id" =>6,),
+"7"=>array("name_ru"=>"Токмок","name_en"=>"Tokmok","name_href" => "kg/population-of-tokmok","count" => "53 231","real_id" =>7,),
+"8"=>array("name_ru"=>"Узген","name_en"=>"Uzgen","name_href" => "kg/population-of-uzgen","count" => "50 253","real_id" =>8,),
+"9"=>array("name_ru"=>"Кызыл-Кия","name_en"=>"Kyzyl-Kiya","name_href" => "kg/population-of-kyzyl-kiya","count" => "44 144","real_id" =>9,),
+"10"=>array("name_ru"=>"Балыкчы","name_en"=>"Balykchy","name_href" => "kg/population-of-balykchy","count" => "42 875","real_id" =>10,),
+"11"=>array("name_ru"=>"Нарын","name_en"=>"Naryn","name_href" => "kg/population-of-naryn","count" => "34 822","real_id" =>11,),
+"12"=>array("name_ru"=>"Таш-Кумыр","name_en"=>"Tash-Kumyr","name_href" => "kg/population-of-tash-kumyr","count" => "34 756","real_id" =>12,),
+"13"=>array("name_ru"=>"Талас","name_en"=>"Talas","name_href" => "kg/population-of-talas","count" => "32 886","real_id" =>13,),
+"14"=>array("name_ru"=>"Исфана","name_en"=>"Isfana","name_href" => "kg/population-of-isfana","count" => "27 962","real_id" =>14,),
+"15"=>array("name_ru"=>"Сулюкта","name_en"=>"Sulukta","name_href" => "kg/population-of-sulukta","count" => "24 700","real_id" =>15,),
+"16"=>array("name_ru"=>"Баткен","name_en"=>"Batken","name_href" => "kg/population-of-batken","count" => "23 134","real_id" =>16,),
+"17"=>array("name_ru"=>"Кара-Суу","name_en"=>"Kara-Suu","name_href" => "kg/population-of-kara-suu","count" => "22 900","real_id" =>17,),
+"18"=>array("name_ru"=>"Майлуу-Суу","name_en"=>"Mailuu-Suu","name_href" => "kg/population-of-mailuu-suu","count" => "22 853","real_id" =>18,),
+"19"=>array("name_ru"=>"Кара-Куль","name_en"=>"Kara-Kul","name_href" => "kg/population-of-kara-kul","count" => "22 502","real_id" =>19,),
+"20"=>array("name_ru"=>"Токтогул","name_en"=>"Toktogul","name_href" => "kg/population-of-toktogul","count" => "16 429","real_id" =>20,),
+"21"=>array("name_ru"=>"Кочкор-Ата","name_en"=>"Kochkor-ATA","name_href" => "kg/population-of-kochkor-ata","count" => "14 800","real_id" =>21,),
+"22"=>array("name_ru"=>"Ноокат","name_en"=>"Nookat","name_href" => "kg/population-of-nookat","count" => "14 400","real_id" =>22,),
+"23"=>array("name_ru"=>"Кербен","name_en"=>"Kerben","name_href" => "kg/population-of-kerben","count" => "14 100","real_id" =>23,),
+"24"=>array("name_ru"=>"Айдаркен","name_en"=>"Aidarken","name_href" => "kg/population-of-aidarken","count" => "11 924","real_id" =>24,),
+"25"=>array("name_ru"=>"Чолпон-Ата","name_en"=>"Cholpon-ATA","name_href" => "kg/population-of-cholpon-ata","count" => "10 900","real_id" =>25,),
+"26"=>array("name_ru"=>"Кок-Джангак","name_en"=>"Kok-Jangak","name_href" => "kg/population-of-kok-jangak","count" => "10 500","real_id" =>26,),
+"27"=>array("name_ru"=>"Каинды","name_en"=>"Kaindy","name_href" => "kg/population-of-kaindy","count" => "9 100","real_id" =>27,),
+"28"=>array("name_ru"=>"Шопоков","name_en"=>"Shopokov","name_href" => "kg/population-of-shopokov","count" => "8 700","real_id" =>28,),
+"29"=>array("name_ru"=>"Кемин","name_en"=>"Kemin","name_href" => "kg/population-of-kemin","count" => "8 169","real_id" =>29,),
+"30"=>array("name_ru"=>"Кадамжай","name_en"=>"Kadamzhay","name_href" => "kg/population-of-kadamzhay","count" => "6 732","real_id" =>30,),
+"31"=>array("name_ru"=>"Орловка","name_en"=>"Orlovka","name_href" => "kg/population-of-orlovka","count" => "4 800","real_id" =>31,),
+"32"=>array("name_ru"=>"Бишкек","name_en"=>"Bishkek","name_href" => "kg/population-of-bishkek","count" => "995 300","real_id" =>32,),
+"33"=>array("name_ru"=>"Ош","name_en"=>"Osh","name_href" => "kg/population-of-osh","count" => "243 300","real_id" =>33,),
+"34"=>array("name_ru"=>"Джалал-Абад","name_en"=>"Jalal-Abad","name_href" => "kg/population-of-jalal-abad","count" => "89 004","real_id" =>34,),
+"35"=>array("name_ru"=>"Каракол","name_en"=>"Karakol","name_href" => "kg/population-of-karakol","count" => "79 700","real_id" =>35,),
+"36"=>array("name_ru"=>"Кара-Балта","name_en"=>"Kara-Balta","name_href" => "kg/population-of-kara-balta","count" => "70 000","real_id" =>36,)
+);
+
+?>

@@ -1,0 +1,41 @@
+<?php
+//Исландия 30
+$libis = array ( 
+"1"=>array("name_ru"=>"Рейкьявик","name_en"=>"Reykjavik","name_href" => "is/population-of-reykjavik","count" => "117 505","real_id" =>1,),
+"2"=>array("name_ru"=>"Коупавогюр","name_en"=>"Cowpowoghur","name_href" => "is/population-of-cowpowoghur","count" => "30 357","real_id" =>2,),
+"3"=>array("name_ru"=>"Хабнарфьордюр","name_en"=>"Habnarfjördür","name_href" => "is/population-of-habnarfjördür","count" => "25 913","real_id" =>3,),
+"4"=>array("name_ru"=>"Акюрейри","name_en"=>"Akureyri","name_href" => "is/population-of-akureyri","count" => "17 295","real_id" =>4,),
+"5"=>array("name_ru"=>"Кеблавик","name_en"=>"Keblavik","name_href" => "is/population-of-keblavik","count" => "13 972","real_id" =>5,),
+"6"=>array("name_ru"=>"Гардабайр","name_en"=>"Gardabire","name_href" => "is/population-of-gardabire","count" => "10 643","real_id" =>6,),
+"7"=>array("name_ru"=>"Мосфедльсбайр","name_en"=>"Mosfeldlsbier","name_href" => "is/population-of-mosfeldlsbier","count" => "8 346","real_id" =>7,),
+"8"=>array("name_ru"=>"Акранес","name_en"=>"Akranes","name_href" => "is/population-of-akranes","count" => "6 549","real_id" =>8,),
+"9"=>array("name_ru"=>"Сельфосс","name_en"=>"Selfoss","name_href" => "is/population-of-selfoss","count" => "6 493","real_id" =>9,),
+"10"=>array("name_ru"=>"Селтьярнарнес","name_en"=>"Seltjarnarnes","name_href" => "is/population-of-seltjarnarnes","count" => "4 395","real_id" =>10,),
+"11"=>array("name_ru"=>"Вестманнаэйяр","name_en"=>"Vestmannaeyjar","name_href" => "is/population-of-vestmannaeyjar","count" => "4 135","real_id" =>11,),
+"12"=>array("name_ru"=>"Гриндавик","name_en"=>"Grindavik","name_href" => "is/population-of-grindavik","count" => "2 837","real_id" =>12,),
+"13"=>array("name_ru"=>"Сёйдауркроукюр","name_en"=>"Seydaurcrocure","name_href" => "is/population-of-seydaurcrocure","count" => "2 640","real_id" =>13,),
+"14"=>array("name_ru"=>"Исафьордюр","name_en"=>"Isafjordur","name_href" => "is/population-of-isafjordur","count" => "2 677","real_id" =>14,),
+"15"=>array("name_ru"=>"Аульфтанес","name_en"=>"Aulfthanes","name_href" => "is/population-of-aulfthanes","count" => "2 523","real_id" =>15,),
+"16"=>array("name_ru"=>"Эйильсстадир","name_en"=>"Eielsstadir","name_href" => "is/population-of-eielsstadir","count" => "2 277","real_id" =>16,),
+"17"=>array("name_ru"=>"Хверагерди","name_en"=>"Hveragerdi","name_href" => "is/population-of-hveragerdi","count" => "2 291","real_id" =>17,),
+"18"=>array("name_ru"=>"Хусавик","name_en"=>"Husavik","name_href" => "is/population-of-husavik","count" => "2 229","real_id" =>18,),
+"19"=>array("name_ru"=>"Боргарнес","name_en"=>"Borgarnes","name_href" => "is/population-of-borgarnes","count" => "1 828","real_id" =>19,),
+"20"=>array("name_ru"=>"Хёбн","name_en"=>"Höbn","name_href" => "is/population-of-höbn","count" => "1 614","real_id" =>20,),
+"21"=>array("name_ru"=>"Сандгерди","name_en"=>"Sandgerdi","name_href" => "is/population-of-sandgerdi","count" => "1 710","real_id" =>21,),
+"22"=>array("name_ru"=>"Торлауксхёбн","name_en"=>"Torlaukshobn","name_href" => "is/population-of-torlaukshobn","count" => "1 565","real_id" =>22,),
+"23"=>array("name_ru"=>"Нескёйпстадюр","name_en"=>"Nesköypstadur","name_href" => "is/population-of-nesköypstadur","count" => "1 461","real_id" =>23,),
+"24"=>array("name_ru"=>"Гардур","name_en"=>"Gardur","name_href" => "is/population-of-gardur","count" => "1 515","real_id" =>24,),
+"25"=>array("name_ru"=>"Дальвик","name_en"=>"Dalvik","name_href" => "is/population-of-dalvik","count" => "1 435","real_id" =>25,),
+"26"=>array("name_ru"=>"Сиглюфьордюр","name_en"=>"Siglufjordur","name_href" => "is/population-of-siglufjordur","count" => "1 214","real_id" =>26,),
+"27"=>array("name_ru"=>"Рейдарфьордюр","name_en"=>"Reidarfjordur","name_href" => "is/population-of-reidarfjordur","count" => "1 090","real_id" =>27,),
+"28"=>array("name_ru"=>"Стиккисхоульмюр","name_en"=>"Stikkisholmur","name_href" => "is/population-of-stikkisholmur","count" => "1 092","real_id" =>28,),
+"29"=>array("name_ru"=>"Вогар","name_en"=>"Vogar","name_href" => "is/population-of-vogar","count" => "1 122","real_id" =>29,),
+"30"=>array("name_ru"=>"Эскифьордюр","name_en"=>"Eskisfjordur","name_href" => "is/population-of-eskisfjordur","count" => "1 062","real_id" =>30,),
+"31"=>array("name_ru"=>"Рейкьявик","name_en"=>"Reykjavik","name_href" => "is/population-of-reykjavik","count" => "117 505","real_id" =>31,),
+"32"=>array("name_ru"=>"Коупавогюр","name_en"=>"Cowpowoghur","name_href" => "is/population-of-cowpowoghur","count" => "30 357","real_id" =>32,),
+"33"=>array("name_ru"=>"Хабнарфьордюр","name_en"=>"Habnarfjördür","name_href" => "is/population-of-habnarfjördür","count" => "25 913","real_id" =>33,),
+"34"=>array("name_ru"=>"Акюрейри","name_en"=>"Akureyri","name_href" => "is/population-of-akureyri","count" => "17 295","real_id" =>34,),
+"35"=>array("name_ru"=>"Кеблавик","name_en"=>"Keblavik","name_href" => "is/population-of-keblavik","count" => "13 972","real_id" =>35,)
+);
+
+?>

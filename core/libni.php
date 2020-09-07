@@ -1,0 +1,61 @@
+<?php
+//Никарагуа 46
+$libni = array (
+
+
+"1"=>array("name_ru"=>"Манагуа","name_en"=>"Managua","name_href" => "ni/population-of-managua","count" => "908 892","real_id" =>1,),
+"2"=>array("name_ru"=>"Леон","name_en"=>"Leon","name_href" => "ni/population-of-leon","count" => "139 433","real_id" =>2,),
+"3"=>array("name_ru"=>"Чинандега","name_en"=>"Chinandega","name_href" => "ni/population-of-chinandega","count" => "95 614","real_id" =>3,),
+"4"=>array("name_ru"=>"Масая","name_en"=>"Masaya","name_href" => "ni/population-of-masaya","count" => "92 598","real_id" =>4,),
+"5"=>array("name_ru"=>"Эстели","name_en"=>"Estelí","name_href" => "ni/population-of-estelí","count" => "90 294","real_id" =>5,),
+"6"=>array("name_ru"=>"Типитапа","name_en"=>"Tipitapa","name_href" => "ni/population-of-tipitapa","count" => "85 948","real_id" =>6,),
+"7"=>array("name_ru"=>"Матагальпа","name_en"=>"Matagalpa","name_href" => "ni/population-of-matagalpa","count" => "80 228","real_id" =>7,),
+"8"=>array("name_ru"=>"Гранада","name_en"=>"Granada","name_href" => "ni/population-of-granada","count" => "79 418","real_id" =>8,),
+"9"=>array("name_ru"=>"Сьюдад-Сандино","name_en"=>"Ciudad Sandino","name_href" => "ni/population-of-ciudad-sandino","count" => "72 501","real_id" =>9,),
+"10"=>array("name_ru"=>"Хуигальпа","name_en"=>"Juigalpa","name_href" => "ni/population-of-juigalpa","count" => "42 763","real_id" =>10,),
+"11"=>array("name_ru"=>"Хинотега","name_en"=>"Jinotega","name_href" => "ni/population-of-jinotega","count" => "41 134","real_id" =>11,),
+"12"=>array("name_ru"=>"Пуэрто-Кабесас","name_en"=>"Puerto Cabezas","name_href" => "ni/population-of-puerto-cabezas","count" => "39 428","real_id" =>12,),
+"13"=>array("name_ru"=>"Эль-Вьехо","name_en"=>"El Viejo","name_href" => "ni/population-of-el-viejo","count" => "39 178","real_id" =>13,),
+"14"=>array("name_ru"=>"Блуфилдс","name_en"=>"Bluefields","name_href" => "ni/population-of-bluefields","count" => "38 623","real_id" =>14,),
+"15"=>array("name_ru"=>"Дириамба","name_en"=>"Diriamba","name_href" => "ni/population-of-diriamba","count" => "35 222","real_id" =>15,),
+"16"=>array("name_ru"=>"Чичигальпа","name_en"=>"Chichigalpa","name_href" => "ni/population-of-chichigalpa","count" => "34 243","real_id" =>16,),
+"17"=>array("name_ru"=>"Окоталь","name_en"=>"Ocotal","name_href" => "ni/population-of-ocotal","count" => "34 190","real_id" =>17,),
+"18"=>array("name_ru"=>"Хинотепе","name_en"=>"Jinotepe","name_href" => "ni/population-of-jinotepe","count" => "31 257","real_id" =>18,),
+"19"=>array("name_ru"=>"Ривас","name_en"=>"Rivas","name_href" => "ni/population-of-rivas","count" => "27 650","real_id" =>19,),
+"20"=>array("name_ru"=>"Нуэва-Гвинея","name_en"=>"Nueva Guinea","name_href" => "ni/population-of-nueva-guinea","count" => "25 585","real_id" =>20,),
+"21"=>array("name_ru"=>"Матеаре","name_en"=>"Mateare","name_href" => "ni/population-of-mateare","count" => "25 313","real_id" =>21,),
+"22"=>array("name_ru"=>"Халапа","name_en"=>"Jalapa","name_href" => "ni/population-of-jalapa","count" => "24 435","real_id" =>22,),
+"23"=>array("name_ru"=>"Сан-Рафаэль-дель-Сюр","name_en"=>"San Rafael del Sur","name_href" => "ni/population-of-san-rafael-del-sur","count" => "23 420","real_id" =>23,),
+"24"=>array("name_ru"=>"Себако","name_en"=>"Sébaco","name_href" => "ni/population-of-sébaco","count" => "22 431","real_id" =>24,),
+"25"=>array("name_ru"=>"Боако","name_en"=>"Boaco","name_href" => "ni/population-of-boaco","count" => "20 405","real_id" =>25,),
+"26"=>array("name_ru"=>"Нагароте","name_en"=>"Nagarote","name_href" => "ni/population-of-nagarote","count" => "19 614","real_id" =>26,),
+"27"=>array("name_ru"=>"Ла-Пас-Сентро","name_en"=>"La Paz Centro","name_href" => "ni/population-of-la-paz-centro","count" => "19 010","real_id" =>27,),
+"28"=>array("name_ru"=>"Сан-Маркос","name_en"=>"San Marcos","name_href" => "ni/population-of-san-marcos","count" => "18 852","real_id" =>28,),
+"29"=>array("name_ru"=>"Сомото","name_en"=>"Somoto","name_href" => "ni/population-of-somoto","count" => "18 126","real_id" =>29,),
+"30"=>array("name_ru"=>"Ниндирини","name_en"=>"Nindian","name_href" => "ni/population-of-nindian","count" => "17 313","real_id" =>30,),
+"31"=>array("name_ru"=>"Сьюдад-Дарио","name_en"=>"Ciudad Darío","name_href" => "ni/population-of-ciudad-darío","count" => "16 646","real_id" =>31,),
+"32"=>array("name_ru"=>"Коринто","name_en"=>"Corinto","name_href" => "ni/population-of-corinto","count" => "16 466","real_id" =>32,),
+"33"=>array("name_ru"=>"Нандаиме","name_en"=>"Nandaime","name_href" => "ni/population-of-nandaime","count" => "15 866","real_id" =>33,),
+"34"=>array("name_ru"=>"Масатепе","name_en"=>"Masatepe","name_href" => "ni/population-of-masatepe","count" => "15 482","real_id" =>34,),
+"35"=>array("name_ru"=>"Эль-Рама","name_en"=>"El-Rama","name_href" => "ni/population-of-el-rama","count" => "14 838","real_id" =>35,),
+"36"=>array("name_ru"=>"Камоапа","name_en"=>"Camoapa","name_href" => "ni/population-of-camoapa","count" => "13 995","real_id" =>36,),
+"37"=>array("name_ru"=>"Сомотильо","name_en"=>"Sompasaari","name_href" => "ni/population-of-sompasaari","count" => "13 290","real_id" =>37,),
+"38"=>array("name_ru"=>"Рио-Бланко","name_en"=>"Rio Blanco","name_href" => "ni/population-of-rio-blanco","count" => "12 933","real_id" =>38,),
+"39"=>array("name_ru"=>"Ла-Консепсьон","name_en"=>"La Concepcion","name_href" => "ni/population-of-la-concepcion","count" => "12 234","real_id" =>39,),
+"40"=>array("name_ru"=>"Сан-Карлос","name_en"=>"San Carlos","name_href" => "ni/population-of-san-carlos","count" => "12 174","real_id" =>40,),
+"41"=>array("name_ru"=>"Санто-Томас","name_en"=>"Santo Tomas","name_href" => "ni/population-of-santo-tomas","count" => "11 678","real_id" =>41,),
+"42"=>array("name_ru"=>"Ларрейнага","name_en"=>"Larranaga","name_href" => "ni/population-of-larranaga","count" => "11 292","real_id" =>42,),
+"43"=>array("name_ru"=>"Ла-Тринидад","name_en"=>"La Trinidad","name_href" => "ni/population-of-la-trinidad","count" => "11 000","real_id" =>43,),
+"44"=>array("name_ru"=>"Сиуна","name_en"=>"Shiun","name_href" => "ni/population-of-shiun","count" => "10 345","real_id" =>44,),
+"45"=>array("name_ru"=>"Тикуантепе","name_en"=>"Ticuantepe","name_href" => "ni/population-of-ticuantepe","count" => "10 328","real_id" =>45,),
+"46"=>array("name_ru"=>"Кондега","name_en"=>"Condega","name_href" => "ni/population-of-condega","count" => "10 067","real_id" =>46,),
+"47"=>array("name_ru"=>"Манагуа","name_en"=>"Managua","name_href" => "ni/population-of-managua","count" => "908 892","real_id" =>47,),
+"48"=>array("name_ru"=>"Леон","name_en"=>"Leon","name_href" => "ni/population-of-leon","count" => "139 433","real_id" =>48,),
+"49"=>array("name_ru"=>"Чинандега","name_en"=>"Chinandega","name_href" => "ni/population-of-chinandega","count" => "95 614","real_id" =>49,),
+"50"=>array("name_ru"=>"Масая","name_en"=>"Masaya","name_href" => "ni/population-of-masaya","count" => "92 598","real_id" =>50,),
+"51"=>array("name_ru"=>"Эстели","name_en"=>"Estelí","name_href" => "ni/population-of-estelí","count" => "90 294","real_id" =>51,)
+
+
+);
+
+?>
