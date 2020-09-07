@@ -1,10 +1,21 @@
+<?php 
+$server_link = $_SERVER['REQUEST_URI'];
+$countryISO = explode("/", $server_link); 
+// print $countryISO[1];
+?>
+
 <?php
 include 'ru/inc/linkadd.php';
 include 'ru/inc/config.php';
 include 'core/function.php';
-include 'core/libby.php';
+include "core/lib$countryISO[1].php";
 include 'core/libcountry.php';
+
+
+// print_r (${"lib" . $countryISO[1]})
 ?>
+
+
 
 <!DOCTYPE html>
 <?php
@@ -26,23 +37,23 @@ echo $headdown;
     <meta name='viewport' content='width=device-width, initial-scale=1.0'>
 	
 	<title>Население города <?php 
-	foreach($libcities as $value){
-		if ($_SERVER['REQUEST_URI'] == $value["name_href"]){
+	foreach(${"lib" . $countryISO[1]} as $value){
+		if (ltrim($_SERVER['REQUEST_URI'], "/") == $value["name_href"]){
 			print($value["name_ru"]);
 		}
 	}
 	unset($value);
 	?>. Узнайте сколько людей живет в <?php 
-	foreach($libcities as $value){
-		if ($_SERVER['REQUEST_URI'] == $value["name_href"]){
+	foreach(${"lib" . $countryISO[1]} as $value){
+		if (ltrim($_SERVER['REQUEST_URI'], "/") == $value["name_href"]){
 			print($value["name_ru"]);
 		}
 	}
 	unset($value);
 	?></title>
-	<meta name='description' content='Актуальные данные о численности населения города <?php
-	foreach($libcities as $value){
-		if ($_SERVER['REQUEST_URI'] == $value["name_href"]){
+	<meta name='description' content='Актуальные данные о численности населения города <?php 
+	foreach(${"lib" . $countryISO[1]} as $value){
+		if (ltrim($_SERVER['REQUEST_URI'], "/") == $value["name_href"]){
 			print($value["name_ru"]);
 		}
 	}
@@ -108,11 +119,7 @@ echo $bodydown;
 // print $libby[ltrim($_SERVER['REQUEST_URI'], '/')]['count'].' <br/>';
 // print $libby[ltrim($_SERVER['REQUEST_URI'], '/')]['real_id'].' <br/>'; -->
 
-<?php 
 
-print $_SERVER['REQUEST_URI'];
-
-?>
 
 	<nav class='navbar navbar-inverse navbar-fixed-top' itemscope='' itemtype='http://www.schema.org/SiteNavigationElement'>
       <div class='container'>
@@ -153,33 +160,17 @@ print $_SERVER['REQUEST_URI'];
 							</a>
 						</li>
 						<li itemscope='' itemprop='itemListElement' itemtype='http://schema.org/ListItem'>
-							<a href='https://all-populations.com/ru/<?php 
-							foreach($libcities as $value){
-								if ($_SERVER['REQUEST_URI'] == $value["name_href"]){
-									$CitiesISO = $value["country_iso"];
-									break;
-								}
-							}
-							unset($value);
-		
-							foreach($libcountry as $value){
-								if ($CitiesISO == $value["country_iso"]){
-									print($value["name_country_href"]);
-								}
-							}
-							unset($value);
-							?>.html' itemprop='item'>
-								<span itemprop='name'>Население <?php 
-								foreach($libcities as $value){
-									if ($_SERVER['REQUEST_URI'] == $value["name_href"]){
-										$CitiesISO = $value["country_iso"];
-										break;
+							<a href='/<?php
+								foreach($libcountry as $value){
+									if ($countryISO[1] == $value["country_iso"]){
+										print($value["name_country_href"]);
 									}
 								}
 								unset($value);
-			
+								?>' itemprop='item'>
+								<span itemprop='name'>Население <?php
 								foreach($libcountry as $value){
-									if ($CitiesISO == $value["country_iso"]){
+									if ($countryISO[1] == $value["country_iso"]){
 										print($value["name_country_ru_zz"]);
 									}
 								}
@@ -190,8 +181,8 @@ print $_SERVER['REQUEST_URI'];
 						<li itemscope='' itemprop='itemListElement' itemtype='http://schema.org/ListItem'>
 							<span itemprop='item'>
 								<span itemprop='name'>Население <?php 
-								foreach($libcities as $value){
-									if ($_SERVER['REQUEST_URI'] == $value["name_href"]){
+								foreach(${"lib" . $countryISO[1]} as $value){
+									if (ltrim($_SERVER['REQUEST_URI'], "/") == $value["name_href"]){
 										print($value["name_ru"]);
 									}
 								}
@@ -210,13 +201,13 @@ print $_SERVER['REQUEST_URI'];
 				<div class='panel-heading' >
 					<h1 itemprop='headline'>Численность населения 
 					<?php 
-						foreach($libcities as $value){
-							if ($_SERVER['REQUEST_URI'] == $value["name_href"]){
-								print($value["name_ru"]);
-							}
-						}
-						unset($value);
-						?>
+								foreach(${"lib" . $countryISO[1]} as $value){
+									if (ltrim($_SERVER['REQUEST_URI'], "/") == $value["name_href"]){
+										print($value["name_ru"]);
+									}
+								}
+								unset($value);
+								?>
 					</h1>
 				</div>
 				
@@ -224,38 +215,30 @@ print $_SERVER['REQUEST_URI'];
 				<p>На <?php echo $year;?> год численность населения города 
 				<strong>
 				<?php 
-					foreach($libcities as $value){
-						if ($_SERVER['REQUEST_URI'] == $value["name_href"]){
-							print($value["name_ru"]);
-						}
-					}
-					unset($value);
-				?>
+								foreach(${"lib" . $countryISO[1]} as $value){
+									if (ltrim($_SERVER['REQUEST_URI'], "/") == $value["name_href"]){
+										print($value["name_ru"]);
+									}
+								}
+								unset($value);
+								?>
 				</strong>, 
+				<?php
+								foreach($libcountry as $value){
+									if ($countryISO[1] == $value["country_iso"]){
+										print($value["name_country_ru_zz"]);
+									}
+								}
+								unset($value);
+								?> - составляет <span class='pop-info'>
 				<?php 
-					foreach($libcities as $value){
-						if ($_SERVER['REQUEST_URI'] == $value["name_href"]){
-							$CitiesISO = $value["country_iso"];
-							break;
-						}
-					}
-					unset($value);
-
-					foreach($libcountry as $value){
-						if ($CitiesISO == $value["country_iso"]){
-							print($value["name_country_ru"]);
-						}
-					}
-					unset($value);
-				?> - составляет <span class='pop-info'>
-				<?php 
-					foreach($libcities as $value){
-						if ($_SERVER['REQUEST_URI'] == $value["name_href"]){
-							print($value["count"]);
-						}
-					}
-				unset($value);
-				?></span> человек. All-populations.com использовал данные количества населения из официальных источников. Узнать, какая статистика населения страны, города, района на All-populations.com. </p>
+								foreach(${"lib" . $countryISO[1]} as $value){
+									if (ltrim($_SERVER['REQUEST_URI'], "/") == $value["name_href"]){
+										print($value["count"]);
+									}
+								}
+								unset($value);
+								?></span> человек. All-populations.com использовал данные количества населения из официальных источников. Узнать, какая статистика населения страны, города, района на All-populations.com. </p>
 				</div>		
 		
 				<div class='showinfo'>
@@ -269,87 +252,55 @@ print $_SERVER['REQUEST_URI'];
 							<div class='count' itemscope='' itemtype='http://schema.org/ImageObject'>
 								<h3 class='naselenie'>
 								<?php 
-									foreach($libcities as $value){
-										if ($_SERVER['REQUEST_URI'] == $value["name_href"]){
-											print($value["name_ru"]);
-										}
-									}
-									unset($value);
-								?> - Население</h3>
-								<span class='skolko'>
-								<?php 
-									foreach($libcities as $value){
-										if ($_SERVER['REQUEST_URI'] == $value["name_href"]){
-											print($value["count"]);
-										}
-									}
-								unset($value);
-								?> человек</span>
-								<img src='https://all-populations.com/ru/images/
-								<?php 
-									foreach($libcities as $value){
-										if ($_SERVER['REQUEST_URI'] == $value["name_href"]){
-											$CitiesISO = $value["country_iso"];
-											break;
-										}
-									}
-									unset($value);
-				
-									foreach($libcountry as $value){
-										if ($CitiesISO == $value["country_iso"]){
-											print($value["country_flag"]);
-										}
-									}
-									unset($value);
-								?>' itemprop='contentUrl' width='160' height='107' alt='Флаг 
-								<?php 
-								foreach($libcities as $value){
-									if ($_SERVER['REQUEST_URI'] == $value["name_href"]){
-										$CitiesISO = $value["country_iso"];
-										break;
+								foreach(${"lib" . $countryISO[1]} as $value){
+									if (ltrim($_SERVER['REQUEST_URI'], "/") == $value["name_href"]){
+										print($value["name_ru"]);
 									}
 								}
 								unset($value);
-			
+								?> - Население</h3>
+								<span class='skolko'>
+								<?php 
+								foreach(${"lib" . $countryISO[1]} as $value){
+									if (ltrim($_SERVER['REQUEST_URI'], "/") == $value["name_href"]){
+										print($value["count"]);
+									}
+								}
+								unset($value);
+								?> человек</span>
+								<img src='https://all-populations.com/ru/images/
+								<?php
 								foreach($libcountry as $value){
-									if ($CitiesISO == $value["country_iso"]){
+									if ($countryISO[1] == $value["country_iso"]){
+										print($value["country_flag"]);
+									}
+								}
+								unset($value);
+								?>' itemprop='contentUrl' width='160' height='107' alt='Флаг 
+								<?php
+								foreach($libcountry as $value){
+									if ($countryISO[1] == $value["country_iso"]){
 										print($value["name_country_ru"]);
 									}
 								}
 								unset($value);
 								?>' title='Флаг 
-								<?php 
-								foreach($libcities as $value){
-									if ($_SERVER['REQUEST_URI'] == $value["name_href"]){
-										$CitiesISO = $value["country_iso"];
-										break;
-									}
-								}
-								unset($value);
-			
+								<?php
 								foreach($libcountry as $value){
-									if ($CitiesISO == $value["country_iso"]){
+									if ($countryISO[1] == $value["country_iso"]){
 										print($value["name_country_ru"]);
 									}
 								}
 								unset($value);
 								?>' />
 								<span itemprop='name' style='display:block; font-size: 12px;'>Флаг 
-								<?php 
-									foreach($libcities as $value){
-										if ($_SERVER['REQUEST_URI'] == $value["name_href"]){
-											$CitiesISO = $value["country_iso"];
-											break;
-										}
+								<?php
+								foreach($libcountry as $value){
+									if ($countryISO[1] == $value["country_iso"]){
+										print($value["name_country_ru_zz"]);
 									}
-									unset($value);
-				
-									foreach($libcountry as $value){
-										if ($CitiesISO == $value["country_iso"]){
-											print($value["name_country_ru"]);
-										}
-									}
-									unset($value);
+								}
+								unset($value);
 								?></span>
 								<span class='date'>На <?php echo $month; echo $year;?> год</span>
 							</div>
@@ -369,41 +320,32 @@ print $_SERVER['REQUEST_URI'];
 			?>
 				<ul class='parent-menu-list'>
 					<li>
-						<a itemprop='url' href='/ru/<?php
-						foreach($libcities as $value){
-							if ($_SERVER['REQUEST_URI'] == $value["name_href"]){
-								$CitiesISO = $value["country_iso"];
-								break;
-							}
-						}
-						unset($value);
-	
-						foreach($libcountry as $value){
-							if ($CitiesISO == $value["country_iso"]){
-								print($value["rate_city_country"]);
-							}
-						}
-						unset($value);
-						?>.html' title='Список городов <?php getNameCountryRu($libcountry,185);?> по населению'>
+						<a itemprop='url' href='<?php
+								foreach($libcountry as $value){
+									if ($countryISO[1] == $value["country_iso"]){
+										print($value["rate_city_country"]);
+									}
+								}
+								unset($value);
+								?>.html' title='Список городов <?php
+								foreach($libcountry as $value){
+									if ($countryISO[1] == $value["country_iso"]){
+										print($value["name_country_ru_zz"]);
+									}
+								}
+								unset($value);
+								?> по населению'>
 							<span itemprop='name'>Список городов <?php
-							 foreach($libcities as $value){
-								if ($_SERVER['REQUEST_URI'] == $value["name_href"]){
-									$CitiesISO = $value["country_iso"];
-									break;
+								foreach($libcountry as $value){
+									if ($countryISO[1] == $value["country_iso"]){
+										print($value["name_country_ru_zz"]);
+									}
 								}
-							}
-							unset($value);
-		
-							foreach($libcountry as $value){
-								if ($CitiesISO == $value["country_iso"]){
-									print($value["name_country_ru_zz"]);
-								}
-							}
-							unset($value);
-							 ?> по населению</span>
+								unset($value);
+								?> по населению</span>
 						</a>
 						<ul class='child-menu-list'>
-							<?php rightMenuRu($libad,15);?>
+							<?php rightMenuRu(${"lib" . $countryISO[1]},15);?>
 						</ul>
 					</li>
 				</ul>

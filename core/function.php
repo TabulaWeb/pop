@@ -69,7 +69,7 @@ function rightMenuRu($menu, $id="", $op='"') {
 	for ($i = $real; $i <= $id; $i++) 
   { 
     echo "<li>
-			<a itemprop=".$op."url".$op." href=".$op."https://all-populations.com/ru/{$menu[$i]['name_href']}.html".$op.">
+			<a itemprop=".$op."url".$op." href=".$op."/{$menu[$i]['name_href']}".$op.">
 				<span itemprop=".$op."name".$op.">Население {$menu[$i]['name_ru']}</span>
 			</a>
 		 </li>"; 

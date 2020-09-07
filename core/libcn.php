@@ -140,13 +140,10 @@ $libcn = array (
 "135"=>array("name_ru"=>"Цзегу","name_en"=>"Czego","name_href" => "cn/population-of-czego","count" => "50 000","real_id" =>135,),
 "136"=>array("name_ru"=>"Карашар","name_en"=>"Karashar","name_href" => "cn/population-of-karashar","count" => "31 773","real_id" =>136,),
 "137"=>array("name_ru"=>"Нанкин ","name_en"=>"Nanjing ","name_href" => "cn/population-of-nanjing","count" => "8 118","real_id" =>137,),
-"138"=>array("name_ru"=>"Чунцин","name_en"=>"Chongqing","name_href" => "cn/population-of-chongqing","count" => "29 914 000","real_id" =>138,),
 "139"=>array("name_ru"=>"Шанхай","name_en"=>"Shanghai","name_href" => "cn/population-of-shanghai","count" => "24 150 000","real_id" =>139,),
 "140"=>array("name_ru"=>"Пекин","name_en"=>"Beijing","name_href" => "cn/population-of-beijing","count" => "21 705 000","real_id" =>140,),
 "141"=>array("name_ru"=>"Тяньцзинь","name_en"=>"Tianjin","name_href" => "cn/population-of-tianjin","count" => "14 425 000","real_id" =>141,),
 "142"=>array("name_ru"=>"Наньян","name_en"=>"Nanyang","name_href" => "cn/population-of-nanyang","count" => "12 010 000","real_id" =>142,)
-
-
 );
 
 ?>

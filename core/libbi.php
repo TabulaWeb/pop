@@ -22,7 +22,6 @@ $libbi = array (
 "19"=>array("name_ru"=>"Муйинга","name_en"=>"Muyinga","name_href" => "bi/population-of-muyinga","count" => "100 624","real_id" =>19,),
 "20"=>array("name_ru"=>"Руйиги","name_en"=>"Ruyigi","name_href" => "bi/population-of-ruyigi","count" => "46 082","real_id" =>20,),
 "21"=>array("name_ru"=>"Макамба","name_en"=>"Makamba","name_href" => "bi/population-of-makamba","count" => "26 549","real_id" =>21,),
-"22"=>array("name_ru"=>"Гитега","name_en"=>"Gitega","name_href" => "bi/population-of-gitega","count" => "24 932","real_id" =>22,)
 );
 
 ?>
