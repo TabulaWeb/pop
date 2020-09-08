@@ -60,7 +60,7 @@ echo $bodydown;
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-		<a class="navbar-brand" href="../home.php"><span style="color: #f3e99a;">all-</span>populations<span style="color: #eee;">.com</span></a>
+		<a class="navbar-brand" href="/"><span style="color: #f3e99a;">all-</span>populations<span style="color: #eee;">.com</span></a>
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-left">
@@ -84,7 +84,7 @@ echo $bodydown;
 				<div id="breadcrumbs-inner">
 					<ul itemscope="" itemtype="http://schema.org/BreadcrumbList">
 						<li itemscope="" itemprop="itemListElement" itemtype="http://schema.org/ListItem">
-							<a href="../home.php" itemprop="item">
+							<a href="/" itemprop="item">
 								<span itemprop="name">All-populations.com</span>
 							</a>
 						</li>    
@@ -143,27 +143,27 @@ echo $bodydown;
 						</a>
 						<ul class="child-menu-list">
 							<li>
-								<a itemprop="url" href="https://all-populations.com/ru/cn/population-of-china.html" title="Население Китая">
+								<a itemprop="url" href="../cn/population-of-china" title="Население Китая">
 									<span itemprop="name">Население Китая</span>
 								</a>
 							</li>
 							<li>
-								<a itemprop="url" href="https://all-populations.com/ru/in/population-of-india.html" title="Население Индии">
+								<a itemprop="url" href="../in/population-of-india" title="Население Индии">
 									<span itemprop="name">Население Индии</span>
 								</a>
 							</li>
 							<li>
-								<a itemprop="url" href="https://all-populations.com/ru/us/population-of-usa.html" title="Население США">
+								<a itemprop="url" href="../us/population-of-usa" title="Население США">
 									<span itemprop="name">Население США</span>
 								</a>
 							</li>
 							<li>
-								<a itemprop="url" href="https://all-populations.com/ru/id/population-of-indonesia.html" title="Население Индонезии">
+								<a itemprop="url" href="../id/population-of-indonesia" title="Население Индонезии">
 									<span itemprop="name">Население Индонезии</span>
 								</a>
 							</li>
 							<li>
-								<a itemprop="url" href="https://all-populations.com/ru/pk/population-of-pakistan.html" title="Население Пакистана">
+								<a itemprop="url" href="../pk/population-of-pakistan" title="Население Пакистана">
 									<span itemprop="name">Население Пакистана</span>
 								</a>
 							</li>

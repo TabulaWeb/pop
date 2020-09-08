@@ -73,7 +73,7 @@ echo $bodydown;
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-		<a class="navbar-brand" href="../home.php"><span style="color: #f3e99a;">all-</span>populations<span style="color: #eee;">.com</span></a>
+		<a class="navbar-brand" href="/"><span style="color: #f3e99a;">all-</span>populations<span style="color: #eee;">.com</span></a>
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-left">
