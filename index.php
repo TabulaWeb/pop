@@ -1,8 +1,6 @@
 <?php 
 $server_link = $_SERVER['REQUEST_URI'];
 $countryISO = explode("/", $server_link); 
-// print $server_link
-// print $countryISO[1];
 ?>
 
 <?php
@@ -15,9 +13,6 @@ if ($_SERVER['REQUEST_URI'] == "/"){
 	include "core/lib$countryISO[1].php";
 } 
 include 'core/libcountry.php';
-
-
-// print_r (${"lib" . $countryISO[1]})
 ?>
 
 <!DOCTYPE html>
@@ -34,46 +29,95 @@ echo $headup;
 <?php
 echo $headdown;
 ?>
+
+<?php 
+	if ($_SERVER['REQUEST_URI'] != "/"){
+		foreach(${"lib" . $countryISO[1]} as $value){
+			if (ltrim($_SERVER['REQUEST_URI'], "/") == $value["name_href"]){
+				$href_city = $value["name_href"];
+			}
+		}
+	}
+	
+	foreach($libcountry as $value){
+		if(ltrim($_SERVER['REQUEST_URI'], "/") == $value["name_country_href"]){
+			$name_country = $value["name_country_ru"];
+			$href_country = $value["name_country_href"];
+		}
+	}
+
+	foreach($libcountry as $value){
+		if(ltrim($_SERVER['REQUEST_URI'], "/") == $value["rate_city_country"]){
+			$href_rate_city =  $value["rate_city_country"];
+		}
+	}
+		
+?>
+
+
+
   
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <meta name='viewport' content='width=device-width, initial-scale=1.0'>
 	<!-- TITLE -->
 	<title> 
-	<?php 
-		foreach(${"lib" . $countryISO[1]} as $value){
+	<?php
+		if($_SERVER['REQUEST_URI'] == "/"){
+			print("Текущая статистика численности населения: мира, стран, городов");
+		} elseif (ltrim($_SERVER['REQUEST_URI'], "/") == "$href_city"){
+			foreach(${"lib" . $countryISO[1]} as $value){
 			if (ltrim($_SERVER['REQUEST_URI'], "/") == $value["name_href"]){
 				$name_city = $value["name_ru"];
 				print("Население города $name_city. Узнайте сколько людей живет в $name_city");
 			}
 		}	
 		unset($value);
-
-		foreach($libcountry as $value){
+		} elseif (ltrim($_SERVER['REQUEST_URI'], "/") == "$href_country") {
+			foreach($libcountry as $value){
 			if(ltrim($_SERVER['REQUEST_URI'], "/") == $value["name_country_href"]){
 				$name_country =  $value["name_country_ru"];
 				print "Население $name_country. Узнайте сколько людей живет в $name_country";
 			}
 		}
+		} elseif (ltrim($_SERVER['REQUEST_URI'], "/") == "$href_rate_city") {
+			foreach($libcountry as $value){
+			if(ltrim($_SERVER['REQUEST_URI'], "/") == $value["rate_city_country"]){
+				$href_rate_city =  $value["rate_city_country"];
+				print "Узнайте численность населения стран мира на $year год";
+			}
+		}
+		}
 	?>
 	</title>
 	<!-- DESCRIPTION -->
 	<meta name='description' content='
-	<?php 
-	foreach(${"lib" . $countryISO[1]} as $value){
-		if (ltrim($_SERVER['REQUEST_URI'], "/") == $value["name_href"]){
-			print("Актуальные данные о численности населения города $name_city на $year год. Узнайте сколько человек проживает в городе.");
+	<?php
+		if($_SERVER['REQUEST_URI'] == "/"){
+			print("Здесь вы узнаете сколько людей живет на планете, численность населения каждой страны и каждого города. Рейтинги стран и городов по численности населения.");
+		} elseif (ltrim($_SERVER['REQUEST_URI'], "/") == "$href_city"){
+			foreach(${"lib" . $countryISO[1]} as $value){
+			if (ltrim($_SERVER['REQUEST_URI'], "/") == $value["name_href"]){
+				$name_city = $value["name_ru"];
+				print("Актуальные данные о численности населения города $name_city на $year год. Узнайте сколько человек проживает в городе.");
+			}
+		}	
+		unset($value);
+		} elseif (ltrim($_SERVER['REQUEST_URI'], "/") == "$href_country") {
+			foreach($libcountry as $value){
+			if(ltrim($_SERVER['REQUEST_URI'], "/") == $value["name_country_href"]){
+				$name_country =  $value["name_country_ru"];
+				print "Актуальные данные о численности населения $name_country на $year год. Узнайте сколько человек проживает в стране.";
+			}
 		}
-	}
-	unset($value);
-
-
-	foreach($libcountry as $value){
-		if(ltrim($_SERVER['REQUEST_URI'], "/") == $value["name_country_href"]){
-			$name_country =  $value["name_country_ru"];
-			print "Актуальные данные о численности населения $name_city на $year год. Узнайте сколько человек проживает в стране.";
+		} elseif (ltrim($_SERVER['REQUEST_URI'], "/") == "$href_rate_city") {
+			foreach($libcountry as $value){
+			if(ltrim($_SERVER['REQUEST_URI'], "/") == $value["rate_city_country"]){
+				$href_rate_city =  $value["rate_city_country"];
+				print "Рейтинг городов $name_country по численности населения на 2020 год. Узнайте список самых крупных городов  $name_country";
+			}
 		}
-	}
+		}
 	?>
 	'>
 	<meta name='keywords' content='Численность населения <?php getNameRu($libad,15);?>, население <?php getNameRu($libad,15);?> на <?php echo $year;?> год'>
