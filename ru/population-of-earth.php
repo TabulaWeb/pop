@@ -265,7 +265,7 @@ echo $bodydown;
 					<li>
 						<p class="lang">На других языках</p>
 						<ul class="language-menu-list">
-							<li><a href="https://all-populations.com/en/population-of-earth.html" title="Population of Earth">Population of Earth</a></li>
+							<li><a href="/en/population-of-earth.php" title="Population of Earth">Population of Earth</a></li>
 						</ul>
 					</li>
 				</ul>

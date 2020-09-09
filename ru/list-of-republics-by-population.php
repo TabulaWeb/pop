@@ -90,7 +90,7 @@ echo $bodydown;
 				<div id="breadcrumbs-inner">
 					<ul itemscope="" itemtype="http://schema.org/BreadcrumbList">
 						<li itemscope="" itemprop="itemListElement" itemtype="http://schema.org/ListItem">
-							<a href="https://all-populations.com/ru/population-of-earth.html" itemprop="item">
+							<a href="population-of-earth.php" itemprop="item">
 								<span itemprop="name">Население Земли</span>
 							</a>
 						</li>    
@@ -155,7 +155,7 @@ echo $bodydown;
 						<p class="lang">На других языках</p>
 						<ul class="language-menu-list">
 							<li>
-								<a href="https://all-populations.com/en/list-of-republics-by-population.html" title="List of republics by population">
+								<a href="../en/list-of-republics-by-population.php" title="List of republics by population">
 									List of republics by population
 								</a>
 							</li>

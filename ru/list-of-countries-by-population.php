@@ -158,7 +158,7 @@ echo $bodydown;
 						<p class="lang">На других языках</p>
 						<ul class="language-menu-list">
 							<li>
-								<a href="https://all-populations.com/en/list-of-countries-by-population.html" title="List of countries by population">
+								<a href="../en/list-of-countries-by-population.php" title="List of countries by population">
 									List of countries by population
 								</a>
 							</li>

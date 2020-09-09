@@ -23,23 +23,16 @@ echo $headdown;
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	
-	<title>Population of earth in <?php echo $year;?></title>
-	<meta name="description" content="Population of earth in <?php echo $year;?> - all-populations.com">
-	<meta name="keywords" content="Population of earth in <?php echo $year;?> - all-populations.com">
+	<title>Численность населения мира на <?php echo $year;?> год</title>
+	<meta name="title" content="Численность населения мира на <?php echo $year;?> год">
+	<meta name="description" content="Узнайте сколько человек живет в мире. Статистика численности людей на Земле на <?php echo $year;?> год.">
+	<meta name="keywords" content="Численность населения Земли, статистика населения Земли на <?php echo $year;?> год">
 	
-	<link rel="shortcut icon" href="https://all-populations.com/favicon.ico">
+	<link rel="shortcut icon" href="../favicon.ico">
 
-	<link rel="canonical" href="https://all-populations.com/en/population-of-earth.html">
-
-	<link rel="alternate" href="https://all-populations.com/en/population-of-earth.html" hreflang="en">
-	<link rel="alternate" href="https://all-populations.com/ru/population-of-earth.html" hreflang="ru">
-
-    <link href="https://all-populations.com/assets/css/bootstrap.css" rel="stylesheet">
-    <link href="https://all-populations.com/assets/css/font-awesome.min.css" rel="stylesheet">
-    <link href="https://all-populations.com/assets/css/main.css" rel="stylesheet">
-	
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="../assets/css/bootstrap.css" rel="stylesheet">
+    <link href="../assets/css/font-awesome.min.css" rel="stylesheet">
+    <link href="../assets/css/main.css" rel="stylesheet">
  
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -71,10 +64,10 @@ echo $bodydown;
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-left">
-            <li itemprop="name"><a itemprop="url" href="https://all-populations.com/en/list-of-countries-by-population.html">Countries</a></li>
-            <li itemprop="name"><a itemprop="url" href="https://all-populations.com/en/list-of-kingdoms-by-population.html">Kingdoms</a></li>
-            <li itemprop="name"><a itemprop="url" href="https://all-populations.com/en/list-of-republics-by-population.html">Republics</a></li>
-            <li itemprop="name"><a itemprop="url" href="https://all-populations.com/en/list-of-cities-by-population.html">Cities</a></li>
+            <li itemprop="name"><a itemprop="url" href="list-of-countries-by-population.php">Countries</a></li>
+            <li itemprop="name"><a itemprop="url" href="list-of-kingdoms-by-population.php">Kingdoms</a></li>
+            <li itemprop="name"><a itemprop="url" href="list-of-republics-by-population.php">Republics</a></li>
+            <li itemprop="name"><a itemprop="url" href="list-of-cities-by-population.php">Cities</a></li>
           </ul>
         </div>
       </div>
@@ -91,7 +84,7 @@ echo $bodydown;
 				<div id="breadcrumbs-inner">
 					<ul itemscope="" itemtype="http://schema.org/BreadcrumbList">
 						<li itemscope="" itemprop="itemListElement" itemtype="http://schema.org/ListItem">
-							<a href="https://all-populations.com/" itemprop="item">
+							<a href="/" itemprop="item">
 								<span itemprop="name">All-populations.com</span>
 							</a>
 						</li>    
@@ -145,32 +138,32 @@ echo $bodydown;
 			?>
 				<ul class="parent-menu-list">
 					<li>
-						<a itemprop="url" href="https://all-populations.com/en/list-of-countries-by-population.html" title="List of countries by population">
+						<a itemprop="url" href="list-of-countries-by-population.php" title="List of countries by population">
 							<span itemprop="name">List of countries by population</span>
 						</a>
 						<ul class="child-menu-list">
 							<li>
-								<a itemprop="url" href="https://all-populations.com/en/cn/population-of-china.html" title="Population of China">
+								<a itemprop="url" href="/en/cn/population-of-china.html" title="Population of China">
 									<span itemprop="name">Population of China</span>
 								</a>
 							</li>
 							<li>
-								<a itemprop="url" href="https://all-populations.com/en/in/population-of-india.html" title="Population of India">
+								<a itemprop="url" href="/en/in/population-of-india.html" title="Population of India">
 									<span itemprop="name">Population of India</span>
 								</a>
 							</li>
 							<li>
-								<a itemprop="url" href="https://all-populations.com/en/us/population-of-usa.html" title="Population of USA">
+								<a itemprop="url" href="/en/us/population-of-usa.html" title="Population of USA">
 									<span itemprop="name">Population of USA</span>
 								</a>
 							</li>
 							<li>
-								<a itemprop="url" href="https://all-populations.com/en/id/population-of-indonesia.html" title="Population of Indonesia">
+								<a itemprop="url" href="/en/id/population-of-indonesia.html" title="Population of Indonesia">
 									<span itemprop="name">Population of Indonesia</span>
 								</a>
 							</li>
 							<li>
-								<a itemprop="url" href="https://all-populations.com/en/pk/population-of-pakistan.html" title="Population of Pakistan">
+								<a itemprop="url" href="/en/pk/population-of-pakistan.html" title="Population of Pakistan">
 									<span itemprop="name">Population of Pakistan</span>
 								</a>
 							</li>
@@ -272,7 +265,7 @@ echo $bodydown;
 					<li>
 						<p class="lang">Other Languages</p>
 						<ul class="language-menu-list">
-							<li><a href="https://all-populations.com/ru/population-of-earth.html" title="Население Земли">Население Земли</a></li>
+							<li><a href="../ru/population-of-earth.php" title="Население Земли">Население Земли</a></li>
 						</ul>
 					</li>
 				</ul>

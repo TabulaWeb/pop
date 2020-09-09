@@ -51,7 +51,6 @@ echo $headdown;
       <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
     <![endif]-->
  
-	<base href="https://all-populations.com/en/list-of-kingdoms-by-population.html">
 <?php
 echo $headtop;
 ?>
@@ -73,14 +72,14 @@ echo $bodydown;
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-		<a class="navbar-brand" href="https://all-populations.com"><span style="color: #f3e99a;">all-</span>populations<span style="color: #eee;">.com</span></a>
+		<a class="navbar-brand" href="/"><span style="color: #f3e99a;">all-</span>populations<span style="color: #eee;">.com</span></a>
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-left">
-            <li itemprop="name"><a itemprop="url" href="https://all-populations.com/en/list-of-countries-by-population.html">Countries</a></li>
-            <li class="active" itemprop="name"><a itemprop="url" href="https://all-populations.com/en/list-of-kingdoms-by-population.html">Kingdoms</a></li>
-            <li itemprop="name"><a itemprop="url" href="https://all-populations.com/en/list-of-republics-by-population.html">Republics</a></li>
-            <li itemprop="name"><a itemprop="url" href="https://all-populations.com/en/list-of-cities-by-population.html">Cities</a></li>
+            <li itemprop="name"><a itemprop="url" href="list-of-countries-by-population.php">Countries</a></li>
+            <li class="active" itemprop="name"><a itemprop="url" href="list-of-kingdoms-by-population.php">Kingdoms</a></li>
+            <li itemprop="name"><a itemprop="url" href="list-of-republics-by-population.php">Republics</a></li>
+            <li itemprop="name"><a itemprop="url" href="list-of-cities-by-population.php">Cities</a></li>
           </ul>
         </div>
       </div>
@@ -96,7 +95,7 @@ echo $bodydown;
 				<div id="breadcrumbs-inner">
 					<ul itemscope="" itemtype="http://schema.org/BreadcrumbList">
 						<li itemscope="" itemprop="itemListElement" itemtype="http://schema.org/ListItem">
-							<a href="https://all-populations.com/en/population-of-earth.html" itemprop="item">
+							<a href="population-of-earth.php" itemprop="item">
 								<span itemprop="name">Population of Earth</span>
 							</a>
 						</li>    
@@ -161,7 +160,7 @@ echo $bodydown;
 						<p class="lang">Other Languages</p>
 						<ul class="language-menu-list">
 							<li>
-								<a href="https://all-populations.com/ru/list-of-kingdoms-by-population.html" title="Список королевст по населению">
+								<a href="../ru/list-of-kingdoms-by-population.php" title="Список королевст по населению">
 									Список королевст по населению
 								</a>
 							</li>

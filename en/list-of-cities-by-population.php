@@ -51,7 +51,6 @@ echo $headdown;
       <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
     <![endif]-->
  
-	<base href="https://all-populations.com/en/list-of-cities-by-population.html">
 <?php
 echo $headtop;
 ?>
@@ -73,14 +72,14 @@ echo $bodydown;
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-		<a class="navbar-brand" href="https://all-populations.com"><span style="color: #f3e99a;">all-</span>populations<span style="color: #eee;">.com</span></a>
+		<a class="navbar-brand" href="/"><span style="color: #f3e99a;">all-</span>populations<span style="color: #eee;">.com</span></a>
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-left">
-            <li itemprop="name"><a itemprop="url" href="https://all-populations.com/en/list-of-countries-by-population.html">Countries</a></li>
-            <li itemprop="name"><a itemprop="url" href="https://all-populations.com/en/list-of-kingdoms-by-population.html">Kingdoms</a></li>
-            <li itemprop="name"><a itemprop="url" href="https://all-populations.com/en/list-of-republics-by-population.html">Republics</a></li>
-            <li class="active" itemprop="name"><a itemprop="url" href="https://all-populations.com/en/list-of-cities-by-population.html">Cities</a></li>
+            <li itemprop="name"><a itemprop="url" href="list-of-countries-by-population.php">Countries</a></li>
+            <li itemprop="name"><a itemprop="url" href="list-of-kingdoms-by-population.php">Kingdoms</a></li>
+            <li itemprop="name"><a itemprop="url" href="list-of-republics-by-population.php">Republics</a></li>
+            <li class="active" itemprop="name"><a itemprop="url" href="list-of-cities-by-population.php">Cities</a></li>
           </ul>
         </div>
       </div>
@@ -96,7 +95,7 @@ echo $bodydown;
 				<div id="breadcrumbs-inner">
 					<ul itemscope="" itemtype="http://schema.org/BreadcrumbList">
 						<li itemscope="" itemprop="itemListElement" itemtype="http://schema.org/ListItem">
-							<a href="https://all-populations.com/en/population-of-earth.html" itemprop="item">
+							<a href="population-of-earth.php" itemprop="item">
 								<span itemprop="name">Population of Earth</span>
 							</a>
 						</li>    
@@ -135,56 +134,56 @@ echo $bodydown;
 					  </tr>
 					</thead>
 					<tbody id="myTable">
-					<tr><th>1</th><td><a href="https://all-populations.com/en/cn/population-of-chongqing.html">Chongqing</td><td>29 914 000</td></tr>
-<tr><th>2</th><td><a href="https://all-populations.com/en/cn/population-of-shanghai.html">Shanghai</td><td>24 150 000</td></tr>
-<tr><th>3</th><td><a href="https://all-populations.com/en/cn/population-of-beijing.html">Beijing</td><td>21 705 000</td></tr>
-<tr><th>4</th><td><a href="https://all-populations.com/en/cn/population-of-tianjin.html">Tianjin</td><td>14 425 000</td></tr>
-<tr><th>5</th><td><a href="https://all-populations.com/en/ng/population-of-lagos.html">Lagos</td><td>13 123 000</td></tr>
-<tr><th>6</th><td><a href="https://all-populations.com/en/cn/population-of-nanyang.html">Nanyang</td><td>12 010 000</td></tr>
-<tr><th>7</th><td><a href="https://all-populations.com/en/in/population-of-mumbai.html">Mumbai</td><td>11 978 450</td></tr>
-<tr><th>8</th><td><a href="https://all-populations.com/en/br/population-of-sao-paulo.html">São Paulo</td><td>11 895 893</td></tr>
-<tr><th>9</th><td><a href="https://all-populations.com/en/ru/population-of-moscow.html">Moscow</td><td>11 514 330</td></tr>
-<tr><th>10</th><td><a href="https://all-populations.com/en/pk/population-of-karachi.html">Karachi</td><td>11 234 942</td></tr>
-<tr><th>11</th><td><a href="https://all-populations.com/en/tr/population-of-istanbul.html">Istanbul</td><td>10 895 257</td></tr>
-<tr><th>12</th><td><a href="https://all-populations.com/en/cn/population-of-baoding.html">Baoding</td><td>10 700 000</td></tr>
-<tr><th>13</th><td><a href="https://all-populations.com/en/cn/population-of-harbin.html">Harbin</td><td>10 635 971</td></tr>
-<tr><th>14</th><td><a href="https://all-populations.com/en/cn/population-of-shenzhen.html">Shenzhen</td><td>10 357 938</td></tr>
-<tr><th>15</th><td><a href="https://all-populations.com/en/cn/population-of-wuhan.html">Wuhan</td><td>10 220 000</td></tr>
-<tr><th>16</th><td><a href="https://all-populations.com/en/id/population-of-jakarta.html">Jakarta</td><td>10 135 030</td></tr>
-<tr><th>17</th><td><a href="https://all-populations.com/en/cd/population-of-kinshasa.html">Kinshasa</td><td>10 076 099</td></tr>
-<tr><th>18</th><td><a href="https://all-populations.com/en/kr/population-of-seoul.html">Seoul</td><td>10 063 197</td></tr>
-<tr><th>19</th><td><a href="https://all-populations.com/en/cn/population-of-guangzhou.html">Guangzhou</td><td>10 000 000</td></tr>
-<tr><th>20</th><td><a href="https://all-populations.com/en/in/population-of-delhi.html">Delhi</td><td>9 879 172</td></tr>
-<tr><th>21</th><td><a href="https://all-populations.com/en/cn/population-of-shijiazhuang.html">Shijiazhuang</td><td>9 600 000</td></tr>
-<tr><th>22</th><td><a href="https://all-populations.com/en/cn/population-of-xuzhou.html">Xuzhou</td><td>9 468 000</td></tr>
-<tr><th>23</th><td><a href="https://all-populations.com/en/jp/population-of-tokyo.html">Tokyo</td><td>8 967 665</td></tr>
-<tr><th>24</th><td><a href="https://all-populations.com/en/bd/population-of-dhaka.html">Dhaka</td><td>8 906 039</td></tr>
-<tr><th>25</th><td><a href="https://all-populations.com/en/mx/population-of-mexico.html">Mexico City</td><td>8 800 000</td></tr>
-<tr><th>26</th><td><a href="https://all-populations.com/en/cn/population-of-hangzhou.html">Hangzhou</td><td>8 700 000</td></tr>
-<tr><th>27</th><td><a href="https://all-populations.com/en/cn/population-of-zhengzhou.html">Zhengzhou</td><td>8 626 505</td></tr>
-<tr><th>28</th><td><a href="https://all-populations.com/en/cn/population-of-weifang.html">Weifang</td><td>8 500 000</td></tr>
-<tr><th>29</th><td><a href="https://all-populations.com/en/pe/population-of-lima.html">Lima</td><td>8 486 866</td></tr>
-<tr><th>30</th><td><a href="https://all-populations.com/en/cn/population-of-fuyang.html">Fuyang</td><td>8 360 000</td></tr>
-<tr><th>31</th><td><a href="https://all-populations.com/en/cn/population-of-ganzhou.html">Ganzhou</td><td>8 300 000</td></tr>
-<tr><th>32</th><td><a href="https://all-populations.com/en/th/population-of-bangkok.html">Bangkok</td><td>8 280 925</td></tr>
-<tr><th>33</th><td><a href="https://all-populations.com/en/us/population-of-new-york.html">New York</td><td>8 244 910</td></tr>
-<tr><th>34</th><td><a href="https://all-populations.com/en/ng/population-of-london.html">London</td><td>8 173 900</td></tr>
-<tr><th>35</th><td><a href="https://all-populations.com/en/eg/population-of-cairo.html">Cairo</td><td>8 105 071</td></tr>
-<tr><th>36</th><td><a href="https://all-populations.com/en/cn/population-of-jining.html">Jining</td><td>8 023 000</td></tr>
-<tr><th>37</th><td><a href="https://all-populations.com/en/co/population-of-bogota.html">Bogota</td><td>7 980 001</td></tr>
-<tr><th>38</th><td><a href="https://all-populations.com/en/vn/population-of-ho-chi-minh-city.html">Ho Chi Minh City</td><td>7 955 000</td></tr>
-<tr><th>39</th><td><a href="https://all-populations.com/en/ir/population-of-tehran.html">Tehran</td><td>7 797 520</td></tr>
-<tr><th>40</th><td><a href="https://all-populations.com/en/cn/population-of-shenyang.html">Shenyang</td><td>7 760 000</td></tr>
-<tr><th>41</th><td><a href="https://all-populations.com/en/cn/population-of-zhumadian.html">Zhumadian</td><td>7 640 000</td></tr>
-<tr><th>42</th><td><a href="https://all-populations.com/en/mm/population-of-rangoon.html">Rangoon</td><td>7 360 703</td></tr>
-<tr><th>43</th><td><a href="https://all-populations.com/en/cn/population-of-xian.html">Xi'an</td><td>7 270 000</td></tr>
-<tr><th>44</th><td><a href="https://all-populations.com/en/cn/population-of-hong-kong.html">Hong Kong</td><td>7 182 724</td></tr>
-<tr><th>45</th><td><a href="https://all-populations.com/en/cn/population-of-chengdu.html">Chengdu</td><td>7 123 000</td></tr>
-<tr><th>46</th><td><a href="https://all-populations.com/en/cn/population-of-tangshan.html">Tangshan</td><td>7 100 000</td></tr>
-<tr><th>47</th><td><a href="https://all-populations.com/en/iq/population-of-baghdad.html">Baghdad</td><td>7 055 200</td></tr>
-<tr><th>48</th><td><a href="https://all-populations.com/en/cn/population-of-shangqiu.html">Shanqiu</td><td>7 000 000</td></tr>
-<tr><th>49</th><td><a href="https://all-populations.com/en/cn/population-of-zhanjiang.html">Zhanjiang</td><td>6 900 000</td></tr>
-<tr><th>50</th><td><a href="https://all-populations.com/en/cn/population-of-zunyi.html">Tsunyi</td><td>6 838 000</td></tr>
+					<tr><th>1</th><td><a href="/en/cn/population-of-chongqing.html">Chongqing</td><td>29 914 000</td></tr>
+<tr><th>2</th><td><a href="/en/cn/population-of-shanghai.html">Shanghai</td><td>24 150 000</td></tr>
+<tr><th>3</th><td><a href="/en/cn/population-of-beijing.html">Beijing</td><td>21 705 000</td></tr>
+<tr><th>4</th><td><a href="/en/cn/population-of-tianjin.html">Tianjin</td><td>14 425 000</td></tr>
+<tr><th>5</th><td><a href="/en/ng/population-of-lagos.html">Lagos</td><td>13 123 000</td></tr>
+<tr><th>6</th><td><a href="/en/cn/population-of-nanyang.html">Nanyang</td><td>12 010 000</td></tr>
+<tr><th>7</th><td><a href="/en/in/population-of-mumbai.html">Mumbai</td><td>11 978 450</td></tr>
+<tr><th>8</th><td><a href="/en/br/population-of-sao-paulo.html">São Paulo</td><td>11 895 893</td></tr>
+<tr><th>9</th><td><a href="/en/ru/population-of-moscow.html">Moscow</td><td>11 514 330</td></tr>
+<tr><th>10</th><td><a href="/en/pk/population-of-karachi.html">Karachi</td><td>11 234 942</td></tr>
+<tr><th>11</th><td><a href="/en/tr/population-of-istanbul.html">Istanbul</td><td>10 895 257</td></tr>
+<tr><th>12</th><td><a href="/en/cn/population-of-baoding.html">Baoding</td><td>10 700 000</td></tr>
+<tr><th>13</th><td><a href="/en/cn/population-of-harbin.html">Harbin</td><td>10 635 971</td></tr>
+<tr><th>14</th><td><a href="/en/cn/population-of-shenzhen.html">Shenzhen</td><td>10 357 938</td></tr>
+<tr><th>15</th><td><a href="/en/cn/population-of-wuhan.html">Wuhan</td><td>10 220 000</td></tr>
+<tr><th>16</th><td><a href="/en/id/population-of-jakarta.html">Jakarta</td><td>10 135 030</td></tr>
+<tr><th>17</th><td><a href="/en/cd/population-of-kinshasa.html">Kinshasa</td><td>10 076 099</td></tr>
+<tr><th>18</th><td><a href="/en/kr/population-of-seoul.html">Seoul</td><td>10 063 197</td></tr>
+<tr><th>19</th><td><a href="/en/cn/population-of-guangzhou.html">Guangzhou</td><td>10 000 000</td></tr>
+<tr><th>20</th><td><a href="/en/in/population-of-delhi.html">Delhi</td><td>9 879 172</td></tr>
+<tr><th>21</th><td><a href="/en/cn/population-of-shijiazhuang.html">Shijiazhuang</td><td>9 600 000</td></tr>
+<tr><th>22</th><td><a href="/en/cn/population-of-xuzhou.html">Xuzhou</td><td>9 468 000</td></tr>
+<tr><th>23</th><td><a href="/en/jp/population-of-tokyo.html">Tokyo</td><td>8 967 665</td></tr>
+<tr><th>24</th><td><a href="/en/bd/population-of-dhaka.html">Dhaka</td><td>8 906 039</td></tr>
+<tr><th>25</th><td><a href="/en/mx/population-of-mexico.html">Mexico City</td><td>8 800 000</td></tr>
+<tr><th>26</th><td><a href="/en/cn/population-of-hangzhou.html">Hangzhou</td><td>8 700 000</td></tr>
+<tr><th>27</th><td><a href="/en/cn/population-of-zhengzhou.html">Zhengzhou</td><td>8 626 505</td></tr>
+<tr><th>28</th><td><a href="/en/cn/population-of-weifang.html">Weifang</td><td>8 500 000</td></tr>
+<tr><th>29</th><td><a href="/en/pe/population-of-lima.html">Lima</td><td>8 486 866</td></tr>
+<tr><th>30</th><td><a href="/en/cn/population-of-fuyang.html">Fuyang</td><td>8 360 000</td></tr>
+<tr><th>31</th><td><a href="/en/cn/population-of-ganzhou.html">Ganzhou</td><td>8 300 000</td></tr>
+<tr><th>32</th><td><a href="/en/th/population-of-bangkok.html">Bangkok</td><td>8 280 925</td></tr>
+<tr><th>33</th><td><a href="/en/us/population-of-new-york.html">New York</td><td>8 244 910</td></tr>
+<tr><th>34</th><td><a href="/en/ng/population-of-london.html">London</td><td>8 173 900</td></tr>
+<tr><th>35</th><td><a href="/en/eg/population-of-cairo.html">Cairo</td><td>8 105 071</td></tr>
+<tr><th>36</th><td><a href="/en/cn/population-of-jining.html">Jining</td><td>8 023 000</td></tr>
+<tr><th>37</th><td><a href="/en/co/population-of-bogota.html">Bogota</td><td>7 980 001</td></tr>
+<tr><th>38</th><td><a href="/en/vn/population-of-ho-chi-minh-city.html">Ho Chi Minh City</td><td>7 955 000</td></tr>
+<tr><th>39</th><td><a href="/en/ir/population-of-tehran.html">Tehran</td><td>7 797 520</td></tr>
+<tr><th>40</th><td><a href="/en/cn/population-of-shenyang.html">Shenyang</td><td>7 760 000</td></tr>
+<tr><th>41</th><td><a href="/en/cn/population-of-zhumadian.html">Zhumadian</td><td>7 640 000</td></tr>
+<tr><th>42</th><td><a href="/en/mm/population-of-rangoon.html">Rangoon</td><td>7 360 703</td></tr>
+<tr><th>43</th><td><a href="/en/cn/population-of-xian.html">Xi'an</td><td>7 270 000</td></tr>
+<tr><th>44</th><td><a href="/en/cn/population-of-hong-kong.html">Hong Kong</td><td>7 182 724</td></tr>
+<tr><th>45</th><td><a href="/en/cn/population-of-chengdu.html">Chengdu</td><td>7 123 000</td></tr>
+<tr><th>46</th><td><a href="/en/cn/population-of-tangshan.html">Tangshan</td><td>7 100 000</td></tr>
+<tr><th>47</th><td><a href="/en/iq/population-of-baghdad.html">Baghdad</td><td>7 055 200</td></tr>
+<tr><th>48</th><td><a href="/en/cn/population-of-shangqiu.html">Shanqiu</td><td>7 000 000</td></tr>
+<tr><th>49</th><td><a href="/en/cn/population-of-zhanjiang.html">Zhanjiang</td><td>6 900 000</td></tr>
+<tr><th>50</th><td><a href="/en/cn/population-of-zunyi.html">Tsunyi</td><td>6 838 000</td></tr>
 
 					</tbody>
 				  </table>
@@ -213,7 +212,7 @@ echo $bodydown;
 						<p class="lang">Other Languages</p>
 						<ul class="language-menu-list">
 							<li>
-								<a href="https://all-populations.com/ru/list-of-cities-by-population.html" title="Список городов по численности населения">
+								<a href="../ru/list-of-cities-by-population.php" title="Список городов по численности населения">
 									Список городов по населению
 								</a>
 							</li>
