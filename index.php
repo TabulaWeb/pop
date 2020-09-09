@@ -83,8 +83,9 @@ echo $headdown;
 		} elseif (ltrim($_SERVER['REQUEST_URI'], "/") == "$href_rate_city") {
 			foreach($libcountry as $value){
 			if(ltrim($_SERVER['REQUEST_URI'], "/") == $value["rate_city_country"]){
+				$name_country =  $value["name_country_ru"];
 				$href_rate_city =  $value["rate_city_country"];
-				print "Узнайте численность населения стран мира на $year год";
+				print "Самые крупные города $name_country по численности населения";
 			}
 		}
 		}
@@ -113,8 +114,9 @@ echo $headdown;
 		} elseif (ltrim($_SERVER['REQUEST_URI'], "/") == "$href_rate_city") {
 			foreach($libcountry as $value){
 			if(ltrim($_SERVER['REQUEST_URI'], "/") == $value["rate_city_country"]){
+				$name_country =  $value["name_country_ru"];
 				$href_rate_city =  $value["rate_city_country"];
-				print "Рейтинг городов $name_country по численности населения на 2020 год. Узнайте список самых крупных городов  $name_country";
+				print "Рейтинг городов $name_country по численности населения на 2020 год. Узнайте список самых крупных городов $name_country";
 			}
 		}
 		}
@@ -257,7 +259,7 @@ echo $bodydown;
 						
 						<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
 							<div class="count" style="float:none!important;">
-							<a href="/en/population-of-earth.html">
+							<a href="/en/population-of-earth.php">
 								<i class="fa fa-globe" aria-hidden="true" style="font-size: 200px"></i>
 								<span class="date">World population / EN</span>
 							</a>
