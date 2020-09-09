@@ -43,23 +43,23 @@ echo $headdown;
 	<!-- TITLE -->
 	<title> 
 	<?php
-		if (urldecode($_SERVER['REQUEST_URI']) != "/"){
+		if ($server_link != "/"){
 			foreach(${"lib" . $countryISO[1]} as $value){
-				if (ltrim(urldecode($_SERVER['REQUEST_URI']), "/") == $value["name_href"] . $end_link){
+				if (ltrim($server_link, "/") == $value["name_href"] . $end_link){
 					$href_city = $value["name_href"] . $end_link;
 				}
 			}
 		}
 
 		foreach($libcountry as $value){
-			if(ltrim(urldecode($_SERVER['REQUEST_URI']), "/") == $value["name_country_href"] . $end_link){
+			if(ltrim($server_link, "/") == $value["name_country_href"] . $end_link){
 				$name_country = $value["name_country_ru"];
 				$href_country = $value["name_country_href"] . $end_link;
 			}
 		}
 	
 		foreach($libcountry as $value){
-			if(ltrim(urldecode($_SERVER['REQUEST_URI']), "/") == $value["rate_city_country"] . $end_link){
+			if(ltrim($server_link, "/") == $value["rate_city_country"] . $end_link){
 				$href_rate_city =  $value["rate_city_country"] . $end_link;
 			}
 		}
@@ -67,24 +67,24 @@ echo $headdown;
 
 		if($_SERVER['REQUEST_URI'] == "/"){
 			print("Текущая статистика численности населения: мира, стран, городов");
-		} elseif (ltrim(urldecode($_SERVER['REQUEST_URI']), "/") == "$href_city"){
+		} elseif (ltrim($server_link, "/") == "$href_city"){
 			foreach(${"lib" . $countryISO[1]} as $value){
-			if (ltrim(urldecode($_SERVER['REQUEST_URI']), "/") == $value["name_href"] . $end_link){
+			if (ltrim($server_link, "/") == $value["name_href"] . $end_link){
 				$name_city = $value["name_ru"];
 				print("Население города $name_city. Узнайте сколько людей живет в $name_city");
 			}
 		}	
 		unset($value);
-		} elseif (ltrim(urldecode($_SERVER['REQUEST_URI']), "/") == "$href_country") {
+		} elseif (ltrim($server_link, "/") == "$href_country") {
 			foreach($libcountry as $value){
-			if(ltrim(urldecode($_SERVER['REQUEST_URI']), "/") == $value["name_country_href"] . $end_link){
+			if(ltrim($server_link, "/") == $value["name_country_href"] . $end_link){
 				$name_country =  $value["name_country_ru"];
 				print "Население $name_country. Узнайте сколько людей живет в $name_country";
 			}
 		}
-		} elseif (ltrim(urldecode($_SERVER['REQUEST_URI']), "/") == "$href_rate_city") {
+		} elseif (ltrim($server_link, "/") == "$href_rate_city") {
 			foreach($libcountry as $value){
-			if(ltrim(urldecode($_SERVER['REQUEST_URI']), "/") == $value["rate_city_country"] . $end_link){
+			if(ltrim($server_link, "/") == $value["rate_city_country"] . $end_link){
 				$name_country =  $value["name_country_ru"];
 				$href_rate_city =  $value["rate_city_country"];
 				print "Самые крупные города $name_country по численности населения";

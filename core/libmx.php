@@ -37,7 +37,6 @@ $libmx = array (
 "32"=>array("name_ru"=>"Тлакотепек","name_en"=>"Tlacotepec","name_href" =>"mx/population-of-tlacotepec","count" =>"5 087","real_id" =>32,),
 "33"=>array("name_ru"=>"Кальнали","name_en"=>"Calnali","name_href" =>"mx/population-of-calnali","count" =>"4 147","real_id" =>33,),
 "34"=>array("name_ru"=>"Гуанасеви","name_en"=>"Guanacevi","name_href" =>"mx/population-of-guanacevi","count" =>"2 087","real_id" =>34,),
-"35"=>array("name_ru"=>"Мехико","name_en"=>"Mexico","name_href" =>"mx/population-of-mexico","count" =>"8 800 000","real_id" =>35,),
 "36"=>array("name_ru"=>"Гвадалахара","name_en"=>"Guadalajara","name_href" =>"mx/population-of-guadalajara","count" =>"1 494 134","real_id" =>36,),
 "37"=>array("name_ru"=>"Леон","name_en"=>"Leon","name_href" =>"mx/population-of-leon","count" =>"1 238 962","real_id" =>37,),
 "38"=>array("name_ru"=>"Сан-Луис-Потоси","name_en"=>"San Luis Potosi","name_href" =>"mx/population-of-san-luis-potosi","count" =>"1 085 000","real_id" =>38,),
