@@ -69,7 +69,7 @@ function rightMenuRu($menu, $id="", $op='"') {
 	for ($i = $real; $i <= $id; $i++) 
   { 
     echo "<li>
-			<a itemprop=".$op."url".$op." href=".$op."/{$menu[$i]['name_href']}".$op.">
+			<a itemprop=".$op."url".$op." href=".$op."/{$menu[$i]['name_href']}.html".$op.">
 				<span itemprop=".$op."name".$op.">Население {$menu[$i]['name_ru']}</span>
 			</a>
 		 </li>"; 
@@ -140,7 +140,7 @@ function getCountryRealId($menu, $id=""){
    { 
 	echo " <tr>
 			<th>{$menu[$i]['real_id']}</th>
-			<td><a href=".$op."../{$menu[$i]['name_href']}".$op.">{$menu[$i]['name_ru']}</a></td>
+			<td><a href=".$op."../{$menu[$i]['name_href']}.html".$op.">{$menu[$i]['name_ru']}</a></td>
 			<td>{$menu[$i]['count']}</td>
 		   </tr>";
   } 
