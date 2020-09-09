@@ -52,9 +52,9 @@ echo $headdown;
 		}
 
 		foreach($libcountry as $value){
-			if(ltrim($_SERVER['REQUEST_URI'], "/") == $value["name_country_href"]){
+			if(ltrim($_SERVER['REQUEST_URI'], "/") == $value["name_country_href"] . $end_link){
 				$name_country = $value["name_country_ru"];
-				$href_country = $value["name_country_href"];
+				$href_country = $value["name_country_href"] . $end_link;
 			}
 		}
 	
@@ -78,7 +78,7 @@ echo $headdown;
 		unset($value);
 		} elseif (ltrim($_SERVER['REQUEST_URI'], "/") == "$href_country") {
 			foreach($libcountry as $value){
-			if(ltrim($_SERVER['REQUEST_URI'], "/") == $value["name_country_href"]){
+			if(ltrim($_SERVER['REQUEST_URI'], "/") == $value["name_country_href"] . $end_link){
 				$name_country =  $value["name_country_ru"];
 				print "Население $name_country. Узнайте сколько людей живет в $name_country";
 			}
@@ -109,7 +109,7 @@ echo $headdown;
 		unset($value);
 		} elseif (ltrim($_SERVER['REQUEST_URI'], "/") == "$href_country") {
 			foreach($libcountry as $value){
-			if(ltrim($_SERVER['REQUEST_URI'], "/") == $value["name_country_href"]){
+			if(ltrim($_SERVER['REQUEST_URI'], "/") == $value["name_country_href"] . $end_link){
 				$name_country =  $value["name_country_ru"];
 				print "Актуальные данные о численности населения $name_country на $year год. Узнайте сколько человек проживает в стране.";
 			}
@@ -201,11 +201,11 @@ echo $bodydown;
 
 // print ltrim($_SERVER['REQUEST_URI'], "/");
 
-// if ($_SERVER['REQUEST_URI'] != "/"){
-// 	foreach(${"lib" . $countryISO[1]} as $value){
-// 		if (ltrim($_SERVER['REQUEST_URI'], "/") == $value["name_href"] . $end_link){
-// 			$href_city = $value["name_href"] . $end_link;
-// 			print "$href_city";
+// if (ltrim($_SERVER['REQUEST_URI'], "/") == "$href_country"){
+// 	foreach($libcountry as $value){
+// 		if(ltrim($_SERVER['REQUEST_URI'], "/") == $value["name_country_href"] . $end_link){
+// 			$href_country = $value["name_country_href"] . $end_link;
+// 			print $href_country;
 // 		}
 // 	}
 // }
@@ -301,27 +301,27 @@ echo $bodydown;
 						</a>
 						<ul class="child-menu-list">
 							<li>
-								<a itemprop="url" href="cn/population-of-china" title="Population of China">
+								<a itemprop="url" href="cn/population-of-china.html" title="Population of China">
 									<span itemprop="name">Население Китая</span>
 								</a>
 							</li>
 							<li>
-								<a itemprop="url" href="in/population-of-india" title="Population of India">
+								<a itemprop="url" href="in/population-of-india.html" title="Population of India">
 									<span itemprop="name">Население Индии</span>
 								</a>
 							</li>
 							<li>
-								<a itemprop="url" href="us/population-of-usa" title="Population of USA">
+								<a itemprop="url" href="us/population-of-usa.html" title="Population of USA">
 									<span itemprop="name">Население США</span>
 								</a>
 							</li>
 							<li>
-								<a itemprop="url" href="id/population-of-indonesia" title="Population of Indonesia">
+								<a itemprop="url" href="id/population-of-indonesia.html" title="Population of Indonesia">
 									<span itemprop="name">Население Индонезии</span>
 								</a>
 							</li>
 							<li>
-								<a itemprop="url" href="pk/population-of-pakistan" title="Population of Pakistan">
+								<a itemprop="url" href="pk/population-of-pakistan.html" title="Population of Pakistan">
 									<span itemprop="name">Население Пакистана</span>
 								</a>
 							</li>
