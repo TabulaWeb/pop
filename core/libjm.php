@@ -36,7 +36,6 @@ $libjm = array (
 "33"=>array("name_ru"=>"Лайонел-Таун","name_en"=>"Lionel Town","name_href" => "jm/population-of-lionel-town","count" => "4 669","real_id" =>33,),
 "34"=>array("name_ru"=>"Блэк-Ривер","name_en"=>"Black River","name_href" => "jm/population-of-black-river","count" => "3 675","real_id" =>34,),
 "35"=>array("name_ru"=>"Порт-Роял","name_en"=>"Port Royal","name_href" => "jm/population-of-port-royal","count" => "3 004","real_id" =>35,),
-"36"=>array("name_ru"=>"Кингстон","name_en"=>"kingston","name_href" => "jm/population-of-kingston","count" => "587 798","real_id" =>36,),
 "37"=>array("name_ru"=>"Монтего-Бей","name_en"=>"Montego Bay","name_href" => "jm/population-of-montego-bay","count" => "96 488","real_id" =>37,),
 "38"=>array("name_ru"=>"Спаниш-Таун","name_en"=>"Spanish Town","name_href" => "jm/population-of-spanish-town","count" => "92 383","real_id" =>38,),
 "39"=>array("name_ru"=>"Портмор","name_en"=>"Portmore","name_href" => "jm/population-of-portmore","count" => "90 138","real_id" =>39,),
