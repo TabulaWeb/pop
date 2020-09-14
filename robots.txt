@@ -1,0 +1,14 @@
+User-Agent: *
+Disallow: /core/
+Disallow: /ru/inc/
+Disallow: *?
+Disallow: /en/inc/
+
+User-Agent: Yandex
+Disallow: /core/
+Disallow: *?
+Disallow: /ru/inc/
+Disallow: /en/inc/
+
+Host: https://all-populations.com
+Sitemap: https://all-populations.com/sitemap.xml
