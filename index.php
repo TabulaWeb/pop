@@ -348,7 +348,7 @@ echo $headdown;
 	
 	'>
 	
-	<link rel='shortcut icon' href='favicon.ico' type='image/x-icon'>
+	<link rel='shortcut icon' href='/favicon.ico' type='image/x-icon'>
 
     <link href='/assets/css/bootstrap.css' rel='stylesheet'>
     <link href='/assets/css/font-awesome.min.css' rel='stylesheet'>

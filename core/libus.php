@@ -1562,7 +1562,7 @@ $libus = array (
 "1559"=>array("name_ru"=>"Гротон","name_en"=>"Groton","name_href" => "us/population-of-groton","count" => "1 001","real_id" =>1559,),
 "1560"=>array("name_ru"=>"Де Пере","name_en"=>"De Pere","name_href" => "us/population-of-de-pere","count" => "238","real_id" =>1560,),
 "1561"=>array("name_ru"=>"Ривер Фолс","name_en"=>"River Falls","name_href" => "us/population-of-river-falls","count" => "15","real_id" =>1561,),
-"1562"=>array("name_ru"=>"Нью-Йорк","name_en"=>"New York","name_href" => "us/population-of-new-york","count" => "8 244 910","real_id" =>1562,),
+// "1562"=>array("name_ru"=>"Нью-Йорк","name_en"=>"New York","name_href" => "us/population-of-new-york","count" => "8 244 910","real_id" =>1562,),
 "1563"=>array("name_ru"=>"Лос Анджелес","name_en"=>"Los Angeles","name_href" => "us/population-of-los-angeles","count" => "3 884 307","real_id" =>1563,),
 "1564"=>array("name_ru"=>"Чикаго","name_en"=>"Chicago","name_href" => "us/population-of-chicago","count" => "2 695 598","real_id" =>1564,),
 "1565"=>array("name_ru"=>"Хьюстон","name_en"=>"Houston","name_href" => "us/population-of-houston","count" => "2 195 914","real_id" =>1565,),
