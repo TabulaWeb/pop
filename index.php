@@ -64,12 +64,15 @@ echo $headdown;
 		if ($countryISO[1] == "en") {
 			
 			$start_link = "en/";
-			foreach(${"lib" . $countryISO[2]} as $value){
-				if (ltrim($server_link, "/") == $start_link . $value["name_href"] . $end_link){
-					$href_city_en = $start_link . $value["name_href"] . $end_link;
-					$name_city_en = $value["name_en"];
+			if ($countryISO[2] != "gb"){
+				foreach(${"lib" . $countryISO[2]} as $value){
+					if (ltrim($server_link, "/") == $start_link . $value["name_href"] . $end_link){
+						$href_city_en = $start_link . $value["name_href"] . $end_link;
+						$name_city_en = $value["name_en"];
+					}
 				}
-			}
+			} 
+			
 
 			foreach($libcountry as $value){
 				if(ltrim($server_link, "/") == $start_link . $value["name_country_href"] . $end_link){
@@ -119,7 +122,7 @@ echo $headdown;
 
 
 		} else {
-		if ($server_link != "/"){
+		if ($server_link != ("/" || "/gb/population-of-united-kingdom")){
 			foreach(${"lib" . $countryISO[1]} as $value){
 				if (ltrim($server_link, "/") == $value["name_href"] . $end_link){
 					$href_city = $value["name_href"] . $end_link;
@@ -176,12 +179,15 @@ echo $headdown;
 
 		if ($countryISO[1] == "en"){
 			$start_link = "en/";
-			foreach(${"lib" . $countryISO[2]} as $value){
-				if (ltrim($server_link, "/") == $start_link . $value["name_href"] . $end_link){
-					$href_city_en = $start_link . $value["name_href"] . $end_link;
-					$name_city_en = $value["name_en"];
+			if ($countryISO[2] != "gb"){
+				foreach(${"lib" . $countryISO[2]} as $value){
+					if (ltrim($server_link, "/") == $start_link . $value["name_href"] . $end_link){
+						$href_city_en = $start_link . $value["name_href"] . $end_link;
+						$name_city_en = $value["name_en"];
+					}
 				}
 			}
+			
 
 			foreach($libcountry as $value){
 				if(ltrim($server_link, "/") == $start_link . $value["name_country_href"] . $end_link){
@@ -260,10 +266,12 @@ echo $headdown;
 
 		if ($countryISO[1] == "en"){
 			$start_link = "en/";
-			foreach(${"lib" . $countryISO[2]} as $value){
-				if (ltrim($server_link, "/") == $start_link . $value["name_href"] . $end_link){
-					$href_city_en = $start_link . $value["name_href"] . $end_link;
-					$name_city_en = $value["name_en"];
+			if ($countryISO[2] != "gb") {
+				foreach(${"lib" . $countryISO[2]} as $value){
+					if (ltrim($server_link, "/") == $start_link . $value["name_href"] . $end_link){
+						$href_city_en = $start_link . $value["name_href"] . $end_link;
+						$name_city_en = $value["name_en"];
+					}
 				}
 			}
 
