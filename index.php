@@ -122,13 +122,13 @@ echo $headdown;
 
 
 		} else {
-		if ($server_link != ("/" || "/gb/population-of-united-kingdom")){
+		if ($server_link != ("/")){
 			foreach(${"lib" . $countryISO[1]} as $value){
 				if (ltrim($server_link, "/") == $value["name_href"] . $end_link){
 					$href_city = $value["name_href"] . $end_link;
 				}
 			}
-		}
+		} 
 
 		foreach($libcountry as $value){
 			if(ltrim($server_link, "/") == $value["name_country_href"] . $end_link){
@@ -179,7 +179,7 @@ echo $headdown;
 
 		if ($countryISO[1] == "en"){
 			$start_link = "en/";
-			if ($countryISO[2] != "gb"){
+			if ($countryISO[1] != "gb"){
 				foreach(${"lib" . $countryISO[2]} as $value){
 					if (ltrim($server_link, "/") == $start_link . $value["name_href"] . $end_link){
 						$href_city_en = $start_link . $value["name_href"] . $end_link;
@@ -266,7 +266,7 @@ echo $headdown;
 
 		if ($countryISO[1] == "en"){
 			$start_link = "en/";
-			if ($countryISO[2] != "gb") {
+			if ($countryISO[1] != "gb") {
 				foreach(${"lib" . $countryISO[2]} as $value){
 					if (ltrim($server_link, "/") == $start_link . $value["name_href"] . $end_link){
 						$href_city_en = $start_link . $value["name_href"] . $end_link;
@@ -508,7 +508,7 @@ echo $bodydown;
 			?>
 				<ul class="parent-menu-list">
 					<li>
-						<a itemprop="url" href="ru/list-of-countries-by-population.php" title="List of countries by population">
+						<a itemprop="url" href="ru/list-of-countries-by-population.html" title="List of countries by population">
 							<span itemprop="name">Список стран по численности населения</span>
 						</a>
 						<ul class="child-menu-list">
@@ -649,7 +649,7 @@ echo $bodydown;
 				<div id='breadcrumbs-inner'>
 					<ul itemscope='' itemtype='http://schema.org/BreadcrumbList'>
 						<li itemscope='' itemprop='itemListElement' itemtype='http://schema.org/ListItem'>
-							<a href='/ru/population-of-earth.php' itemprop='item'>
+							<a href='/ru/population-of-earth.html' itemprop='item'>
 								<span itemprop='name'>Население Земли</span>
 							</a>
 						</li>
@@ -990,7 +990,7 @@ echo $bodydown;
 				<div id='breadcrumbs-inner'>
 					<ul itemscope='' itemtype='http://schema.org/BreadcrumbList'>
 						<li itemscope='' itemprop='itemListElement' itemtype='http://schema.org/ListItem'>
-							<a href='/ru/population-of-earth.php' itemprop='item'>
+							<a href='/ru/population-of-earth.html' itemprop='item'>
 								<span itemprop='name'>Население Земли</span>
 							</a>
 						</li>
@@ -1323,10 +1323,10 @@ echo $bodydown;
         </div>
         <div class='navbar-collapse collapse'>
           <ul class='nav navbar-nav navbar-left'>
-            <li itemprop='name'><a itemprop='url' href='/ru/list-of-countries-by-population.php'>Страны</a></li>
-            <li itemprop='name'><a itemprop='url' href='/ru/list-of-kingdoms-by-population.php'>Королевства</a></li>
-            <li itemprop='name'><a itemprop='url' href='/ru/list-of-republics-by-population.php'>Республики</a></li>
-            <li itemprop='name'><a itemprop='url' href='/ru/list-of-cities-by-population.php'>Города</a></li>
+            <li itemprop='name'><a itemprop='url' href='/ru/list-of-countries-by-population.html'>Страны</a></li>
+            <li itemprop='name'><a itemprop='url' href='/ru/list-of-kingdoms-by-population.html'>Королевства</a></li>
+            <li itemprop='name'><a itemprop='url' href='/ru/list-of-republics-by-population.html'>Республики</a></li>
+            <li itemprop='name'><a itemprop='url' href='/ru/list-of-cities-by-population.html'>Города</a></li>
           </ul>
         </div>
       </div>
@@ -1655,10 +1655,10 @@ echo $bodydown;
         </div>
         <div class='navbar-collapse collapse'>
           <ul class='nav navbar-nav navbar-left'>
-            <li itemprop='name'><a itemprop='url' href='/en/list-of-countries-by-population.php'>Countries</a></li>
-            <li itemprop='name'><a itemprop='url' href='/en/list-of-kingdoms-by-population.php'>Kingdomcs</a></li>
-            <li itemprop='name'><a itemprop='url' href='/en/list-of-republics-by-population.php'>Republics</a></li>
-            <li itemprop='name'><a itemprop='url' href='/en/list-of-cities-by-population.php'>Cities</a></li>
+            <li itemprop='name'><a itemprop='url' href='/en/list-of-countries-by-population.html'>Countries</a></li>
+            <li itemprop='name'><a itemprop='url' href='/en/list-of-kingdoms-by-population.html'>Kingdomcs</a></li>
+            <li itemprop='name'><a itemprop='url' href='/en/list-of-republics-by-population.html'>Republics</a></li>
+            <li itemprop='name'><a itemprop='url' href='/en/list-of-cities-by-population.html'>Cities</a></li>
           </ul>
         </div>
       </div>
@@ -1677,7 +1677,7 @@ echo $bodydown;
 				<div id='breadcrumbs-inner'>
 					<ul itemscope='' itemtype='http://schema.org/BreadcrumbList'>
 						<li itemscope='' itemprop='itemListElement' itemtype='http://schema.org/ListItem'>
-							<a href='/en/population-of-earth.php' itemprop='item'>
+							<a href='/en/population-of-earth.html' itemprop='item'>
 								<span itemprop='name'>Population of Earth</span>
 							</a>
 						</li>
@@ -1976,7 +1976,7 @@ echo $bodydown;
 				<div id='breadcrumbs-inner'>
 					<ul itemscope='' itemtype='http://schema.org/BreadcrumbList'>
 						<li itemscope='' itemprop='itemListElement' itemtype='http://schema.org/ListItem'>
-							<a href='/en/population-of-earth.php' itemprop='item'>
+							<a href='/en/population-of-earth.html' itemprop='item'>
 								<span itemprop='name'>Population of Earth</span>
 							</a>
 						</li>
