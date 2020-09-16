@@ -18,10 +18,16 @@ include 'core/function.php';
 if ($_SERVER['REQUEST_URI'] == "/"){
 	include 'core/libby.php';
 } elseif ( $countryISO[1] == "en" ){
-	include "core/lib$countryISO[2].php";
+	if ($countryISO[2] == "gb") {
+		include "core/libeng.php";
+	} else {
+		include "core/lib$countryISO[2].php";
+	}
+} elseif ( $countryISO[1] == "gb") {
+	include "core/libeng.php";
 } else {
 	include "core/lib$countryISO[1].php";
-} 
+}
 include 'core/libcountry.php';
 ?>
 
@@ -1123,31 +1129,49 @@ echo $bodydown;
 				<ul class='parent-menu-list'>
 					<li>
 						<a itemprop='url' href='/<?php
-								foreach($libcountry as $value){
-									if ($countryISO[1] == $value["country_iso"]){
-										print($value["rate_city_country"] . $end_link);
+								if ( $countryISO[1] == "gb" ){
+									print("eng/list-of-cities-in-england-by-population.html");
+								} else {
+									foreach($libcountry as $value){
+										if ($countryISO[1] == $value["country_iso"]){
+											print($value["rate_city_country"] . $end_link);
+										}
 									}
+									unset($value);
 								}
-								unset($value);
 								?>' title='Список городов <?php
-								foreach($libcountry as $value){
-									if ($countryISO[1] == $value["country_iso"]){
-										print($value["name_country_ru_zz"]);
+								if ( $countryISO[1] == "gb" ){
+									print("Англии");
+								} else {
+									foreach($libcountry as $value){
+										if ($countryISO[1] == $value["country_iso"]){
+											print($value["name_country_ru_zz"]);
+										}
 									}
+									unset($value);
 								}
-								unset($value);
 								?> по населению'>
 							<span itemprop='name'>Список городов <?php
-								foreach($libcountry as $value){
-									if ($countryISO[1] == $value["country_iso"]){
-										print($value["name_country_ru_zz"]);
+								if ( $countryISO[1] == "gb" ){
+									print("Англии");
+								} else {
+									foreach($libcountry as $value){
+										if ($countryISO[1] == $value["country_iso"]){
+											print($value["name_country_ru_zz"]);
+										}
 									}
+									unset($value);
 								}
-								unset($value);
 								?> по населению</span>
 						</a>
 						<ul class='child-menu-list'>
-							<?php rightMenuRu(${"lib" . $countryISO[1]},15);?>
+							<?php
+							if ( $countryISO[1] == "gb" ){
+								rightMenuRu($libeng,15);
+							} else {
+								rightMenuRu(${"lib" . $countryISO[1]},15);
+							}
+							?>
 						</ul>
 					</li>
 				</ul>
@@ -1562,6 +1586,27 @@ echo $bodydown;
 		// ENG_VERSION
 
 		if ($countryISO[1] == "en"){
+			if ($countryISO[2] == "gb"){
+				foreach($libeng as $value){
+					if (ltrim($server_link, "/") == $start_link . $value["name_href"] . $end_link){
+						$href_city_en = $start_link . $value["name_href"] . $end_link;
+						$name_city_en = $value["name_en"];
+					}
+				}
+	
+				foreach($libcountry as $value){
+					if(ltrim($server_link, "/") == $start_link . $value["name_country_href"] . $end_link){
+						$name_country_en = $value["name_country_en"];
+						$href_country_en = $start_link . $value["name_country_href"] . $end_link;
+					}
+				}
+	
+				foreach($libcountry as $value){
+					if(ltrim($server_link, "/") == $start_link . $value["rate_city_country"] . $end_link){
+						$href_rate_city_en = $start_link . $value["rate_city_country"] . $end_link;
+					}
+				}
+			} else {
 			$start_link = "en/";
 			foreach(${"lib" . $countryISO[2]} as $value){
 				if (ltrim($server_link, "/") == $start_link . $value["name_href"] . $end_link){
@@ -1582,8 +1627,7 @@ echo $bodydown;
 					$href_rate_city_en = $start_link . $value["rate_city_country"] . $end_link;
 				}
 			}
-
-
+			}		
 
 		}
 
@@ -2050,12 +2094,16 @@ echo $bodydown;
 				<ul class='parent-menu-list'>
 					<li>
 						<a itemprop='url' href='/en/<?php
-								foreach($libcountry as $value){
-									if ($countryISO[2] == $value["country_iso"]){
-										print($value["rate_city_country"]);
+								if ($countryISO[2] == "gb") {
+									print("eng/list-of-cities-in-england-by-population");
+								} else {
+									foreach($libcountry as $value){
+										if ($countryISO[2] == $value["country_iso"]){
+											print($value["rate_city_country"]);
+										}
 									}
+									unset($value);
 								}
-								unset($value);
 								?>.html' title='List of cities in <?php
 								foreach($libcountry as $value){
 									if ($countryISO[2] == $value["country_iso"]){
@@ -2065,16 +2113,26 @@ echo $bodydown;
 								unset($value);
 								?> by population'>
 							<span itemprop='name'>List of cities in <?php
-								foreach($libcountry as $value){
-									if ($countryISO[2] == $value["country_iso"]){
-										print($value["name_country_en"]);
+								if ($countryISO[2] == "gb"){
+									print ("England");
+								} else {
+									foreach($libcountry as $value){
+										if ($countryISO[2] == $value["country_iso"]){
+											print($value["name_country_en"]);
+										}
 									}
+									unset($value);
 								}
-								unset($value);
 								?> by population</span>
 						</a>
 						<ul class='child-menu-list'>
-						<?php rightMenuEnF(${"lib" . $countryISO[2]},15);?>
+						<?php
+						if ($countryISO[2] == "gb"){
+							rightMenuEnF($libeng, 15);
+						} else {
+							rightMenuEnF(${"lib" . $countryISO[2]},15);
+						}
+						?>
 						</ul>
 					</li>
 				</ul>
