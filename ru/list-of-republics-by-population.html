@@ -2,7 +2,7 @@
 include 'inc/linkadd.php';
 include 'inc/config.php';
 include '../core/function.php';
-include '../core/libkingdom.php';
+include '../core/librepublic.php';
 echo $doctypeup;
 ?>
 
@@ -26,9 +26,9 @@ echo $headdown;
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	
 	
-	<title>Список королевств по населению <?php echo $year?></title>
-	<meta name="description" content="Список всех королевств по численности населения на <?php echo $year?>.">
-	<meta name="keywords" content="Список королевств по населению">
+	<title>Список республик по населению <?php echo $year?></title>
+	<meta name="description" content="Список всех республик по численности населения на <?php echo $year?>.">
+	<meta name="keywords" content="Список республик по населению">
 	
 	<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
 
@@ -71,10 +71,10 @@ echo $bodydown;
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-left">
-            <li itemprop="name"><a itemprop="url" href="list-of-countries-by-population.php">Страны</a></li>
-            <li class="active" itemprop="name"><a itemprop="url" href="list-of-kingdoms-by-population.php">Королевства</a></li>
-            <li itemprop="name"><a itemprop="url" href="list-of-republics-by-population.php">Республики</a></li>
-            <li itemprop="name"><a itemprop="url" href="list-of-cities-by-population.php">Города</a></li>
+            <li itemprop="name"><a itemprop="url" href="list-of-countries-by-population.html">Страны</a></li>
+            <li itemprop="name"><a itemprop="url" href="list-of-kingdoms-by-population.html">Королевства</a></li>
+            <li class="active" itemprop="name"><a itemprop="url" href="list-of-republics-by-population.html">Республики</a></li>
+            <li itemprop="name"><a itemprop="url" href="list-of-cities-by-population.html">Города</a></li>
           </ul>
         </div>
       </div>
@@ -96,7 +96,7 @@ echo $bodydown;
 						</li>    
 						<li itemscope="" itemprop="itemListElement" itemtype="http://schema.org/ListItem">
 							<span itemprop="item">
-								<span itemprop="name">Список королевств по населению</span>
+								<span itemprop="name">Список республик по населению</span>
 							</span>
 						</li>      
 					</ul>
@@ -108,25 +108,25 @@ echo $bodydown;
 		
 			<section class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
 				<div class="panel-heading">
-					<h1 itemprop="headline">Список всех королевств по численности населения</h1>
+					<h1 itemprop="headline">Список всех республик по численности населения</h1>
 				</div>
 				
 				<div itemprop="text">
-					<p>Список из 15 королевст по численности населения на <?php echo $year;?> год.</p>
+					<p>Список из 121 республики по численности населения на <?php echo $year;?> год.</p>
 				</div>	
-				  <input class="form-control" id="myInput" type="text" placeholder="Поиск королевства..">
+				  <input class="form-control" id="myInput" type="text" placeholder="Поиск республики..">
 				  <br>
 				  <div class="table-responsive">
 				  <table class="table table-bordered">
 					<thead>
 					  <tr>
 						<th>#</th>
-						<th>Королевство</th>
+						<th>Республика</th>
 						<th>Население</th>
 					  </tr>
 					</thead>
 					<tbody id="myTable">
-					  <?php getTableAllKingdomRu($libkingdom,1);?>
+					  <?php getTableAllRepublicRu($librepublic,1);?>
 					</tbody>
 				  </table>
 				  </div>
@@ -148,15 +148,15 @@ echo $bodydown;
 				<?php 
 			echo $asideup;
 			?>
-				<?php  echo $ads3;?>
+				<?php echo $ads3;?>
 				
 				<ul class="parent-menu-list">
 					<li>
 						<p class="lang">На других языках</p>
 						<ul class="language-menu-list">
 							<li>
-								<a href="../en/list-of-kingdoms-by-population.php" title="List of kingdoms by population">
-									List of kingdoms by population
+								<a href="../en/list-of-republics-by-population.html" title="List of republics by population">
+									List of republics by population
 								</a>
 							</li>
 						</ul>

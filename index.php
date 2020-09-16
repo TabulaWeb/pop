@@ -444,10 +444,10 @@ echo $bodydown;
         </div>
         <div class='navbar-collapse collapse'>
           <ul class='nav navbar-nav navbar-left'>
-            <li itemprop='name'><a itemprop='url' href='../ru/list-of-countries-by-population.php'>Страны</a></li>
-            <li itemprop='name'><a itemprop='url' href='../ru/list-of-kingdoms-by-population.php'>Королевства</a></li>
-            <li itemprop='name'><a itemprop='url' href='../ru/list-of-republics-by-population.php'>Республики</a></li>
-            <li itemprop='name'><a itemprop='url' href='../ru/list-of-cities-by-population.php'>Города</a></li>
+            <li itemprop='name'><a itemprop='url' href='../ru/list-of-countries-by-population.html'>Страны</a></li>
+            <li itemprop='name'><a itemprop='url' href='../ru/list-of-kingdoms-by-population.html'>Королевства</a></li>
+            <li itemprop='name'><a itemprop='url' href='../ru/list-of-republics-by-population.html'>Республики</a></li>
+            <li itemprop='name'><a itemprop='url' href='../ru/list-of-cities-by-population.html'>Города</a></li>
           </ul>
         </div>
       </div>
@@ -478,7 +478,7 @@ echo $bodydown;
 					
 						<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
 							<div class="count" style="float:none!important;">
-							<a href="/ru/population-of-earth.php">
+							<a href="/ru/population-of-earth.html">
 								<i class="fa fa-globe" aria-hidden="true" style="font-size: 200px"></i>
 								<span class="date">Население земли / RU</span>
 							</a>
@@ -487,7 +487,7 @@ echo $bodydown;
 						
 						<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
 							<div class="count" style="float:none!important;">
-							<a href="/en/population-of-earth.php">
+							<a href="/en/population-of-earth.html">
 								<i class="fa fa-globe" aria-hidden="true" style="font-size: 200px"></i>
 								<span class="date">World population / EN</span>
 							</a>
