@@ -266,86 +266,86 @@ echo $headdown;
 	
 	<?php
 
-		if ($countryISO[1] == "en"){
-			$start_link = "en/";
-			if ($countryISO[2] != "gb") {
-				foreach(${"lib" . $countryISO[2]} as $value){
-					if (ltrim($server_link, "/") == $start_link . $value["name_href"] . $end_link){
-						$href_city_en = $start_link . $value["name_href"] . $end_link;
-						$name_city_en = $value["name_en"];
-					}
-				}
-			}
+		// if ($countryISO[1] == "en"){
+		// 	$start_link = "en/";
+		// 	if ($countryISO[2] != "gb") {
+		// 		foreach(${"lib" . $countryISO[2]} as $value){
+		// 			if (ltrim($server_link, "/") == $start_link . $value["name_href"] . $end_link){
+		// 				$href_city_en = $start_link . $value["name_href"] . $end_link;
+		// 				$name_city_en = $value["name_en"];
+		// 			}
+		// 		}
+		// 	}
 
-			foreach($libcountry as $value){
-				if(ltrim($server_link, "/") == $start_link . $value["name_country_href"] . $end_link){
-					$name_country_en = $value["name_country_en"];
-					$href_country_en = $start_link . $value["name_country_href"] . $end_link;
-				}
-			}
+		// 	foreach($libcountry as $value){
+		// 		if(ltrim($server_link, "/") == $start_link . $value["name_country_href"] . $end_link){
+		// 			$name_country_en = $value["name_country_en"];
+		// 			$href_country_en = $start_link . $value["name_country_href"] . $end_link;
+		// 		}
+		// 	}
 
-			foreach($libcountry as $value){
-				if(ltrim($server_link, "/") == $start_link . $value["rate_city_country"] . $end_link){
-					$href_rate_city_en = $start_link . $value["rate_city_country"] . $end_link;
-				}
-			}
+		// 	foreach($libcountry as $value){
+		// 		if(ltrim($server_link, "/") == $start_link . $value["rate_city_country"] . $end_link){
+		// 			$href_rate_city_en = $start_link . $value["rate_city_country"] . $end_link;
+		// 		}
+		// 	}
 
 
 
-			if(ltrim($server_link, "/") == "en/population-of-earth"){
-				print("Текущая статистика численности населения: мира, стран, городов");
-			} elseif (ltrim($server_link, "/") == $href_city_en){
-				foreach(${"lib" . $countryISO[2]} as $value){
-				if (ltrim($server_link, "/") == $start_link . $value["name_href"] . $end_link){
-					$name_city = $value["name_ru"];
-					print("Population of $name_city_en, population of $name_city_en in $year");
-				}
-			}	
-			unset($value);
-			} elseif (ltrim($server_link, "/") == $href_country_en) {
-				foreach($libcountry as $value){
-				if(ltrim($server_link, "/") == $start_link . $value["name_country_href"] . $end_link){
-					$name_country =  $value["name_country_ru"];
-					print "Population of $name_country_en, population of $name_country_en in $year";
-				}
-			}
-			} elseif (ltrim($server_link, "/") == $href_rate_city_en) {
-				foreach($libcountry as $value){
-				if(ltrim($server_link, "/") == $start_link . $value["rate_city_country"] . $end_link){
-					$name_country =  $value["name_country_ru"];
-					$name_country_en = $value["name_country_en"];
-					$href_rate_city =  $value["rate_city_country"];
-					print "List of cities in $name_country_en by population";
-				}
-			}
-			}
-		}else {
-		if(urldecode($_SERVER['REQUEST_URI']) == "/"){
-			print("Здесь вы узнаете сколько людей живет на планете, численность населения каждой страны и каждого города. Рейтинги стран и городов по численности населения.");
-		} elseif (ltrim(urldecode($_SERVER['REQUEST_URI']), "/") == "$href_city"){
-			foreach(${"lib" . $countryISO[1]} as $value){
-			if (ltrim(urldecode($_SERVER['REQUEST_URI']), "/") == $value["name_href"] . $end_link){
-				$name_city = $value["name_ru"];
-				print("Численность населения $name_city, население $name_city на $year год");
-			}
-		}	
-		unset($value);
-		} elseif (ltrim(urldecode($_SERVER['REQUEST_URI']), "/") == "$href_country") {
-			foreach($libcountry as $value){
-			if(ltrim(urldecode($_SERVER['REQUEST_URI']), "/") == $value["name_country_href"] . $end_link){
-				$name_country =  $value["name_country_ru"];
-				print "Численность населения $name_country, население $name_country на $year год";
-			}
-		}
-		} elseif (ltrim(urldecode($_SERVER['REQUEST_URI']), "/") == "$href_rate_city" . $end_link) {
-			foreach($libcountry as $value){
-			if(ltrim(urldecode($_SERVER['REQUEST_URI']), "/") == $value["rate_city_country"] . $end_link){
-				$name_country =  $value["name_country_ru"];
-				print "список городов $name_country по населению";
-			}
-		}
-		}
-		}
+		// 	if(ltrim($server_link, "/") == "en/population-of-earth"){
+		// 		print("Текущая статистика численности населения: мира, стран, городов");
+		// 	} elseif (ltrim($server_link, "/") == $href_city_en){
+		// 		foreach(${"lib" . $countryISO[2]} as $value){
+		// 		if (ltrim($server_link, "/") == $start_link . $value["name_href"] . $end_link){
+		// 			$name_city = $value["name_ru"];
+		// 			print("Population of $name_city_en, population of $name_city_en in $year");
+		// 		}
+		// 	}	
+		// 	unset($value);
+		// 	} elseif (ltrim($server_link, "/") == $href_country_en) {
+		// 		foreach($libcountry as $value){
+		// 		if(ltrim($server_link, "/") == $start_link . $value["name_country_href"] . $end_link){
+		// 			$name_country =  $value["name_country_ru"];
+		// 			print "Population of $name_country_en, population of $name_country_en in $year";
+		// 		}
+		// 	}
+		// 	} elseif (ltrim($server_link, "/") == $href_rate_city_en) {
+		// 		foreach($libcountry as $value){
+		// 		if(ltrim($server_link, "/") == $start_link . $value["rate_city_country"] . $end_link){
+		// 			$name_country =  $value["name_country_ru"];
+		// 			$name_country_en = $value["name_country_en"];
+		// 			$href_rate_city =  $value["rate_city_country"];
+		// 			print "List of cities in $name_country_en by population";
+		// 		}
+		// 	}
+		// 	}
+		// }else {
+		// if(urldecode($_SERVER['REQUEST_URI']) == "/"){
+		// 	print("Здесь вы узнаете сколько людей живет на планете, численность населения каждой страны и каждого города. Рейтинги стран и городов по численности населения.");
+		// } elseif (ltrim(urldecode($_SERVER['REQUEST_URI']), "/") == "$href_city"){
+		// 	foreach(${"lib" . $countryISO[1]} as $value){
+		// 	if (ltrim(urldecode($_SERVER['REQUEST_URI']), "/") == $value["name_href"] . $end_link){
+		// 		$name_city = $value["name_ru"];
+		// 		print("Численность населения $name_city, население $name_city на $year год");
+		// 	}
+		// }	
+		// unset($value);
+		// } elseif (ltrim(urldecode($_SERVER['REQUEST_URI']), "/") == "$href_country") {
+		// 	foreach($libcountry as $value){
+		// 	if(ltrim(urldecode($_SERVER['REQUEST_URI']), "/") == $value["name_country_href"] . $end_link){
+		// 		$name_country =  $value["name_country_ru"];
+		// 		print "Численность населения $name_country, население $name_country на $year год";
+		// 	}
+		// }
+		// } elseif (ltrim(urldecode($_SERVER['REQUEST_URI']), "/") == "$href_rate_city" . $end_link) {
+		// 	foreach($libcountry as $value){
+		// 	if(ltrim(urldecode($_SERVER['REQUEST_URI']), "/") == $value["rate_city_country"] . $end_link){
+		// 		$name_country =  $value["name_country_ru"];
+		// 		print "список городов $name_country по населению";
+		// 	}
+		// }
+		// }
+		// }
 	?>
 	
 	'>
@@ -466,7 +466,6 @@ echo $bodydown;
 				
 				<div itemprop="text">
 					<p>Текущая статистика населения в мире.</p>
-					<h2>Выбрать язык:</h2>
 				</div>
 				
 				<div class="showinfo">
@@ -579,9 +578,6 @@ echo $bodydown;
 			<div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
 				<div class="panel-body">
 					<div class="row">
-						<div class="panel-heading h2">
-							<h2>Недавно интересовались населением:</h2>
-						</div>
 						<div class="last-view col-xs-12 col-sm-6 col-md-6 col-lg-4">
 							<span class="glyphicon glyphicon-exclamation-sign"></span>
 							<p>
@@ -895,9 +891,6 @@ echo $bodydown;
 			<div class='col-xs-12 col-sm-12 col-md-8 col-lg-8'>
 				<div class='panel-body'>
 					<div class='row'>
-						<div class='panel-heading h2'>
-							<h2>Недавно интересовались населением:</h2>
-						</div>
 						<div class='last-view col-xs-12 col-sm-6 col-md-6 col-lg-4'>
 							<span class='glyphicon glyphicon-exclamation-sign'></span>
 							<p>
@@ -1231,9 +1224,6 @@ echo $bodydown;
 			<div class='col-xs-12 col-sm-12 col-md-8 col-lg-8'>
 				<div class='panel-body'>
 					<div class='row'>
-						<div class='panel-heading h2'>
-							<h2>Недавно интересовались населением:</h2>
-						</div>
 						<div class='last-view col-xs-12 col-sm-6 col-md-6 col-lg-4'>
 							<span class='glyphicon glyphicon-exclamation-sign'></span>
 							<p>
@@ -1566,9 +1556,6 @@ echo $bodydown;
 			<div class='col-xs-12 col-sm-12 col-md-8 col-lg-8'>
 				<div class='panel-body'>
 					<div class='row'>
-						<div class='panel-heading h2'>
-							<h2>Недавно интересовались населением:</h2>
-						</div>
 						<div class='last-view col-xs-12 col-sm-6 col-md-6 col-lg-4'>
 							<span class='glyphicon glyphicon-exclamation-sign'></span>
 							<p>
