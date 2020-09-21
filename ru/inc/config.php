@@ -20,16 +20,16 @@ if ($m1==11) {$month = "Ноябрь ";}
 if ($m1==12) {$month = "Декабрь ";}
 //$year = "2020 2019";
 //$month = "Январь ";
-$scripttable ='				<script>
+$scripttable ="				<script>
 				$(document).ready(function(){
-				  $("#myInput").on("keyup", function() {
+				  $('#myInput').on('keyup', function() {
 					var value = $(this).val().toLowerCase();
-					$("#myTable tr").filter(function() {
+					$('#myTable tr').filter(function() {
 					  $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
 					});
 				  });
 				});
-				</script>';
+				</script>";
 ##################################################################
 // ПОДКЛЮЧАЮ Скрипт недавно интересовались населением - рандомные 12 страниц
 // include 'linkadd.php';

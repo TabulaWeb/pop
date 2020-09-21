@@ -354,7 +354,10 @@ echo $headdown;
 
     <link href='/assets/css/bootstrap.css' rel='stylesheet'>
     <link href='/assets/css/font-awesome.min.css' rel='stylesheet'>
-    <link href='/assets/css/main.css' rel='stylesheet'>
+	<link href='/assets/css/main.css' rel='stylesheet'>
+	
+	<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+	<script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js'></script>
  
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -3353,7 +3356,7 @@ echo $bodydown;
 		</footer>
 	
     <script src='https://code.jquery.com/jquery-1.10.2.min.js'></script>
-    <script async src='https://all-populations.com/assets/js/bootstrap.min.js'></script>
+    <script async src='/assets/js/bootstrap.min.js'></script>
   <?php
   echo $bodytop;
   ?>
