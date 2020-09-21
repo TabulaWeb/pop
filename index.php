@@ -1776,7 +1776,31 @@ echo $bodydown;
 								unset($value);
 								?>.</p>
 
-					<p>Поиск производится исключительно среди 200 самых крупных городов страны</p>
+					<p>
+					<?php 
+
+					foreach($libcountry as $value){
+						if ($countryISO[1] == $value["country_iso"]){
+							$count_city = ($value["count_city_country"]);
+							$country_name_ru = ($value["name_country_ru"]);
+						}
+					}
+					unset($value);
+					if ($count_city >= "200"){
+						print("<p>Поиск производится исключительно среди 200 самых крупных городов страны</p>");
+					} elseif ($country_name_ru == "Германия"){
+						print("Поиск производится исключительно среди 100 самых крупных городов страны");
+					} elseif ($country_name_ru == "Италия"){
+						print("Поиск производится среди 46 городов страны.");
+					} elseif ($country_name_ru == "Бразилия"){
+						print("Поиск производится среди 110 городов страны.");
+					} elseif ($country_name_ru == "Индия") {
+						print("Поиск производится среди 46 городов страны.");
+					} else {
+						print("");
+					}
+					?>
+					</p>
 				</div>		
 				
 				<input class='form-control' id='myInput' type='text' placeholder='Поиск города..'>
