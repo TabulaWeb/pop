@@ -205,7 +205,7 @@ function getCountryRealId($menu, $id=""){
 	for ($i = $real; $i <= $id; $i++) 
   { 
 	echo "<li>
-			<a itemprop=".$op."url".$op." href=".$op."{$menu[$i]['rate_city_country']}.html".$op.">
+			<a itemprop=".$op."url".$op." href=".$op."../{$menu[$i]['rate_city_country']}.html".$op.">
 				<span itemprop=".$op."name".$op.">List of cities in {$menu[$i]['name_country_en']}</span>
 			</a>
 		 </li>"; 
