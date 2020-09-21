@@ -1,9 +1,12 @@
 <?php 
+
 $server_link = urldecode($_SERVER['REQUEST_URI']);
 $countryISO = explode("/", $server_link);
-?>
 
-<?php
+
+
+
+
 if ($countryISO[1] == "en"){
 	include 'en/inc/linkadd.php';
 } else {
@@ -29,9 +32,11 @@ if ($_SERVER['REQUEST_URI'] == "/"){
 	include "core/lib$countryISO[1].php";
 }
 include 'core/libcountry.php';
-?>
 
-<!DOCTYPE html>
+
+
+
+?><!DOCTYPE html>
 <?php
 echo $doctypedown;
 echo $htmlup;
@@ -44,9 +49,7 @@ echo $headup;
   <head>
 <?php
 echo $headdown;
-?>
 
-<?php 
 	$end_link = ".html"	
 ?>
 
@@ -663,6 +666,7 @@ echo $bodydown;
 	} elseif (ltrim(urldecode($_SERVER['REQUEST_URI']), "/") == "$href_city"){
 	// PAGE CITY__START
 		?>
+		fdgdfgddfgdfg
 	<div class='container'>
 		
 		<div class='row'>
@@ -3359,8 +3363,21 @@ echo $bodydown;
 	</div>
 
 			<?php
-		}
+		} 
 			// ENG_VERSION RATE_CITY_END
+	} else {
+		header("HTTP/1.0 404 Not Found");
+		?>
+		Страница не найдена
+		<!-- <div class="background">
+		</div>
+		<div class="message">
+			<h1>404</h1>
+			<h2>There's nothing here.</h2>
+			<h3><a href="https://all-populations.com/">Back to the Home page</a></h3>
+		</div> -->
+		
+		<?php
 	}
 	
 	?>
