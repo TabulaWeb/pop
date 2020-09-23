@@ -12,8 +12,6 @@ AddType application/x-httpd-php .html
 AddType application/x-httpd-php .tpl
 </IfModule>
 
-ErrorDocument 404 /404.html
-
 #AddHandler php5-fastcgi .htm .html
 #RemoveHandler .html .htm
 #AddType application/x-httpd-php .php .htm .html .phtml
@@ -44,4 +42,4 @@ Redirect 301 /final/ru/index.php /final/ru/population-of-earth.html
 Redirect 301 /final/en/index.php /final/en/population-of-earth.html
 Redirect 301 /final/ru/ru/index.php /final/ru/ru/population-of-russia.html
 
-ErrorDocument 404 /404.html
+ErrorDocument 404 /404
