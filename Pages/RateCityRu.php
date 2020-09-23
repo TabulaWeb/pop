@@ -1,36 +1,4 @@
-<?php
-function RateCityRu(){
-    $server_link = urldecode($_SERVER['REQUEST_URI']);
-       $countryISO = explode("/", $server_link);
-       $end_link = ".html";
-   
-       if ($countryISO[1] == "en"){
-           include 'en/inc/linkadd.php';
-       } else {
-           include 'ru/inc/linkadd.php';
-       }
-       if ($countryISO[1] == "en"){
-           include 'en/inc/config.php';
-       } else {
-           include 'ru/inc/config.php';
-       } 
-       if ($_SERVER['REQUEST_URI'] == "/"){
-           include 'core/libby.php';
-       } elseif ( $countryISO[1] == "en" ){
-           if ($countryISO[2] == "gb") {
-               include "core/libeng.php";
-           } else {
-               include "core/lib$countryISO[2].php";
-           }
-       } elseif ( $countryISO[1] == "gb") {
-           include "core/libeng.php";
-       } else {
-           include "core/lib$countryISO[1].php";
-       }
-       include 'core/libcountry.php';
-
-       ?>
-		<nav class='navbar navbar-inverse navbar-fixed-top' itemscope='' itemtype='http://www.schema.org/SiteNavigationElement'>
+	<nav class='navbar navbar-inverse navbar-fixed-top' itemscope='' itemtype='http://www.schema.org/SiteNavigationElement'>
       <div class='container'>
         <div class='navbar-header'>
           <button type='button' class='navbar-toggle' data-toggle='collapse' data-target='.navbar-collapse'>
@@ -694,6 +662,3 @@ function RateCityRu(){
 			
 		</div>
 	</div>
-		<?php
-}
-?>

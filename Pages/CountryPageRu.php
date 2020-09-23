@@ -1,36 +1,4 @@
-<?php
-function CountryPageRu(){
-    $server_link = urldecode($_SERVER['REQUEST_URI']);
-       $countryISO = explode("/", $server_link);
-       $end_link = ".html";
-   
-       if ($countryISO[1] == "en"){
-           include 'en/inc/linkadd.php';
-       } else {
-           include 'ru/inc/linkadd.php';
-       }
-       if ($countryISO[1] == "en"){
-           include 'en/inc/config.php';
-       } else {
-           include 'ru/inc/config.php';
-       } 
-       if ($_SERVER['REQUEST_URI'] == "/"){
-           include 'core/libby.php';
-       } elseif ( $countryISO[1] == "en" ){
-           if ($countryISO[2] == "gb") {
-               include "core/libeng.php";
-           } else {
-               include "core/lib$countryISO[2].php";
-           }
-       } elseif ( $countryISO[1] == "gb") {
-           include "core/libeng.php";
-       } else {
-           include "core/lib$countryISO[1].php";
-       }
-       include 'core/libcountry.php';
-
-       ?>
-       <div class='container'>
+    <div class='container'>
            
            <div class='row'>
    
@@ -521,6 +489,3 @@ function CountryPageRu(){
                
            </div>
        </div>
-    <?php
-}
-?>

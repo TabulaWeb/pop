@@ -42,4 +42,4 @@ Redirect 301 /final/ru/index.php /final/ru/population-of-earth.html
 Redirect 301 /final/en/index.php /final/en/population-of-earth.html
 Redirect 301 /final/ru/ru/index.php /final/ru/ru/population-of-russia.html
 
-ErrorDocument 404 /404
+ErrorDocument 404 /404.html
