@@ -28,9 +28,46 @@ if ($_SERVER['REQUEST_URI'] == "/"){
 	include "core/lib$countryISO[1].php";
 }
 include 'core/libcountry.php';
-
-
 include 'Pages/MetaData.php';
+
+$include_path = '';
+
+if(urldecode($_SERVER['REQUEST_URI']) == "/"){
+	// PAGE HOME__START
+	$include_path = 'Pages/HomePageRu.php';
+	// PAGE HOME__END
+  } elseif (ltrim(urldecode($_SERVER['REQUEST_URI']), "/") == $href_city){
+	// PAGE CITY__START
+
+	$include_path = 'Pages/CityPageRu.php';
+	  
+	// PAGE CITY__END
+  } elseif (ltrim(urldecode($_SERVER['REQUEST_URI']), "/") == $href_country){
+	// PAGE COUNTRY__START
+	$include_path = 'Pages/CountryPageRu.php';
+	// PAGE COUNTRY__END
+  } elseif (ltrim(urldecode($_SERVER['REQUEST_URI']), "/") == $href_rate_city . $end_link){
+	// PAGE RATE CITY START
+	$include_path = 'Pages/RateCityRu.php';
+  } elseif ($countryISO[1] == "en"){
+	  // ENG_VERSION
+	  if (ltrim(urldecode($_SERVER['REQUEST_URI']), "/") == $href_city_en){
+		// ENG_VERSION CITY_START
+		$include_path = 'Pages/CityPageEn.php';
+		// ENG_VERSION CITY_END
+	  } elseif (ltrim(urldecode($_SERVER['REQUEST_URI']), "/") == $href_country_en) {
+		// ENG_VERSION COUNTRY_START
+		$include_path = 'Pages/CountryPageEn.php';
+		// ENG_VERSION COUNTRY_END
+	  } elseif (ltrim(urldecode($_SERVER['REQUEST_URI']), "/") == $href_rate_city_en){
+		// ENG_VERSION RATE_CITY_START
+		$include_path = 'Pages/RateCityEn.php';
+		// ENG_VERSION RATE_CITY_END
+	  } 			
+  } else {
+	header("HTTP/1.0 404 Not Found");
+	$include_path = '404.html';
+  }
 // ===================================================================== //
 ?>
 <!DOCTYPE html>
@@ -49,7 +86,7 @@ echo $headup;
 		<meta http-equiv='X-UA-Compatible' content='IE=edge'>
 		<meta name='viewport' content='width=device-width, initial-scale=1.0'>
 		<!-- TITLE -->
-		<title> <?php print $meta_title;?></title>
+		<title><?php print $meta_title;?></title>
 		<!-- DESCRIPTION -->
 		<meta name='description' content='<?php print $meta_descr;?>'>
 		<link rel='shortcut icon' href='/favicon.ico' type='image/x-icon'>
@@ -60,7 +97,6 @@ echo $headup;
 		
 		<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
 		<script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js'></script>
-	
 	<?php echo $headtop;?>
 </head>
 <?php
@@ -92,49 +128,7 @@ echo $bodyup;
     </nav>
 	
 	<?php  
-	if(urldecode($_SERVER['REQUEST_URI']) == "/"){
-	  // PAGE HOME__START
-	  	include 'Pages/HomePageRu.php';
-	  // PAGE HOME__END
-	} elseif (ltrim(urldecode($_SERVER['REQUEST_URI']), "/") == "$href_city"){
-	  // PAGE CITY__START
-		include 'Pages/CityPageRu.php';
-	  // PAGE CITY__END
-	} elseif (ltrim(urldecode($_SERVER['REQUEST_URI']), "/") == "$href_country"){
-	  // PAGE COUNTRY__START
-	    include 'Pages/CountryPageRu.php';
-	  // PAGE COUNTRY__END
-	} elseif (ltrim(urldecode($_SERVER['REQUEST_URI']), "/") == "$href_rate_city" . $end_link){
-	  // PAGE RATE CITY START
-	    include 'Pages/RateCityRu.php';
-	} elseif ($countryISO[1] == "en"){
-		// ENG_VERSION
-
-		if (ltrim(urldecode($_SERVER['REQUEST_URI']), "/") == "$href_city_en"){
-		  // ENG_VERSION CITY_START
-		    include 'Pages/CityPageEn.php';
-		  // ENG_VERSION CITY_END
-		} elseif (ltrim(urldecode($_SERVER['REQUEST_URI']), "/") == "$href_country_en") {
-		  // ENG_VERSION COUNTRY_START
-		    include 'Pages/CountryPageEn.php';
-		  // ENG_VERSION COUNTRY_END
-		} elseif (ltrim(urldecode($_SERVER['REQUEST_URI']), "/") == "$href_rate_city_en"){
-		  // ENG_VERSION RATE_CITY_START
-		    include 'Pages/RateCityEn.php';
-		  // ENG_VERSION RATE_CITY_END
-		} 
-			
-	} else {
-		
-		?>
-		<!-- Страница не найдена -->
-		<?php
-		// print($_SERVER["SERVER_PROTOCOL"]);
-		http_response_code(404);
-		include('404.html'); // provide your own HTML for the error page
-		die();
-	}
-	
+	include $include_path;
 	?>
 	<footer itemscope='itemscope' itemtype='http://schema.org/WPFooter'>
 		<?php echo $footerup;?>

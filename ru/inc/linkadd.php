@@ -1,5 +1,4 @@
-
-	<?php	
+<?php	
 	$link1='<a href="/by/population-of-shklov.html">Численность населения Шклов</a>'; 
 	$link2='<a href="/be/population-of-genappe.html">Численность населения Женап</a>';
 	$link3='<a href="/bi/population-of-gitega.html">Численность населения Гитега</a>';
@@ -12,4 +11,4 @@
 	$link10='<a href="/ru/population-of-nyandoma.html">Численность населения Няндома</a>';
 	$link11='<a href="/ru/population-of-okulovka.html">Численность населения Окуловка</a>';
 	$link12='<a href="/se/population-of-uddevalla.html">Численность населения Уддевалла</a>';
-	?>
+?>

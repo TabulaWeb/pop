@@ -110,6 +110,7 @@ if ($countryISO[1] == "en") {
 			foreach(${"lib" . $countryISO[1]} as $value){
 				if (ltrim($server_link, "/") == $value["name_href"] . $end_link){
 					$href_city = $value["name_href"] . $end_link;
+					
 				}
 			}
 		}	
