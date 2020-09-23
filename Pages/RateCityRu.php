@@ -44,7 +44,7 @@
 									}
 								}
 								unset($value);
-								?>' itemprop='item'>
+								?>.html' itemprop='item'>
 								<span itemprop='name'>Население <?php
 								foreach($libcountry as $value){
 									if ($countryISO[1] == $value["country_iso"]){
