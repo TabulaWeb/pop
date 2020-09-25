@@ -1,43 +1,45 @@
 <?php
+$base_link = ltrim(urldecode($_SERVER['REQUEST_URI']), "/");
+
 if ($countryISO[1] == "en"){
 	if ($countryISO[2] == "gb"){
 		foreach($libeng as $value){
-			if (ltrim($server_link, "/") == $start_link . $value["name_href"] . $end_link){
+			if ($base_link == $start_link . $value["name_href"] . $end_link){
 				$href_city_en = $start_link . $value["name_href"] . $end_link;
 				$name_city_en = $value["name_en"];
 			}
 		}
 
 		foreach($libcountry as $value){
-			if(ltrim($server_link, "/") == $start_link . $value["name_country_href"] . $end_link){
+			if($base_link == $start_link . $value["name_country_href"] . $end_link){
 				$name_country_en = $value["name_country_en"];
 				$href_country_en = $start_link . $value["name_country_href"] . $end_link;
 			}
 		}
 
 		foreach($libcountry as $value){
-			if(ltrim($server_link, "/") == $start_link . $value["rate_city_country"] . $end_link){
+			if($base_link == $start_link . $value["rate_city_country"] . $end_link){
 				$href_rate_city_en = $start_link . $value["rate_city_country"] . $end_link;
 			}
 		}
 	} else {
 		$start_link = "en/";
 		foreach(${"lib" . $countryISO[2]} as $value){
-			if (ltrim($server_link, "/") == $start_link . $value["name_href"] . $end_link){
+			if ($base_link == $start_link . $value["name_href"] . $end_link){
 				$href_city_en = $start_link . $value["name_href"] . $end_link;
 				$name_city_en = $value["name_en"];
 			}
 		}
 
 		foreach($libcountry as $value){
-			if(ltrim($server_link, "/") == $start_link . $value["name_country_href"] . $end_link){
+			if($base_link == $start_link . $value["name_country_href"] . $end_link){
 				$name_country_en = $value["name_country_en"];
 				$href_country_en = $start_link . $value["name_country_href"] . $end_link;
 			}
 		}
 
 		foreach($libcountry as $value){
-			if(ltrim($server_link, "/") == $start_link . $value["rate_city_country"] . $end_link){
+			if($base_link == $start_link . $value["rate_city_country"] . $end_link){
 				$href_rate_city_en = $start_link . $value["rate_city_country"] . $end_link;
 			}
 		}
@@ -52,7 +54,7 @@ if ($countryISO[1] == "en") {
 	$start_link = "en/";
 	if ($countryISO[2] != "gb"){
 		foreach(${"lib" . $countryISO[2]} as $value){
-			if (ltrim($server_link, "/") == $start_link . $value["name_href"] . $end_link){
+			if ($base_link == $start_link . $value["name_href"] . $end_link){
 				$href_city_en = $start_link . $value["name_href"] . $end_link;
 				$name_city_en = $value["name_en"];
 			}
@@ -61,40 +63,40 @@ if ($countryISO[1] == "en") {
 	
 
 	foreach($libcountry as $value){
-		if(ltrim($server_link, "/") == $start_link . $value["name_country_href"] . $end_link){
+		if($base_link == $start_link . $value["name_country_href"] . $end_link){
 			$name_country_en = $value["name_country_en"];
 			$href_country_en = $start_link . $value["name_country_href"] . $end_link;
 		}
 	}
 
 	foreach($libcountry as $value){
-		if(ltrim($server_link, "/") == $start_link . $value["rate_city_country"] . $end_link){
+		if($base_link == $start_link . $value["rate_city_country"] . $end_link){
 			$href_rate_city_en = $start_link . $value["rate_city_country"] . $end_link;
 		}
 	}
 
 
 
-	if (ltrim($server_link, "/") == "en/population-of-earth"){
+	if ($base_link == "en/population-of-earth"){
 		$meta_title .= "Текущая статистика численности населения: мира, стран, городов";
-	} elseif (ltrim($server_link, "/") == $href_city_en){
+	} elseif ($base_link == $href_city_en){
 		foreach(${"lib" . $countryISO[2]} as $value){
-		if (ltrim($server_link, "/") == $start_link . $value["name_href"] . $end_link){
+		if ($base_link == $start_link . $value["name_href"] . $end_link){
 			$name_city = $value["name_ru"];
 			$meta_title .= "Population of $name_city_en in $year - statistics";
 		}
 	}	
 	unset($value);
-	} elseif (ltrim($server_link, "/") == $href_country_en) {
+	} elseif ($base_link == $href_country_en) {
 			foreach($libcountry as $value){
-			if(ltrim($server_link, "/") == $start_link . $value["name_country_href"] . $end_link){
+			if($base_link == $start_link . $value["name_country_href"] . $end_link){
 				$name_country =  $value["name_country_ru"];
 				$meta_title .= "Population of $name_country_en in $year";
 			}
 		}
-	} elseif (ltrim($server_link, "/") == $href_rate_city_en) {
+	} elseif ($base_link == $href_rate_city_en) {
 		foreach($libcountry as $value){
-			if(ltrim($server_link, "/") == $start_link . $value["rate_city_country"] . $end_link){
+			if($base_link == $start_link . $value["rate_city_country"] . $end_link){
 				$name_country =  $value["name_country_ru"];
 				$name_country_en = $value["name_country_en"];
 				$href_rate_city =  $value["rate_city_country"];
@@ -106,9 +108,9 @@ if ($countryISO[1] == "en") {
 } else {
 
 	if ($server_link != ("/")){
-		if (ltrim($server_link, "/") != "gb/population-of-united-kingdom.html"){
+		if ($base_link != "gb/population-of-united-kingdom.html"){
 			foreach(${"lib" . $countryISO[1]} as $value){
-				if (ltrim($server_link, "/") == $value["name_href"] . $end_link){
+				if ($base_link == $value["name_href"] . $end_link){
 					$href_city = $value["name_href"] . $end_link;
 					
 				}
@@ -117,14 +119,14 @@ if ($countryISO[1] == "en") {
 	} 
 
 	foreach($libcountry as $value){
-		if(ltrim($server_link, "/") == $value["name_country_href"] . $end_link){
+		if($base_link == $value["name_country_href"] . $end_link){
 			$name_country = $value["name_country_ru"];
 			$href_country = $value["name_country_href"] . $end_link;
 		}
 	}
 
 	foreach($libcountry as $value){
-		if(ltrim($server_link, "/") == $value["rate_city_country"] . $end_link){
+		if($base_link == $value["rate_city_country"] . $end_link){
 			$href_rate_city =  $value["rate_city_country"] . $end_link;
 		}
 	}
@@ -132,24 +134,24 @@ if ($countryISO[1] == "en") {
 
 	if($_SERVER['REQUEST_URI'] == "/"){
 		$meta_title .= "Текущая статистика численности населения: мира, стран, городов";
-	} elseif (ltrim($server_link, "/") == "$href_city"){
+	} elseif ($base_link == "$href_city"){
 		foreach(${"lib" . $countryISO[1]} as $value){
-		if (ltrim($server_link, "/") == $value["name_href"] . $end_link){
+		if ($base_link == $value["name_href"] . $end_link){
 			$name_city = $value["name_ru"];
 			$meta_title .= "Население города $name_city. Узнайте сколько людей живет в $name_city";
 		}
 	}	
 	unset($value);
-	} elseif (ltrim($server_link, "/") == "$href_country") {
+	} elseif ($base_link == "$href_country") {
 		foreach($libcountry as $value){
-			if(ltrim($server_link, "/") == $value["name_country_href"] . $end_link){
+			if($base_link == $value["name_country_href"] . $end_link){
 				$name_country =  $value["name_country_ru"];
 				$meta_title .= "Население $name_country. Узнайте сколько людей живет в $name_country";
 			}
 		}
-	} elseif (ltrim($server_link, "/") == "$href_rate_city") {
+	} elseif ($base_link == "$href_rate_city") {
 		foreach($libcountry as $value){
-			if(ltrim($server_link, "/") == $value["rate_city_country"] . $end_link){
+			if($base_link == $value["rate_city_country"] . $end_link){
 				$name_country =  $value["name_country_ru"];
 				$href_rate_city =  $value["rate_city_country"];
 				$meta_title .= "Самые крупные города $name_country по численности населения";
@@ -164,7 +166,7 @@ if ($countryISO[1] == "en"){
 	$start_link = "en/";
 	if ($countryISO[2] != "gb"){
 		foreach(${"lib" . $countryISO[2]} as $value){
-			if (ltrim($server_link, "/") == $start_link . $value["name_href"] . $end_link){
+			if ($base_link == $start_link . $value["name_href"] . $end_link){
 				$href_city_en = $start_link . $value["name_href"] . $end_link;
 				$name_city_en = $value["name_en"];
 			}
@@ -172,38 +174,38 @@ if ($countryISO[1] == "en"){
 	}
 
 	foreach($libcountry as $value){
-		if(ltrim($server_link, "/") == $start_link . $value["name_country_href"] . $end_link){
+		if($base_link == $start_link . $value["name_country_href"] . $end_link){
 			$name_country_en = $value["name_country_en"];
 			$href_country_en = $start_link . $value["name_country_href"] . $end_link;
 		}
 	}
 
 	foreach($libcountry as $value){
-		if(ltrim($server_link, "/") == $start_link . $value["rate_city_country"] . $end_link){
+		if($base_link == $start_link . $value["rate_city_country"] . $end_link){
 			$href_rate_city_en = $start_link . $value["rate_city_country"] . $end_link;
 		}
 	}
 
-	if(ltrim($server_link, "/") == "en/population-of-earth"){
+	if($base_link == "en/population-of-earth"){
 		$meta_descr .= "Текущая статистика численности населения: мира, стран, городов";
-	} elseif (ltrim($server_link, "/") == $href_city_en){
+	} elseif ($base_link == $href_city_en){
 		foreach(${"lib" . $countryISO[2]} as $value){
-		if (ltrim($server_link, "/") == $start_link . $value["name_href"] . $end_link){
+		if ($base_link == $start_link . $value["name_href"] . $end_link){
 			$name_city = $value["name_ru"];
 			$meta_descr .= "Population of the city of $name_city_en in $year";
 		}
 	}	
 	unset($value);
-	} elseif (ltrim($server_link, "/") == $href_country_en) {
+	} elseif ($base_link == $href_country_en) {
 		foreach($libcountry as $value){
-		if(ltrim($server_link, "/") == $start_link . $value["name_country_href"] . $end_link){
+		if($base_link == $start_link . $value["name_country_href"] . $end_link){
 			$name_country =  $value["name_country_ru"];
 			$meta_descr .= "Population of the country of $name_country_en in $year";
 		}
 	}
-	} elseif (ltrim($server_link, "/") == $href_rate_city_en) {
+	} elseif ($base_link == $href_rate_city_en) {
 		foreach($libcountry as $value){
-		if(ltrim($server_link, "/") == $start_link . $value["rate_city_country"] . $end_link){
+		if($base_link == $start_link . $value["rate_city_country"] . $end_link){
 			$name_country =  $value["name_country_ru"];
 			$name_country_en = $value["name_country_en"];
 			$href_rate_city =  $value["rate_city_country"];
@@ -214,24 +216,24 @@ if ($countryISO[1] == "en"){
 } else {
 if(urldecode($_SERVER['REQUEST_URI']) == "/"){
 	$meta_descr .= "Здесь вы узнаете сколько людей живет на планете, численность населения каждой страны и каждого города. Рейтинги стран и городов по численности населения.";
-} elseif (ltrim(urldecode($_SERVER['REQUEST_URI']), "/") == "$href_city"){
+} elseif ($base_link == "$href_city"){
 	foreach(${"lib" . $countryISO[1]} as $value){
-	if (ltrim(urldecode($_SERVER['REQUEST_URI']), "/") == $value["name_href"] . $end_link){
+	if ($base_link == $value["name_href"] . $end_link){
 		$name_city = $value["name_ru"];
 		$meta_descr .= "Актуальные данные о численности населения города $name_city на $year год. Узнайте сколько человек проживает в городе.";
 	}
 }	
 unset($value);
-} elseif (ltrim(urldecode($_SERVER['REQUEST_URI']), "/") == "$href_country") {
+} elseif ($base_link == "$href_country") {
 	foreach($libcountry as $value){
-	if(ltrim(urldecode($_SERVER['REQUEST_URI']), "/") == $value["name_country_href"] . $end_link){
+	if($base_link == $value["name_country_href"] . $end_link){
 		$name_country =  $value["name_country_ru"];
 		$meta_descr .= "Актуальные данные о численности населения $name_country на $year год. Узнайте сколько человек проживает в стране.";
 	}
 }
-} elseif (ltrim(urldecode($_SERVER['REQUEST_URI']), "/") == "$href_rate_city" . $end_link) {
+} elseif ($base_link == "$href_rate_city" . $end_link) {
 	foreach($libcountry as $value){
-	if(ltrim(urldecode($_SERVER['REQUEST_URI']), "/") == $value["rate_city_country"] . $end_link){
+	if($base_link == $value["rate_city_country"] . $end_link){
 		$name_country =  $value["name_country_ru"];
 		$meta_descr .= "Рейтинг городов $name_country по численности населения на 2020 год. Узнайте список самых крупных городов $name_country";
 	}

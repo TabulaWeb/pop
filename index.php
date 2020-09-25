@@ -37,30 +37,30 @@ if(urldecode($_SERVER['REQUEST_URI']) == "/"){
 	// PAGE HOME__START
 	$include_path = 'Pages/HomePageRu.php';
 	// PAGE HOME__END
-  } elseif (ltrim(urldecode($_SERVER['REQUEST_URI']), "/") == $href_city){
+  } elseif ($base_link == $href_city){
 	// PAGE CITY__START
 
 	$include_path = 'Pages/CityPageRu.php';
 	  
 	// PAGE CITY__END
-  } elseif (ltrim(urldecode($_SERVER['REQUEST_URI']), "/") == $href_country){
+  } elseif ($base_link == $href_country){
 	// PAGE COUNTRY__START
 	$include_path = 'Pages/CountryPageRu.php';
 	// PAGE COUNTRY__END
-  } elseif (ltrim(urldecode($_SERVER['REQUEST_URI']), "/") == $href_rate_city . $end_link){
+  } elseif ($base_link == $href_rate_city . $end_link){
 	// PAGE RATE CITY START
 	$include_path = 'Pages/RateCityRu.php';
   } elseif ($countryISO[1] == "en"){
 	  // ENG_VERSION
-	  if (ltrim(urldecode($_SERVER['REQUEST_URI']), "/") == $href_city_en){
+	  if ($base_link == $href_city_en){
 		// ENG_VERSION CITY_START
 		$include_path = 'Pages/CityPageEn.php';
 		// ENG_VERSION CITY_END
-	  } elseif (ltrim(urldecode($_SERVER['REQUEST_URI']), "/") == $href_country_en) {
+	  } elseif ($base_link == $href_country_en) {
 		// ENG_VERSION COUNTRY_START
 		$include_path = 'Pages/CountryPageEn.php';
 		// ENG_VERSION COUNTRY_END
-	  } elseif (ltrim(urldecode($_SERVER['REQUEST_URI']), "/") == $href_rate_city_en){
+	  } elseif ($base_link == $href_rate_city_en){
 		// ENG_VERSION RATE_CITY_START
 		$include_path = 'Pages/RateCityEn.php';
 		// ENG_VERSION RATE_CITY_END
