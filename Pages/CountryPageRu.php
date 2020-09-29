@@ -73,7 +73,7 @@
                        } elseif (ltrim(urldecode($_SERVER['REQUEST_URI']), "/") == "br/population-of-brazil.html"){
                            print("На 2020 год численность населения");
                        } else {
-                           print("На $year год численность населения");
+                           print("На 2020 год численность населения");
                        }
                    ?>
                    <strong>
@@ -118,7 +118,7 @@
                                    } elseif (ltrim(urldecode($_SERVER['REQUEST_URI']), "/") == "br/population-of-brazil.html"){
                                        print("");
                                    } else {
-                                       print("All-populations.com использовал данные количества населения из официальных источников. Узнать, какая статистика населения страны, города, района на All-populations.com.");
+                                       print("All-populations.com использовал данные количества населения из официальных источников.");
                                    }
                                    ?>
                                    </p>
@@ -190,14 +190,7 @@
                            </div>
                        </div>
                    </div>
-                   <p>Доступная информация по населению любого региона, быстрая работа сайта и постоянное обновление информации являются основой нашего ресурса. Скоро на сайте появится возможность посмотреть <?php
-                                   foreach($libcountry as $value){
-                                       if ($countryISO[1] == $value["country_iso"]){
-                                           print($value["name_country_ru"]);
-                                       }
-                                   }
-                                   unset($value);
-                                   ?> на карте.</p>
+                   
                    
    
                    <?php
