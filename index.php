@@ -110,7 +110,7 @@ echo $bodyup;
 <?php echo $bodydown;?>
 
 	<?php BaseHeader();?>
-	
+
 	<?php  
 	include $include_path;
 	?>
