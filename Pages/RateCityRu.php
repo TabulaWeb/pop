@@ -94,7 +94,7 @@
 									}
 								}
 								unset($value);
-								?> по численности населения на <?php echo $year; ?> год.<p>	
+								?> по численности населения на 2020 год.<p>	
 					<p>Общее количество городов: <?php
 								foreach($libcountry as $value){
 									if ($countryISO[1] == $value["country_iso"]){

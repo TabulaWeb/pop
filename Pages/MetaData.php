@@ -153,8 +153,9 @@ if ($countryISO[1] == "en") {
 		foreach($libcountry as $value){
 			if($base_link == $value["rate_city_country"] . $end_link){
 				$name_country =  $value["name_country_ru"];
+				$name_country_zz = $value["name_country_ru_zz"];
 				$href_rate_city =  $value["rate_city_country"];
-				$meta_title .= "Самые крупные города $name_country по численности населения";
+				$meta_title .= "Самые крупные города $name_country_zz по численности населения";
 			}
 		}
 	}
@@ -235,7 +236,7 @@ unset($value);
 	foreach($libcountry as $value){
 	if($base_link == $value["rate_city_country"] . $end_link){
 		$name_country =  $value["name_country_ru"];
-		$meta_descr .= "Рейтинг городов $name_country по численности населения на 2020 год. Узнайте список самых крупных городов $name_country";
+		$meta_descr .= "Рейтинг городов $name_country_zz по численности населения на 2020 год. Узнайте список самых крупных городов $name_country_zz";
 	}
 }
 }
