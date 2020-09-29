@@ -90,7 +90,7 @@
 						} elseif (ltrim(urldecode($_SERVER['REQUEST_URI']), "/") == "ru/population-of-moscow.html"){
 							print("На 2020 год численность населения города");
 						} else {
-							print("На $year год численность населения города");
+							print("На 2020 год численность населения города");
 						}
 						?>	
 						<strong>
@@ -107,7 +107,7 @@
 						<?php
 							foreach($libcountry as $value){
 								if ($countryISO[1] == $value["country_iso"]){
-									print($value["name_country_ru_zz"]);
+									print($value["name_country_ru"]);
 								}
 							}
 							unset($value);
@@ -137,7 +137,7 @@
 						} elseif (ltrim(urldecode($_SERVER['REQUEST_URI']), "/") == "ru/population-of-moscow.html"){
 							print("Наш сайт использовал данные количества населения из официальных источников.");
 						} else {
-							print("All-populations.com использовал данные количества населения из официальных источников. Узнать, какая статистика населения страны, города, района на All-populations.com.");
+							print("All-populations.com использовал данные количества населения из официальных источников.");
 						}
 						 
 						?></p>
@@ -212,15 +212,6 @@
 						</div>
 					</div>
 				</div>
-				<p>Доступная информация по населению любого региона, быстрая работа сайта и постоянное обновление информации являются основой нашего ресурса. Скоро на сайте появится возможность посмотреть <?php 
-								foreach(${"lib" . $countryISO[1]} as $value){
-									if (ltrim(urldecode($_SERVER['REQUEST_URI']), "/") == $value["name_href"] . $end_link){
-										print($value["name_ru"]);
-										break;
-									}
-								}
-								unset($value);
-								?> на карте.</p>
 
 
 				<?php

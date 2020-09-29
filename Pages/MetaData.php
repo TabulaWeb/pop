@@ -139,6 +139,7 @@ if ($countryISO[1] == "en") {
 		if ($base_link == $value["name_href"] . $end_link){
 			$name_city = $value["name_ru"];
 			$meta_title .= "Население города $name_city. Узнайте сколько людей живет в $name_city";
+			break;
 		}
 	}	
 	unset($value);
@@ -221,7 +222,8 @@ if(urldecode($_SERVER['REQUEST_URI']) == "/"){
 	foreach(${"lib" . $countryISO[1]} as $value){
 	if ($base_link == $value["name_href"] . $end_link){
 		$name_city = $value["name_ru"];
-		$meta_descr .= "Актуальные данные о численности населения города $name_city на $year год. Узнайте сколько человек проживает в городе.";
+		$meta_descr .= "Актуальные данные о численности населения города $name_city на 2020 год. Узнайте сколько человек проживает в городе.";
+		break;
 	}
 }	
 unset($value);
@@ -229,7 +231,7 @@ unset($value);
 	foreach($libcountry as $value){
 	if($base_link == $value["name_country_href"] . $end_link){
 		$name_country =  $value["name_country_ru"];
-		$meta_descr .= "Актуальные данные о численности населения $name_country на $year год. Узнайте сколько человек проживает в стране.";
+		$meta_descr .= "Актуальные данные о численности населения $name_country на 2020 год. Узнайте сколько человек проживает в стране.";
 	}
 }
 } elseif ($base_link == "$href_rate_city" . $end_link) {
