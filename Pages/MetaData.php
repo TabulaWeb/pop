@@ -138,7 +138,7 @@ if ($countryISO[1] == "en") {
 		foreach(${"lib" . $countryISO[1]} as $value){
 		if ($base_link == $value["name_href"] . $end_link){
 			$name_city = $value["name_ru"];
-			$meta_title .= "Население города $name_city. Узнайте сколько людей живет в $name_city";
+			$meta_title .= "Население города $name_city. Узнайте сколько людей живет в городе $name_city";
 			break;
 		}
 	}	
@@ -148,7 +148,7 @@ if ($countryISO[1] == "en") {
 			if($base_link == $value["name_country_href"] . $end_link){
 				$name_country =  $value["name_country_ru"];
 				$name_country_zz = $value["name_country_ru_zz"];
-				$meta_title .= "Население $name_country_zz. Узнайте сколько людей живет в $name_country";
+				$meta_title .= "Население $name_country_zz. Узнайте сколько людей живет в стране $name_country";
 			}
 		}
 	} elseif ($base_link == "$href_rate_city") {
