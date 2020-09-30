@@ -1,14 +1,3 @@
-    
-    <?php
-    function reNameCountry($name_country){
-        if (substr($name_country, -4) === "ия"){
-            print("Hello world");
-        }
-    }
-
-    print(reNameCountry($name_country))
-	?>
-    
     <div class='container'>
            
            <div class='row'>
