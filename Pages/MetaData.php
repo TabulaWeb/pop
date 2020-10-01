@@ -210,7 +210,7 @@ if ($countryISO[1] == "en"){
 		if($base_link == $start_link . $value["rate_city_country"] . $end_link){
 			$name_country =  $value["name_country_ru"];
 			$name_country_en = $value["name_country_en"];
-			$href_rate_city =  $value["rate_city_country"];
+			// $href_rate_city =  $value["rate_city_country"];
 			$meta_descr .= "Rating: List of cities in $name_country_en by population - all-populations.com";
 		}
 	}
@@ -229,14 +229,14 @@ if(urldecode($_SERVER['REQUEST_URI']) == "/"){
 unset($value);
 } elseif ($base_link == "$href_country") {
 	foreach($libcountry as $value){
-	if($base_link == $value["name_country_href"] . $end_link){
+	if($base_link == $start_link_ru . $value["name_country_href"] . $end_link){
 		$name_country =  $value["name_country_ru"];
 		$meta_descr .= "Актуальные данные о численности населения $name_country_zz на 2020 год. Узнайте сколько человек проживает в стране.";
 	}
 }
-} elseif ($base_link == "$href_rate_city" . $end_link) {
+} elseif ($base_link == "$href_rate_city") {
 	foreach($libcountry as $value){
-	if($base_link == $value["rate_city_country"] . $end_link){
+	if($base_link == $start_link_ru . $value["rate_city_country"] . $end_link){
 		$name_country =  $value["name_country_ru"];
 		$meta_descr .= "Рейтинг городов $name_country_zz по численности населения на 2020 год. Узнайте список самых крупных городов $name_country_zz";
 	}

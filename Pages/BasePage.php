@@ -2,11 +2,6 @@
 function BaseHeader(){
     if (http_response_code() != "404"){
         ?>
-
-        <?php
-        print $_SERVER['REQUEST_URI']
-        ?>
-
         <nav class='navbar navbar-inverse navbar-fixed-top' itemscope='' itemtype='http://www.schema.org/SiteNavigationElement'>
         <div class='container'>
             <div class='navbar-header'>

@@ -75,8 +75,6 @@ if(urldecode($_SERVER['REQUEST_URI']) == "/"){
 ?>
 <!DOCTYPE html>
 <?php
-// print $base_link;
-print $countryISO[2];
 echo $doctypedown;
 echo $htmlup;
 ?>
