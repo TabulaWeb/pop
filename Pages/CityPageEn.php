@@ -306,7 +306,7 @@
             <li>
                 <p class='lang'>Other languages</p>
                 <ul class='language-menu-list'>
-                    <li><a href='/../<?php 
+                    <li><a href='/ru/<?php 
                         foreach(${"lib" . $countryISO[2]} as $value){
                             if (ltrim(urldecode($_SERVER['REQUEST_URI']), "/") == $start_link . $value["name_href"] . $end_link){
                                 print($value["name_href"]);

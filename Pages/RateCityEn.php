@@ -226,7 +226,7 @@
 					<li>
 						<p class='lang'>Other languages</p>
 						<ul class='language-menu-list'>
-							<li><a href='/<?php 
+							<li><a href='/ru/<?php 
 							foreach($libcountry as $value){
 								if ($countryISO[2] == $value["country_iso"]){
 									print($value["rate_city_country"]);

@@ -340,7 +340,7 @@
 			?>
 				<ul class='parent-menu-list'>
 					<li>
-						<a itemprop='url' href='/<?php
+						<a itemprop='url' href='/ru/<?php
 								foreach($libcountry as $value){
 									if ($countryISO[2] == $value["country_iso"]){
 										print($value["rate_city_country"] . $end_link);

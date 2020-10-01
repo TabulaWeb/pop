@@ -140,7 +140,7 @@ function getCountryRealId($menu, $id=""){
    { 
 	echo " <tr>
 			<th>{$menu[$i]['real_id']}</th>
-			<td><a href=".$op."../{$menu[$i]['name_href']}.html".$op.">{$menu[$i]['name_ru']}</a></td>
+			<td><a href=".$op."/{$menu[$i]['name_href']}.html".$op.">{$menu[$i]['name_ru']}</a></td>
 			<td>{$menu[$i]['count']}</td>
 		   </tr>";
   } 
@@ -152,7 +152,7 @@ function getCountryRealId($menu, $id=""){
    { 
 	echo " <tr>
 			<th>{$menu[$i]['real_id']}</th>
-			<td><a href=".$op."{$menu[$i]['name_href']}.html".$op.">{$menu[$i]['name_ru']}</a></td>
+			<td><a href=".$op."/ru/{$menu[$i]['name_href']}.html".$op.">{$menu[$i]['name_ru']}</a></td>
 			<td>{$menu[$i]['count']}</td>
 		   </tr>";
   } 

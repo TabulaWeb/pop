@@ -37,7 +37,7 @@
 							</a>
 						</li>
 						<li itemscope='' itemprop='itemListElement' itemtype='http://schema.org/ListItem'>
-							<a href='/<?php
+							<a href='/ru/<?php
 								foreach($libcountry as $value){
 									if ($countryISO[2] == $value["country_iso"]){
 										print($value["name_country_href"]);
