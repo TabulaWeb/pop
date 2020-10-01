@@ -47,7 +47,7 @@ if(urldecode($_SERVER['REQUEST_URI']) == "/"){
 	// PAGE COUNTRY__START
 	$include_path = 'Pages/CountryPageRu.php';
 	// PAGE COUNTRY__END
-  } elseif ($base_link == $href_rate_city . $end_link){
+  } elseif ($base_link == $href_rate_city){
 	// PAGE RATE CITY START
 	$include_path = 'Pages/RateCityRu.php';
   } elseif ($countryISO[1] == "en"){

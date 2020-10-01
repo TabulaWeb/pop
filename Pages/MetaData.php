@@ -155,7 +155,7 @@ if ($countryISO[1] == "en") {
 			if($base_link == $start_link_ru . $value["rate_city_country"] . $end_link){
 				$name_country =  $value["name_country_ru"];
 				$name_country_zz = $value["name_country_ru_zz"];
-				$href_rate_city = $start_link_ru . $value["rate_city_country"];
+				$href_rate_city = $start_link_ru . $value["rate_city_country"] . $end_link;
 				$meta_title .= "Самые крупные города $name_country_zz по численности населения";
 			}
 		}

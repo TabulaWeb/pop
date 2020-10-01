@@ -39,7 +39,7 @@
 						<li itemscope='' itemprop='itemListElement' itemtype='http://schema.org/ListItem'>
 							<a href='/<?php
 								foreach($libcountry as $value){
-									if ($countryISO[1] == $value["country_iso"]){
+									if ($countryISO[2] == $value["country_iso"]){
 										print($value["name_country_href"]);
 									}
 								}
@@ -47,7 +47,7 @@
 								?>.html' itemprop='item'>
 								<span itemprop='name'>Население <?php
 								foreach($libcountry as $value){
-									if ($countryISO[1] == $value["country_iso"]){
+									if ($countryISO[2] == $value["country_iso"]){
 										print($value["name_country_ru_zz"]);
 									}
 								}
@@ -59,7 +59,7 @@
 							<span itemprop='item'>
 								<span itemprop='name'>Список городов <?php
 								foreach($libcountry as $value){
-									if ($countryISO[1] == $value["country_iso"]){
+									if ($countryISO[2] == $value["country_iso"]){
 										print($value["name_country_ru_zz"]);
 									}
 								}
@@ -78,7 +78,7 @@
 				<div class='panel-heading' >
 					<h1 itemprop='headline'>Список городов <?php
 								foreach($libcountry as $value){
-									if ($countryISO[1] == $value["country_iso"]){
+									if ($countryISO[2] == $value["country_iso"]){
 										print($value["name_country_ru_zz"]);
 									}
 								}
@@ -89,7 +89,7 @@
 				<div  itemprop='text'>
 					<p>Список городов <?php
 								foreach($libcountry as $value){
-									if ($countryISO[1] == $value["country_iso"]){
+									if ($countryISO[2] == $value["country_iso"]){
 										print($value["name_country_ru_zz"]);
 									}
 								}
@@ -97,7 +97,7 @@
 								?> по численности населения на 2020 год.<p>	
 					<p>Общее количество городов: <?php
 								foreach($libcountry as $value){
-									if ($countryISO[1] == $value["country_iso"]){
+									if ($countryISO[2] == $value["country_iso"]){
 										print($value["count_city_country"]);
 									}
 								}
@@ -105,7 +105,7 @@
 								?>.</p>
 					<p>Общее количество населения: <?php
 								foreach($libcountry as $value){
-									if ($countryISO[1] == $value["country_iso"]){
+									if ($countryISO[2] == $value["country_iso"]){
 										print($value["count"]);
 									}
 								}
@@ -116,7 +116,7 @@
 					<?php 
 
 					foreach($libcountry as $value){
-						if ($countryISO[1] == $value["country_iso"]){
+						if ($countryISO[2] == $value["country_iso"]){
 							$count_city = ($value["count_city_country"]);
 							$country_name_ru = ($value["name_country_ru"]);
 						}
@@ -143,7 +143,7 @@
 				<br>
 				<h2 style="margin-bottom: 25px;">Самые крупные города <?php
 								foreach($libcountry as $value){
-									if ($countryISO[1] == $value["country_iso"]){
+									if ($countryISO[2] == $value["country_iso"]){
 										print($value["name_country_ru_zz"]);
 									}
 								}
@@ -162,15 +162,15 @@
 					  <?php 
 
 						foreach($libcountry as $value){
-							if ($countryISO[1] == $value["country_iso"]){
+							if ($countryISO[2] == $value["country_iso"]){
 								$count_city = ($value["count_city_country"]);
 							}
 						}
 						unset($value);
 						if ($count_city >= "200"){
-							getTable200(${"lib" . $countryISO[1]});
+							getTable200(${"lib" . $countryISO[2]});
 						} else {
-							getTable(${"lib" . $countryISO[1]});
+							getTable(${"lib" . $countryISO[2]});
 						}
 					  ?>
 					</tbody>
@@ -190,7 +190,7 @@
 								<h3 class='naselenie'>
 								<?php 
 								foreach($libcountry as $value){
-									if ($countryISO[1] == $value["country_iso"]){
+									if ($countryISO[2] == $value["country_iso"]){
 										print($value["name_country_ru"]);
 									}
 								}
@@ -199,7 +199,7 @@
 								<span class='skolko'>
 								<?php 
 								foreach($libcountry as $value){
-									if ($countryISO[1] == $value["country_iso"]){
+									if ($countryISO[2] == $value["country_iso"]){
 										print($value["count"]);
 									}
 								}
@@ -208,7 +208,7 @@
 								<img src='https://all-populations.com/ru/images/
 								<?php
 								foreach($libcountry as $value){
-									if ($countryISO[1] == $value["country_iso"]){
+									if ($countryISO[2] == $value["country_iso"]){
 										print($value["country_flag"]);
 									}
 								}
@@ -216,7 +216,7 @@
 								?>' itemprop='contentUrl' width='160' height='107' alt='Флаг 
 								<?php
 								foreach($libcountry as $value){
-									if ($countryISO[1] == $value["country_iso"]){
+									if ($countryISO[2] == $value["country_iso"]){
 										print($value["name_country_ru"]);
 									}
 								}
@@ -224,7 +224,7 @@
 								?>' title='Флаг 
 								<?php
 								foreach($libcountry as $value){
-									if ($countryISO[1] == $value["country_iso"]){
+									if ($countryISO[2] == $value["country_iso"]){
 										print($value["name_country_ru"]);
 									}
 								}
@@ -233,7 +233,7 @@
 								<span itemprop='name' style='display:block; font-size: 12px;'>Флаг 
 								<?php
 								foreach($libcountry as $value){
-									if ($countryISO[1] == $value["country_iso"]){
+									if ($countryISO[2] == $value["country_iso"]){
 										print($value["name_country_ru_zz"]);
 									}
 								}
@@ -554,21 +554,21 @@
 						<ul class='language-menu-list'>
 							<li><a href='/en/<?php 
 							foreach($libcountry as $value){
-								if ($countryISO[1] == $value["country_iso"]){
+								if ($countryISO[2] == $value["country_iso"]){
 									print($value["rate_city_country"]);
 								}
 							}
 							unset($value);
 							?>.html' title='List of cities in <?php 
 							foreach($libcountry as $value){
-								if ($countryISO[1] == $value["country_iso"]){
+								if ($countryISO[2] == $value["country_iso"]){
 									print($value["name_country_en"]);
 								}
 							}
 							unset($value);
 							?>'>List of cities in <?php 
 							foreach($libcountry as $value){
-								if ($countryISO[1] == $value["country_iso"]){
+								if ($countryISO[2] == $value["country_iso"]){
 									print($value["name_country_en"]);
 								}
 							}

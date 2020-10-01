@@ -316,7 +316,7 @@
                ?>
                    <ul class='parent-menu-list'>
                        <li>
-                           <a itemprop='url' href='/<?php
+                           <a itemprop='url' href='/ru/<?php
                                    if ( $countryISO[2] == "gb" ){
                                        print("eng/list-of-cities-in-england-by-population.html");
                                    } else {
