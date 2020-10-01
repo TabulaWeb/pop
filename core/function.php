@@ -69,7 +69,7 @@ function rightMenuRu($menu, $id="", $op='"') {
 	for ($i = $real; $i <= $id; $i++) 
   { 
     echo "<li>
-			<a itemprop=".$op."url".$op." href=".$op."/{$menu[$i]['name_href']}.html".$op.">
+			<a itemprop=".$op."url".$op." href=".$op."/ru/{$menu[$i]['name_href']}.html".$op.">
 				<span itemprop=".$op."name".$op.">Население {$menu[$i]['name_ru']}</span>
 			</a>
 		 </li>"; 
@@ -232,7 +232,7 @@ function getCountryRealId($menu, $id=""){
 //<img src="Flag_of_Ukraine.png" width="30px" height="20px" style="vertical-align: top; margin-right: 5px">
 	echo " <tr>
 			<th>{$menu[$i]['real_id']}</th>
-			<td><img src=".$op."images/{$menu[$i]['country_flag']}".$op." width=".$op."30px".$op." height=".$op."20px".$op." style=".$op."vertical-align: top; margin-right: 5px".$op." alt=".$op."Флаг {$menu[$i]['name_country_ru_zz']}".$op." title=".$op."Флаг {$menu[$i]['name_country_ru_zz']}".$op."><a href=".$op."../{$menu[$i]['name_country_href']}.html".$op.">{$menu[$i]['name_country_ru']}</a></td>
+			<td><img src=".$op."images/{$menu[$i]['country_flag']}".$op." width=".$op."30px".$op." height=".$op."20px".$op." style=".$op."vertical-align: top; margin-right: 5px".$op." alt=".$op."Флаг {$menu[$i]['name_country_ru_zz']}".$op." title=".$op."Флаг {$menu[$i]['name_country_ru_zz']}".$op."><a href=".$op."../ru/{$menu[$i]['name_country_href']}.html".$op.">{$menu[$i]['name_country_ru']}</a></td>
 			<td>{$menu[$i]['count']}</td>
 		   </tr>";
   } 
@@ -260,7 +260,7 @@ function getCountryRealId($menu, $id=""){
 //<img src="Flag_of_Ukraine.png" width="30px" height="20px" style="vertical-align: top; margin-right: 5px">
 	echo " <tr>
 			<th>{$menu[$i]['real_id']}</th>
-			<td><img src=".$op."images/{$menu[$i]['country_flag']}".$op." width=".$op."30px".$op." height=".$op."20px".$op." style=".$op."vertical-align: top; margin-right: 5px".$op." alt=".$op."Флаг {$menu[$i]['name_country_ru_zz']}".$op." title=".$op."Флаг {$menu[$i]['name_country_ru_zz']}".$op."><a href=".$op."../{$menu[$i]['name_country_href']}.html".$op.">{$menu[$i]['name_country_ru']}</a></td>
+			<td><img src=".$op."images/{$menu[$i]['country_flag']}".$op." width=".$op."30px".$op." height=".$op."20px".$op." style=".$op."vertical-align: top; margin-right: 5px".$op." alt=".$op."Флаг {$menu[$i]['name_country_ru_zz']}".$op." title=".$op."Флаг {$menu[$i]['name_country_ru_zz']}".$op."><a href=".$op."../ru/{$menu[$i]['name_country_href']}.html".$op.">{$menu[$i]['name_country_ru']}</a></td>
 			<td>{$menu[$i]['count']}</td>
 		   </tr>";
   } 
@@ -289,7 +289,7 @@ function getCountryRealId($menu, $id=""){
 //<img src="Flag_of_Ukraine.png" width="30px" height="20px" style="vertical-align: top; margin-right: 5px">
 	echo " <tr>
 			<th>{$menu[$i]['real_id']}</th>
-			<td><img src=".$op."images/{$menu[$i]['country_flag']}".$op." width=".$op."30px".$op." height=".$op."20px".$op." style=".$op."vertical-align: top; margin-right: 5px".$op." alt=".$op."Флаг {$menu[$i]['name_country_ru_zz']}".$op." title=".$op."Флаг {$menu[$i]['name_country_ru_zz']}".$op."><a href=".$op."../{$menu[$i]['name_country_href']}.html".$op.">{$menu[$i]['name_country_ru']}</a></td>
+			<td><img src=".$op."images/{$menu[$i]['country_flag']}".$op." width=".$op."30px".$op." height=".$op."20px".$op." style=".$op."vertical-align: top; margin-right: 5px".$op." alt=".$op."Флаг {$menu[$i]['name_country_ru_zz']}".$op." title=".$op."Флаг {$menu[$i]['name_country_ru_zz']}".$op."><a href=".$op."../ru/{$menu[$i]['name_country_href']}.html".$op.">{$menu[$i]['name_country_ru']}</a></td>
 			<td>{$menu[$i]['count']}</td>
 		   </tr>";
   } 

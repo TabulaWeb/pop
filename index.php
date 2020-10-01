@@ -22,10 +22,10 @@ if ($_SERVER['REQUEST_URI'] == "/"){
 	} else {
 		include "core/lib$countryISO[2].php";
 	}
-} elseif ( $countryISO[1] == "gb") {
+} elseif ( $countryISO[2] == "gb") {
 	include "core/libeng.php";
 } else {
-	include "core/lib$countryISO[1].php";
+	include "core/lib$countryISO[2].php";
 }
 include 'core/libcountry.php';
 include 'Pages/MetaData.php';
@@ -75,6 +75,8 @@ if(urldecode($_SERVER['REQUEST_URI']) == "/"){
 ?>
 <!DOCTYPE html>
 <?php
+// print $base_link;
+print $countryISO[2];
 echo $doctypedown;
 echo $htmlup;
 ?>
@@ -111,7 +113,7 @@ echo $bodyup;
 
 	<?php BaseHeader();?>
 
-	<?php  
+	<?php
 	include $include_path;
 	?>
 

@@ -78,32 +78,32 @@
 			?>
 				<ul class="parent-menu-list">
 					<li>
-						<a itemprop="url" href="ru/list-of-countries-by-population.html" title="List of countries by population">
+						<a itemprop="url" href="/ru/ru/list-of-countries-by-population.html" title="List of countries by population">
 							<span itemprop="name">Список стран по численности населения</span>
 						</a>
 						<ul class="child-menu-list">
 							<li>
-								<a itemprop="url" href="cn/population-of-china.html" title="Population of China">
+								<a itemprop="url" href="/ru/cn/population-of-china.html" title="Population of China">
 									<span itemprop="name">Население Китая</span>
 								</a>
 							</li>
 							<li>
-								<a itemprop="url" href="in/population-of-india.html" title="Population of India">
+								<a itemprop="url" href="/ru/in/population-of-india.html" title="Population of India">
 									<span itemprop="name">Население Индии</span>
 								</a>
 							</li>
 							<li>
-								<a itemprop="url" href="us/population-of-usa.html" title="Population of USA">
+								<a itemprop="url" href="/ru/us/population-of-usa.html" title="Population of USA">
 									<span itemprop="name">Население США</span>
 								</a>
 							</li>
 							<li>
-								<a itemprop="url" href="id/population-of-indonesia.html" title="Population of Indonesia">
+								<a itemprop="url" href="/ru/id/population-of-indonesia.html" title="Population of Indonesia">
 									<span itemprop="name">Население Индонезии</span>
 								</a>
 							</li>
 							<li>
-								<a itemprop="url" href="pk/population-of-pakistan.html" title="Population of Pakistan">
+								<a itemprop="url" href="/ru/pk/population-of-pakistan.html" title="Population of Pakistan">
 									<span itemprop="name">Население Пакистана</span>
 								</a>
 							</li>

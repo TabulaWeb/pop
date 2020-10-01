@@ -19,7 +19,7 @@
 							<a href='/<?php
 								if (is_array($libcountry)){
 									foreach($libcountry as $value){
-										if ($countryISO[1] == $value["country_iso"]){
+										if ($countryISO[2] == $value["country_iso"]){
 											print($value["name_country_href"]);
 										}
 									}
@@ -29,7 +29,7 @@
 								<span itemprop='name'>Население <?php
 								if (is_array($libcountry)){
 									foreach($libcountry as $value){
-										if ($countryISO[1] == $value["country_iso"]){
+										if ($countryISO[2] == $value["country_iso"]){
 											print($value["name_country_ru_zz"]);
 										}
 									}
@@ -42,8 +42,8 @@
 							<span itemprop='item'>
 								<span itemprop='name'>Население <?php 
 								
-									foreach(${"lib" . $countryISO[1]} as $value){
-										if (ltrim(urldecode($_SERVER['REQUEST_URI']), "/") == $value["name_href"] . $end_link){
+									foreach(${"lib" . $countryISO[2]} as $value){
+										if (ltrim(urldecode($_SERVER['REQUEST_URI']), "/") == $start_link_ru . $value["name_href"] . $end_link){
 											print($value["name_ru"]);
 											break;
 										}
@@ -64,8 +64,8 @@
 				<div class='panel-heading' >
 					<h1 itemprop='headline'>Численность населения 
 					<?php 
-								foreach(${"lib" . $countryISO[1]} as $value){
-									if (ltrim(urldecode($_SERVER['REQUEST_URI']), "/") == $value["name_href"] . $end_link){
+								foreach(${"lib" . $countryISO[2]} as $value){
+									if (ltrim(urldecode($_SERVER['REQUEST_URI']), "/") == $start_link_ru . $value["name_href"] . $end_link){
 										print($value["name_ru"]);
 										break;
 									}
@@ -95,8 +95,8 @@
 						?>	
 						<strong>
 						<?php 
-							foreach(${"lib" . $countryISO[1]} as $value){
-								if (ltrim(urldecode($_SERVER['REQUEST_URI']), "/") == $value["name_href"] . $end_link){
+							foreach(${"lib" . $countryISO[2]} as $value){
+								if (ltrim(urldecode($_SERVER['REQUEST_URI']), "/") == $start_link_ru . $value["name_href"] . $end_link){
 									print($value["name_ru"]);
 									break;
 								}
@@ -106,15 +106,15 @@
 						</strong>, 
 						<?php
 							foreach($libcountry as $value){
-								if ($countryISO[1] == $value["country_iso"]){
+								if ($countryISO[2] == $value["country_iso"]){
 									print($value["name_country_ru"]);
 								}
 							}
 							unset($value);
 						?> - составляет <span class='pop-info'>
 						<?php 
-							foreach(${"lib" . $countryISO[1]} as $value){
-								if (ltrim(urldecode($_SERVER['REQUEST_URI']), "/") == $value["name_href"] . $end_link){
+							foreach(${"lib" . $countryISO[2]} as $value){
+								if (ltrim(urldecode($_SERVER['REQUEST_URI']), "/") == $start_link_ru . $value["name_href"] . $end_link){
 									print($value["count"]);
 									break;
 								}
@@ -156,8 +156,8 @@
 							<div class='count' itemscope='' itemtype='http://schema.org/ImageObject'>
 								<h3 class='naselenie'>
 								<?php 
-								foreach(${"lib" . $countryISO[1]} as $value){
-									if (ltrim(urldecode($_SERVER['REQUEST_URI']), "/") == $value["name_href"] . $end_link){
+								foreach(${"lib" . $countryISO[2]} as $value){
+									if (ltrim(urldecode($_SERVER['REQUEST_URI']), "/") == $start_link_ru . $value["name_href"] . $end_link){
 										print($value["name_ru"]);
 										break;
 									}
@@ -166,8 +166,8 @@
 								?> - Население</h3>
 								<span class='skolko'>
 								<?php 
-								foreach(${"lib" . $countryISO[1]} as $value){
-									if (ltrim(urldecode($_SERVER['REQUEST_URI']), "/") == $value["name_href"] . $end_link){
+								foreach(${"lib" . $countryISO[2]} as $value){
+									if (ltrim(urldecode($_SERVER['REQUEST_URI']), "/") == $start_link_ru . $value["name_href"] . $end_link){
 										print($value["count"]);
 										break;
 									}
@@ -176,7 +176,7 @@
 								?> человек</span>
 								<img src='/../ru/images/<?php
 								foreach($libcountry as $value){
-									if ($countryISO[1] == $value["country_iso"]){
+									if ($countryISO[2] == $value["country_iso"]){
 										print($value["country_flag"]);
 									}
 								}
@@ -184,7 +184,7 @@
 								?>' itemprop='contentUrl' width='160' height='107' alt='Флаг 
 								<?php
 								foreach($libcountry as $value){
-									if ($countryISO[1] == $value["country_iso"]){
+									if ($countryISO[2] == $value["country_iso"]){
 										print($value["name_country_ru"]);
 									}
 								}
@@ -192,7 +192,7 @@
 								?>' title='Флаг 
 								<?php
 								foreach($libcountry as $value){
-									if ($countryISO[1] == $value["country_iso"]){
+									if ($countryISO[2] == $value["country_iso"]){
 										print($value["name_country_ru"]);
 									}
 								}
@@ -201,7 +201,7 @@
 								<span itemprop='name' style='display:block; font-size: 12px;'>Флаг 
 								<?php
 								foreach($libcountry as $value){
-									if ($countryISO[1] == $value["country_iso"]){
+									if ($countryISO[2] == $value["country_iso"]){
 										print($value["name_country_ru_zz"]);
 									}
 								}
@@ -342,14 +342,14 @@
 					<li>
 						<a itemprop='url' href='/<?php
 								foreach($libcountry as $value){
-									if ($countryISO[1] == $value["country_iso"]){
+									if ($countryISO[2] == $value["country_iso"]){
 										print($value["rate_city_country"] . $end_link);
 									}
 								}
 								unset($value);
 								?>' title='Список городов <?php
 								foreach($libcountry as $value){
-									if ($countryISO[1] == $value["country_iso"]){
+									if ($countryISO[2] == $value["country_iso"]){
 										print($value["name_country_ru_zz"]);
 									}
 								}
@@ -357,7 +357,7 @@
 								?> по населению'>
 							<span itemprop='name'>Список городов <?php
 								foreach($libcountry as $value){
-									if ($countryISO[1] == $value["country_iso"]){
+									if ($countryISO[2] == $value["country_iso"]){
 										print($value["name_country_ru_zz"]);
 									}
 								}
@@ -365,7 +365,7 @@
 								?> по населению</span>
 						</a>
 						<ul class='child-menu-list'>
-							<?php rightMenuRu(${"lib" . $countryISO[1]},15);?>
+							<?php rightMenuRu(${"lib" . $countryISO[2]},15);?>
 						</ul>
 					</li>
 				</ul>
@@ -460,24 +460,24 @@
 						<p class='lang'>На других языках</p>
 						<ul class='language-menu-list'>
 							<li><a href='/en/<?php 
-								foreach(${"lib" . $countryISO[1]} as $value){
-									if (ltrim(urldecode($_SERVER['REQUEST_URI']), "/") == $value["name_href"] . $end_link){
+								foreach(${"lib" . $countryISO[2]} as $value){
+									if (ltrim(urldecode($_SERVER['REQUEST_URI']), "/") == $start_link_ru . $value["name_href"] . $end_link){
 										print($value["name_href"]);
 										break;
 									}
 								}
 								unset($value);
 								?>.html' title='Population of <?php 
-								foreach(${"lib" . $countryISO[1]} as $value){
-									if (ltrim(urldecode($_SERVER['REQUEST_URI']), "/") == $value["name_href"] . $end_link){
+								foreach(${"lib" . $countryISO[2]} as $value){
+									if (ltrim(urldecode($_SERVER['REQUEST_URI']), "/") == $start_link_ru . $value["name_href"] . $end_link){
 										print($value["name_en"]);
 										break;
 									}
 								}
 								unset($value);
 								?>'>Population of <?php 
-								foreach(${"lib" . $countryISO[1]} as $value){
-									if (ltrim(urldecode($_SERVER['REQUEST_URI']), "/") == $value["name_href"] . $end_link){
+								foreach(${"lib" . $countryISO[2]} as $value){
+									if (ltrim(urldecode($_SERVER['REQUEST_URI']), "/") == $start_link_ru . $value["name_href"] . $end_link){
 										print($value["name_en"]);
 										break;
 									}
