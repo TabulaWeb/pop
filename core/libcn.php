@@ -21,7 +21,7 @@ $libcn = array (
 "16"=>array("name_ru"=>"Фуян","name_en"=>"Fuyang","name_href" => "cn/population-of-fuyang","count" => "8 360 000","real_id" =>16,),
 "17"=>array("name_ru"=>"Ганьчжоу","name_en"=>"Ganzhou","name_href" => "cn/population-of-ganzhou","count" => "8 300 000","real_id" =>17,),
 "18"=>array("name_ru"=>"Цзинин","name_en"=>"Jining","name_href" => "cn/population-of-jining","count" => "8 023 000","real_id" =>18,),
-"19"=>array("name_ru"=>"Шэньян ","name_en"=>"Shenyang ","name_href" => "cn/population-of-shenyang","count" => "7 760 000","real_id" =>19,),
+"19"=>array("name_ru"=>"Шэньян","name_en"=>"Shenyang ","name_href" => "cn/population-of-shenyang","count" => "7 760 000","real_id" =>19,),
 "20"=>array("name_ru"=>"Чжумадянь","name_en"=>"Zhumadian","name_href" => "cn/population-of-zhumadian","count" => "7 640 000","real_id" =>20,),
 "21"=>array("name_ru"=>"Сиань","name_en"=>"XI'an","name_href" => "cn/population-of-xian","count" => "7 270 000","real_id" =>21,),
 "22"=>array("name_ru"=>"Гонконг","name_en"=>"Hong Kong","name_href" => "cn/population-of-hong-kong","count" => "7 182 724","real_id" =>22,),
