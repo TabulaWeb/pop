@@ -1,12 +1,15 @@
+# Enable mod_rewrite
 RewriteEngine On
 RewriteBase /
+
+# REMOVE WWW
+RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
+RewriteRule ^(.*)$ https://%1%{REQUEST_URI} [R=301,QSA,NC,L]
+
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^.*$ /index.php [L,QSA]
 
 <IfModule mod_mime.c>
-AddType application/x-httpd-php .php
-AddType application/x-httpd-php .htm
 AddType application/x-httpd-php .html
-AddType application/x-httpd-php .tpl
 </IfModule>
